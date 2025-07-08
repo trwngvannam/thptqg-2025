@@ -3,191 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thi Tiếng Anh THPTQG Online</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Thi Tiếng Anh THPTQG Online - Demo</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .demo-icon {
+            font-size: 4rem;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .demo-message {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .demo-features {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            text-align: left;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            color: #2d3748;
+        }
+
+        .feature-list li i {
+            color: #48bb78;
+            margin-right: 0.5rem;
+            width: 20px;
+        }
+
+        .demo-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1rem;
+            color: #856404;
+            margin-top: 2rem;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: #2d3748;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .github-link:hover {
+            background: #1a202c;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                <h1>Thi Tiếng Anh THPTQG Online</h1>
-            </div>
-        </header>
-
-        <!-- Welcome Screen -->
-        <div class="welcome-screen" id="welcome-screen">
-            <div class="welcome-card">
-                <div class="welcome-icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
-                <h2>Chào mừng đến với bài thi Tiếng Anh THPTQG</h2>
-                <p>Chọn mã đề và bắt đầu làm bài thi của bạn</p>
-                
-                <div class="exam-selector">
-                    <h3>Chọn mã đề:</h3>
-                    <div class="exam-dropdown">
-                        <div class="dropdown-header" id="dropdown-header">
-                            <i class="fas fa-file-alt"></i>
-                            <span id="selected-exam">Chọn mã đề thi</span>
-                            <i class="fas fa-chevron-down dropdown-arrow"></i>
-                        </div>
-                        <div class="dropdown-list" id="dropdown-list">
-                            <!-- Dropdown items will be generated dynamically by JavaScript -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="student-info">
-                    <input type="text" id="student-name" placeholder="Nhập họ và tên" required>
-                    <input type="text" id="student-id" placeholder="Số báo danh (tùy chọn)">
-                </div>
-
-                <div class="exam-info">
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Thời gian: 50 phút</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-question-circle"></i>
-                        <span>40 câu hỏi</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-star"></i>
-                        <span>10 điểm</span>
-                    </div>
-                </div>
-
-                <button class="start-btn" id="start-exam">
-                    <i class="fas fa-play"></i>
-                    Bắt đầu thi
-                </button>
-            </div>
+    <div class="demo-container">
+        <div class="demo-icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        
+        <h1>Thi Tiếng Anh THPTQG Online</h1>
+        
+        <div class="demo-message">
+            Đây là <strong>Demo Interface</strong> của hệ thống thi trực tuyến THPTQG Tiếng Anh. 
+            Phiên bản này chỉ hiển thị giao diện mà không chứa dữ liệu đề thi thực tế.
         </div>
 
-        <!-- Exam Screen -->
-        <div class="exam-screen" id="exam-screen" style="display: none;">
-            <div class="exam-header">
-                <div class="exam-info-bar">
-                    <span class="exam-code-display" id="exam-code-display"></span>
-                    <span class="student-name-display" id="student-name-display"></span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
-                </div>
-            </div>
-
-            <div class="exam-content">
-                <div class="question-sidebar">
-                    <h3>Danh sách câu hỏi</h3>
-                    <div class="question-grid" id="question-grid"></div>
-                    <button class="submit-btn" id="submit-exam">
-                        <i class="fas fa-check"></i>
-                        Nộp bài
-                    </button>
-                </div>
-
-                <div class="question-area">
-                    <div class="question-header">
-                        <span class="question-number" id="question-number">Câu 1</span>
-                        <div class="timer" id="timer" style="display: none;">
-                            <i class="fas fa-clock"></i>
-                            <span id="time-display">50:00</span>
-                        </div>
-                        <div class="navigation-buttons">
-                            <button class="nav-btn" id="prev-btn" disabled>
-                                <i class="fas fa-chevron-left"></i>
-                                Trước
-                            </button>
-                            <button class="nav-btn" id="next-btn">
-                                Tiếp
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="question-content" id="question-content">
-                        <!-- Questions will be loaded here -->
-                    </div>
-                </div>
-            </div>
+        <div class="demo-features">
+            <h3 style="margin-bottom: 1rem; color: #2d3748;">✨ Tính năng của hệ thống:</h3>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Hỗ trợ 48 mã đề thi (1101-1148)</li>
+                <li><i class="fas fa-check-circle"></i> Giao diện hiện đại, responsive</li>
+                <li><i class="fas fa-check-circle"></i> Đồng hồ đếm ngược 50 phút</li>
+                <li><i class="fas fa-check-circle"></i> Tự động chấm điểm</li>
+                <li><i class="fas fa-check-circle"></i> Lazy loading tối ưu hiệu năng</li>
+                <li><i class="fas fa-check-circle"></i> Dropdown động từ JSON</li>
+                <li><i class="fas fa-check-circle"></i> Giải thích đáp án chi tiết</li>
+            </ul>
         </div>
 
-        <!-- Result Screen -->
-        <div class="result-screen" id="result-screen" style="display: none;">
-            <div class="result-card">
-                <div class="result-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <h2>Kết quả bài thi</h2>
-                <div class="result-info">
-                    <div class="result-item">
-                        <span class="label">Mã đề:</span>
-                        <span class="value" id="result-code"></span>
-                    </div>
-                    <div class="result-item">
-                        <span class="label">Họ tên:</span>
-                        <span class="value" id="result-name"></span>
-                    </div>
-                    <div class="result-item">
-                        <span class="label">Số câu đúng:</span>
-                        <span class="value" id="result-correct"></span>
-                    </div>
-                    <div class="result-item">
-                        <span class="label">Điểm số:</span>
-                        <span class="value score" id="result-score"></span>
-                    </div>
-                    <div class="result-item">
-                        <span class="label">Thời gian làm bài:</span>
-                        <span class="value" id="result-time"></span>
-                    </div>
-                </div>
-                <div class="result-actions">
-                    <button class="restart-btn" id="restart-exam">
-                        <i class="fas fa-redo"></i>
-                        Làm lại đề này
-                    </button>
-                    <button class="new-exam-btn" id="new-exam">
-                        <i class="fas fa-home"></i>
-                        Chọn đề mới
-                    </button>
-                    <button class="review-btn" id="review-exam" style="display: none;">
-                        <i class="fas fa-eye"></i>
-                        Xem lại bài thi
-                    </button>
-                    <button class="review-btn" id="review-answers">
-                        <i class="fas fa-search"></i>
-                        Xem giải thích đáp án
-                    </button>
-                </div>
-            </div>
+        <div class="demo-note">
+            <i class="fas fa-info-circle"></i>
+            <strong>Lưu ý:</strong> Đây chỉ là bản demo giao diện. 
+            Phiên bản đầy đủ với dữ liệu và chức năng hoàn chỉnh được bảo mật riêng.
         </div>
 
-        <!-- Answer Review Screen -->
-        <div class="review-screen" id="review-screen" style="display: none;">
-            <div class="review-container">
-                <div class="review-header">
-                    <h2>Giải thích đáp án chi tiết</h2>
-                    <button class="close-review-btn" id="close-review">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="review-content" id="review-content">
-                    <!-- Answer explanations will be loaded here -->
-                </div>
-                <div class="review-footer">
-                    <button class="back-to-result-btn" id="back-to-result">
-                        <i class="fas fa-arrow-left"></i>
-                        Quay lại kết quả
-                    </button>
-                </div>
-            </div>
-        </div>
+        <a href="https://github.com/trwngvannam/thptqg-2025" class="github-link" target="_blank">
+            <i class="fab fa-github"></i> Xem Repository
+        </a>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

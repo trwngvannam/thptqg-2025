@@ -1,0 +1,12 @@
+# Ẩn các file dữ liệu và code
+data/
+backup/
+exam/
+script.js
+styles.css
+exam_list.json
+explanations.json
+README.md
+
+# Chỉ giữ lại
+!index.html
