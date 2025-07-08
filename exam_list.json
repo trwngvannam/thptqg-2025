@@ -1,0 +1,388 @@
+{
+  "exams": {
+    "1101": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1101",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": true,
+      "file": "data/1101.json"
+    },
+    "1102": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1102",
+      "subject": "TIẾNG ANH", 
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": true,
+      "file": "data/1102.json"
+    },
+    "1103": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1103",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1103.json"
+    },
+    "1104": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1104",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1104.json"
+    },
+    "1105": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1105",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": true,
+      "file": "data/1105.json"
+    },
+    "1106": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1106",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1106.json"
+    },
+    "1107": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1107",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1107.json"
+    },
+    "1108": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1108",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1108.json"
+    },
+    "1109": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1109",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1109.json"
+    },
+    "1110": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1110",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1110.json"
+    },
+    "1111": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1111",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1111.json"
+    },
+    "1112": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1112",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1112.json"
+    },
+    "1113": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1113",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1113.json"
+    },
+    "1114": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1114",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1114.json"
+    },
+    "1115": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1115",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1115.json"
+    },
+    "1116": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1116",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1116.json"
+    },
+    "1117": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1117",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1117.json"
+    },
+    "1118": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1118",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1118.json"
+    },
+    "1119": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1119",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1119.json"
+    },
+    "1120": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1120",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1120.json"
+    },
+    "1121": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1121",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1121.json"
+    },
+    "1122": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1122",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1122.json"
+    },
+    "1123": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1123",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1123.json"
+    },
+    "1124": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1124",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1124.json"
+    },
+    "1125": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1125",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1125.json"
+    },
+    "1126": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1126",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1126.json"
+    },
+    "1127": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1127",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1127.json"
+    },
+    "1128": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1128",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1128.json"
+    },
+    "1129": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1129",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1129.json"
+    },
+    "1130": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1130",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1130.json"
+    },
+    "1131": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1131",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1131.json"
+    },
+    "1132": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1132",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1132.json"
+    },
+    "1133": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1133",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1133.json"
+    },
+    "1134": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1134",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1134.json"
+    },
+    "1135": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1135",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1135.json"
+    },
+    "1136": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1136",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1136.json"
+    },
+    "1137": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1137",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1137.json"
+    },
+    "1138": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1138",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1138.json"
+    },
+    "1139": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1139",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1139.json"
+    },
+    "1140": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1140",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1140.json"
+    },
+    "1141": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1141",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1141.json"
+    },
+    "1142": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1142",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1142.json"
+    },
+    "1143": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1143",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1143.json"
+    },
+    "1144": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1144",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1144.json"
+    },
+    "1145": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1145",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1145.json"
+    },
+    "1146": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1146",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1146.json"
+    },
+    "1147": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1147",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1147.json"
+    },
+    "1148": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1148",
+      "subject": "TIẾNG ANH",
+      "time_limit": 50,
+      "total_questions": 40,
+      "has_content": false,
+      "file": "data/1148.json"
+    }
+  }
+}

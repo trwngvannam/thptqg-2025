@@ -1,5 +1,6 @@
 // Dữ liệu đề thi sẽ được load từ file JSON
-let examData = {};
+let examListData = {}; // Metadata của tất cả các đề
+let currentExamData = null; // Dữ liệu chi tiết của đề đang làm
 
 // Application state
 let currentExam = null;
@@ -18,18 +19,36 @@ const resultScreen = document.getElementById('result-screen');
 const timer = document.getElementById('timer');
 const timeDisplay = document.getElementById('time-display');
 
-// Load exam data from JSON file
-async function loadExamData() {
+// Load exam list metadata from JSON file
+async function loadExamListData() {
     try {
-        const response = await fetch('exam_data.json');
+        const response = await fetch('exam_list.json');
         if (!response.ok) {
-            throw new Error('Không thể tải dữ liệu đề thi');
+            throw new Error('Không thể tải danh sách đề thi');
         }
-        examData = await response.json();
-        console.log('Đã tải dữ liệu đề thi thành công');
+        const data = await response.json();
+        examListData = data.exams;
+        console.log('Đã tải danh sách đề thi thành công');
     } catch (error) {
-        console.error('Lỗi khi tải dữ liệu đề thi:', error);
-        alert('Không thể tải dữ liệu đề thi. Vui lòng kiểm tra kết nối mạng.');
+        console.error('Lỗi khi tải danh sách đề thi:', error);
+        alert('Không thể tải danh sách đề thi. Vui lòng kiểm tra kết nối mạng.');
+    }
+}
+
+// Load specific exam data (lazy loading)
+async function loadSpecificExamData(examCode) {
+    try {
+        const response = await fetch(`data/${examCode}.json`);
+        if (!response.ok) {
+            throw new Error(`Không thể tải dữ liệu đề thi ${examCode}`);
+        }
+        currentExamData = await response.json();
+        console.log(`Đã tải dữ liệu đề thi ${examCode} thành công`);
+        return currentExamData;
+    } catch (error) {
+        console.error(`Lỗi khi tải dữ liệu đề thi ${examCode}:`, error);
+        alert(`Không thể tải dữ liệu đề thi ${examCode}. Vui lòng thử lại.`);
+        return null;
     }
 }
 
@@ -50,7 +69,7 @@ async function loadExplanationsData() {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async function() {
-    await loadExamData();
+    await loadExamListData();
     await loadExplanationsData(); // Load explanations data
     initializeApp();
 });
@@ -126,7 +145,7 @@ function checkStartButtonState() {
     }
 }
 
-function startExam() {
+async function startExam() {
     const studentName = document.getElementById('student-name').value.trim();
     const studentId = document.getElementById('student-id').value.trim();
     
@@ -135,8 +154,18 @@ function startExam() {
         return;
     }
     
+    // Show loading message
+    document.getElementById('selected-exam').textContent = 'Đang tải đề thi...';
+    
+    // Load specific exam data
+    const examData = await loadSpecificExamData(selectedExamCode);
+    if (!examData) {
+        document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
+        return;
+    }
+    
     // Initialize exam
-    currentExam = examData[selectedExamCode];
+    currentExam = examData;
     currentQuestionIndex = 0;
     userAnswers = {};
     examStartTime = new Date();
@@ -668,12 +697,18 @@ function generateDropdownItems() {
     // Clear existing items (nếu có)
     dropdownList.innerHTML = '';
     
-    // Get exam codes from examData and sort them
-    const examCodes = Object.keys(examData).sort();
+    // Check if examListData is loaded
+    if (!examListData || Object.keys(examListData).length === 0) {
+        console.warn('examListData chưa được tải hoặc rỗng');
+        return;
+    }
+    
+    // Get exam codes from examListData and sort them
+    const examCodes = Object.keys(examListData).sort();
     
     // Generate dropdown items
     examCodes.forEach(code => {
-        const examInfo = examData[code];
+        const examInfo = examListData[code];
         const dropdownItem = document.createElement('div');
         dropdownItem.className = 'dropdown-item';
         dropdownItem.setAttribute('data-code', code);

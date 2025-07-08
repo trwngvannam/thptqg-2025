@@ -37,56 +37,82 @@
 - Tính điểm theo thang 10
 - Thống kê thời gian làm bài
 
-## 🎯 **Tối ưu code với Dropdown động**
+## 🎯 **Tối ưu hóa dữ liệu và hiệu năng**
+
+### **Kiến trúc dữ liệu mới (Lazy Loading):**
+- ✅ **Tách dữ liệu**: Mỗi mã đề một file riêng (`data/1101.json`, `data/1102.json`, ...)
+- ✅ **Metadata riêng**: File `exam_list.json` chứa thông tin cơ bản của 48 mã đề
+- ✅ **Lazy Loading**: Chỉ tải dữ liệu đề thi khi người dùng chọn mã đề cụ thể
+- ✅ **Hiệu năng cao**: Trang tải nhanh hơn, chỉ download khi cần thiết
+- ✅ **Dễ mở rộng**: Thêm mã đề mới chỉ cần tạo file JSON tương ứng
+
+### **Cách thức hoạt động:**
+```javascript
+// 1. Load metadata của tất cả đề thi
+async function loadExamListData() {
+    const response = await fetch('exam_list.json');
+    examListData = await response.json();
+}
+
+// 2. Tạo dropdown động từ metadata
+function generateDropdownItems() {
+    const examCodes = Object.keys(examListData).sort();
+    // Tạo dropdown items từ examListData
+}
+
+// 3. Load dữ liệu chi tiết khi chọn đề (lazy loading)
+async function loadSpecificExamData(examCode) {
+    const response = await fetch(`data/${examCode}.json`);
+    return await response.json();
+}
+```
+
+## 🎯 **Dropdown tự động và tối ưu UI**
 
 Thay vì hardcode 48 mã đề trong HTML, hệ thống sử dụng JavaScript để tạo dropdown động:
 
 ### **JavaScript Dynamic Generation:**
-- ✅ **Tự động tạo dropdown**: Từ dữ liệu `exam_data.json`
+- ✅ **Tự động tạo dropdown**: Từ dữ liệu `exam_list.json`
 - ✅ **Code gọn gàng**: Loại bỏ 300+ dòng HTML lặp lại
 - ✅ **Dễ mở rộng**: Chỉ cần thêm mã đề vào JSON là dropdown tự cập nhật
 - ✅ **Sắp xếp tự động**: Các mã đề được sắp xếp theo thứ tự tăng dần
+- ✅ **UI tối ưu**: Dropdown có thanh cuộn, max-height để không chiếm quá nhiều màn hình
 
-### **Cách thức hoạt động:**
-```javascript
-function generateDropdownItems() {
-    const examCodes = Object.keys(examData).sort(); // Lấy tất cả mã đề
-    examCodes.forEach(code => {
-        // Tạo dropdown item cho mỗi mã đề
-        // Tự động gắn event listener
-    });
+### **Cấu trúc dữ liệu exam_list.json:**
+```json
+{
+  "exams": {
+    "1101": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1101",
+      "file": "data/1101.json"
+    },
+    "1102": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1102", 
+      "file": "data/1102.json"
+    }
+    // ... 46 mã đề khác
+  }
 }
 ```
 
-## 🎯 **Dữ liệu đề thi thực tế từ JSON**
-
-Trang web đã được cập nhật để đọc trực tiếp từ file `exam_data.json` thay vì hardcode trong JavaScript:
-
-### **Kiến trúc mới:**
-- ✅ **File JSON riêng biệt**: `exam_data.json` chứa toàn bộ dữ liệu đề thi
-- ✅ **Loading động**: JavaScript load dữ liệu từ JSON khi khởi động
-- ✅ **Dễ bảo trì**: Chỉ cần sửa file JSON để cập nhật câu hỏi
-- ✅ **Hiển thị đầy đủ**: Instruction + Passage + Question + Options
-
-### **Cấu trúc dữ liệu JSON:**
+### **Cấu trúc dữ liệu từng mã đề (data/1101.json):**
 ```json
 {
-  "1101": {
-    "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1101",
-    "subject": "TIẾNG ANH",
-    "time_limit": 50,
-    "total_questions": 50,
-    "questions": [
-      {
-        "id": 1,
-        "instruction": "Read the following passage and mark the letter A, B, C or D...",
-        "passage": "All holidays involve some element of risk...",
-        "text": "Question 1.",
-        "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
-        "correct": 3
-      }
-    ]
-  }
+  "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1101",
+  "subject": "TIẾNG ANH",
+  "time_limit": 50,
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": 1,
+      "instruction": "Read the following passage and mark the letter A, B, C or D...",
+      "passage": "All holidays involve some element of risk...",
+      "text": "Question 1.",
+      "options": ["A. ...", "B. ...", "C. ...", "D. ..."],
+      "correct": 3
+    }
+    // ... 49 câu hỏi khác
+  ]
 }
 ```
 
@@ -147,16 +173,51 @@ Trang web sử dụng file `explanations.json` để lưu trữ giải thích ch
 ```
 THPTQG/
 ├── index.html          # File HTML chính
-├── styles.css          # File CSS cho giao diện
+├── styles.css          # File CSS cho giao diện  
 ├── script.js           # File JavaScript xử lý logic
-├── exam_data.json      # Dữ liệu đề thi từ PDF thực tế
+├── exam_list.json      # Metadata của 48 mã đề (1101-1148)
 ├── explanations.json   # Giải thích đáp án chi tiết
+├── split_data.js       # Script tách dữ liệu từ exam_data.json
+├── exam_data.json      # File dữ liệu cũ (đã tách thành 48 file nhỏ)
 ├── README.md           # File hướng dẫn này
-└── exam/               # Thư mục chứa đề thi PDF
+├── data/               # Thư mục chứa dữ liệu từng mã đề
+│   ├── 1101.json       # Dữ liệu đề thi mã 1101
+│   ├── 1102.json       # Dữ liệu đề thi mã 1102
+│   ├── ...             # ... 
+│   └── 1148.json       # Dữ liệu đề thi mã 1148
+└── exam/               # Thư mục chứa đề thi PDF gốc
     ├── ma-de-1101.pdf
     ├── ma-de-1102.pdf
     └── ma-de-1105.pdf
 ```
+
+## Hướng dẫn thêm mã đề mới
+
+### Cách 1: Thêm thủ công
+1. **Tạo file dữ liệu mới**: `data/1149.json` với cấu trúc tương tự các file khác
+2. **Cập nhật exam_list.json**: Thêm metadata cho mã đề 1149
+```json
+{
+  "exams": {
+    "1149": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1149",
+      "file": "data/1149.json"
+    }
+  }
+}
+```
+3. **Hệ thống tự động cập nhật**: Dropdown sẽ tự động hiển thị mã đề mới
+
+### Cách 2: Sử dụng script tự động (khuyến nghị)
+1. **Cập nhật exam_data.json**: Thêm dữ liệu mã đề mới vào file này
+2. **Chạy script tách dữ liệu**:
+```bash
+node split_data.js
+```
+3. **Script sẽ tự động**:
+   - Tạo file `data/1149.json` 
+   - Cập nhật `exam_list.json`
+   - Đảm bảo tất cả dữ liệu đồng bộ
 
 ## Hướng dẫn sử dụng
 
@@ -206,25 +267,42 @@ THPTQG/
 ## Tùy chỉnh
 
 ### Thêm câu hỏi mới:
-```javascript
-// Trong file script.js, thêm vào object examData
-"1106": {
-    title: "Đề thi THPTQG 2024 - Mã đề 1106",
-    questions: [
-        {
-            id: 1,
-            text: "Câu hỏi của bạn...",
-            options: [
-                "A. Đáp án A",
-                "B. Đáp án B", 
-                "C. Đáp án C",
-                "D. Đáp án D"
-            ],
-            correct: 0 // Index của đáp án đúng (0-3)
-        }
-    ]
+Có 2 cách để thêm câu hỏi mới:
+
+**Cách 1: Chỉnh sửa trực tiếp file data/XXXX.json**
+```json
+{
+  "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1149",
+  "subject": "TIẾNG ANH", 
+  "time_limit": 50,
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Câu hỏi của bạn...",
+      "options": [
+        "A. Đáp án A",
+        "B. Đáp án B",
+        "C. Đáp án C", 
+        "D. Đáp án D"
+      ],
+      "correct": 0 // Index của đáp án đúng (0-3)
+    }
+  ]
 }
 ```
+
+**Cách 2: Thêm vào exam_data.json và chạy script**
+```json
+// Trong exam_data.json
+{
+  "1149": {
+    "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1149", 
+    "questions": [...]
+  }
+}
+```
+Sau đó chạy: `node split_data.js`
 
 ### Thay đổi thời gian thi:
 ```javascript
