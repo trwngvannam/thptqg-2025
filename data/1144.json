@@ -3,5 +3,71 @@
   "subject": "TIẾNG ANH",
   "time_limit": 50,
   "total_questions": 40,
-  "questions": []
+  "questions": [
+    {
+      "id": 1,
+      "instruction": "Read the following passage about carnivals and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 5.",
+      "passage": "The process of sorting through the various holidays on offer and determining which is the best for you is inevitably complex and individual personality traits will determine the eventual decision. Some people undertake a process of extensive problem solving, in which information is sought about a series of products, .................... (1). Other consumers with no patience to explore a variety of choices .................... (2), for the sake of their convenience rather than trying to guarantee that they buy the best possible product. This is known as limited problem solving. Many consumers engage in routinised response behaviour, in which choices change relatively little over time. .................... (3). Also, some holidaymakers who have been content with a particular company or destination in the past may opt for the same experience again. Finally, some consumers will buy on impulse. .................... (4). It is, in fact, a pattern of behaviour that is becoming increasingly prevalent – to the dismay of the operators, who then have less scope for forward planning and reduced opportunities to gain from investing deposits in the short term. .................... (5), where ‘distressed stock’ needs to be cleared at short notice and this can be stimulated by late availability offers particularly.",
+      "text": "Question 1.",
+      "options": [
+        "A. when it is similarly evaluated and compared with other products",
+        "B. those with similarities to other products will be evaluated and compared carefully",
+        "C. each of which is evaluated and compared with similar products",
+        "D. every one of them undergoes evaluations and comparisons with similar products"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 2,
+      "instruction": "Read the following passage about carnivals and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 5.",
+      "passage": "The process of sorting through the various holidays on offer and determining which is the best for you is inevitably complex and individual personality traits will determine the eventual decision. Some people undertake a process of extensive problem solving, in which information is sought about a series of products, .................... (1). Other consumers with no patience to explore a variety of choices .................... (2), for the sake of their convenience rather than trying to guarantee that they buy the best possible product. This is known as limited problem solving. Many consumers engage in routinised response behaviour, in which choices change relatively little over time. .................... (3). Also, some holidaymakers who have been content with a particular company or destination in the past may opt for the same experience again. Finally, some consumers will buy on impulse. .................... (4). It is, in fact, a pattern of behaviour that is becoming increasingly prevalent – to the dismay of the operators, who then have less scope for forward planning and reduced opportunities to gain from investing deposits in the short term. .................... (5), where ‘distressed stock’ needs to be cleared at short notice and this can be stimulated by late availability offers particularly.",
+      "text": "Question 2.",
+      "options": [
+        "A. will deliberately confine themselves to a small number of choices",
+        "B. fewer choices are deliberately confined to themselves",
+        "C. be deliberate to confine themselves to a small number of choices",
+        "D. being deliberately confining themselves to fewer choices"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "instruction": "Read the following passage about carnivals and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 5.",
+      "passage": "The process of sorting through the various holidays on offer and determining which is the best for you is inevitably complex and individual personality traits will determine the eventual decision. Some people undertake a process of extensive problem solving, in which information is sought about a series of products, .................... (1). Other consumers with no patience to explore a variety of choices .................... (2), for the sake of their convenience rather than trying to guarantee that they buy the best possible product. This is known as limited problem solving. Many consumers engage in routinised response behaviour, in which choices change relatively little over time. .................... (3). Also, some holidaymakers who have been content with a particular company or destination in the past may opt for the same experience again. Finally, some consumers will buy on impulse. .................... (4). It is, in fact, a pattern of behaviour that is becoming increasingly prevalent – to the dismay of the operators, who then have less scope for forward planning and reduced opportunities to gain from investing deposits in the short term. .................... (5), where ‘distressed stock’ needs to be cleared at short notice and this can be stimulated by late availability offers particularly.",
+      "text": "Question 3.",
+      "options": [
+        "A. This is a common pattern among brand-loyal consumers, for example",
+        "B. Common brands, by contrast, are a pattern among loyal consumers",
+        "C. This is a common example of brands with loyalty to a consumer pattern",
+        "D. By contrast, a consumer-loyal pattern is seen among common brands"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 4,
+      "instruction": "Read the following passage about carnivals and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 5.",
+      "passage": "The process of sorting through the various holidays on offer and determining which is the best for you is inevitably complex and individual personality traits will determine the eventual decision. Some people undertake a process of extensive problem solving, in which information is sought about a series of products, .................... (1). Other consumers with no patience to explore a variety of choices .................... (2), for the sake of their convenience rather than trying to guarantee that they buy the best possible product. This is known as limited problem solving. Many consumers engage in routinised response behaviour, in which choices change relatively little over time. .................... (3). Also, some holidaymakers who have been content with a particular company or destination in the past may opt for the same experience again. Finally, some consumers will buy on impulse. .................... (4). It is, in fact, a pattern of behaviour that is becoming increasingly prevalent – to the dismay of the operators, who then have less scope for forward planning and reduced opportunities to gain from investing deposits in the short term. .................... (5), where ‘distressed stock’ needs to be cleared at short notice and this can be stimulated by late availability offers particularly.",
+      "text": "Question 4.",
+      "options": [
+        "A. In the meantime, holidays costing little are known to be products typically favoured by many purchasers",
+        "B. While this is more typical of products costing little, it is by no means unknown among holiday purchasers",
+        "C. It doesn’t matter whether products are unknown, it is typical of purchasers to have holidays costing little",
+        "D. The products cost little, which means they are better known and more favoured by typical holiday purchasers"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "instruction": "Read the following passage about carnivals and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 1 to 5.",
+      "passage": "The process of sorting through the various holidays on offer and determining which is the best for you is inevitably complex and individual personality traits will determine the eventual decision. Some people undertake a process of extensive problem solving, in which information is sought about a series of products, .................... (1). Other consumers with no patience to explore a variety of choices .................... (2), for the sake of their convenience rather than trying to guarantee that they buy the best possible product. This is known as limited problem solving. Many consumers engage in routinised response behaviour, in which choices change relatively little over time. .................... (3). Also, some holidaymakers who have been content with a particular company or destination in the past may opt for the same experience again. Finally, some consumers will buy on impulse. .................... (4). It is, in fact, a pattern of behaviour that is becoming increasingly prevalent – to the dismay of the operators, who then have less scope for forward planning and reduced opportunities to gain from investing deposits in the short term. .................... (5), where ‘distressed stock’ needs to be cleared at short notice and this can be stimulated by late availability offers particularly.",
+      "text": "Question 5.",
+      "options": [
+        "A. Though such trait of impulse purchasing proves to be valuable",
+        "B. So valuable is such purchasing trait that it proves to be impulsive",
+        "C. Such impulse purchasing proves to be a valuable trait, though",
+        "D. Such trait is so impulsive that it proves to be valuable to purchasers"
+      ],
+      "correct": 2
+    }
+  ]
 }
