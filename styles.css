@@ -190,8 +190,28 @@ body {
 }
 
 .dropdown-list.open {
-    max-height: 300px;
+    max-height: 240px; /* Chiều cao cho khoảng 3 item (mỗi item ~80px) */
+    overflow-y: auto; /* Thêm thanh cuộn dọc */
     border-color: #4facfe;
+}
+
+/* Style cho thanh cuộn */
+.dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #4facfe;
+    border-radius: 3px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background: #3a8bfd;
 }
 
 .dropdown-item {
