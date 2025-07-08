@@ -177,14 +177,15 @@ THPTQG/
 ├── script.js           # File JavaScript xử lý logic
 ├── exam_list.json      # Metadata của 48 mã đề (1101-1148)
 ├── explanations.json   # Giải thích đáp án chi tiết
-├── split_data.js       # Script tách dữ liệu từ exam_data.json
-├── exam_data.json      # File dữ liệu cũ (đã tách thành 48 file nhỏ)
 ├── README.md           # File hướng dẫn này
 ├── data/               # Thư mục chứa dữ liệu từng mã đề
 │   ├── 1101.json       # Dữ liệu đề thi mã 1101
 │   ├── 1102.json       # Dữ liệu đề thi mã 1102
 │   ├── ...             # ... 
 │   └── 1148.json       # Dữ liệu đề thi mã 1148
+├── backup/             # Thư mục backup (không cần thiết cho production)
+│   ├── exam_data.json  # File dữ liệu gốc (đã tách)
+│   └── split_data.js   # Script tách dữ liệu (đã sử dụng)
 └── exam/               # Thư mục chứa đề thi PDF gốc
     ├── ma-de-1101.pdf
     ├── ma-de-1102.pdf
@@ -193,7 +194,7 @@ THPTQG/
 
 ## Hướng dẫn thêm mã đề mới
 
-### Cách 1: Thêm thủ công
+### Cách 1: Thêm thủ công (Khuyến nghị)
 1. **Tạo file dữ liệu mới**: `data/1149.json` với cấu trúc tương tự các file khác
 2. **Cập nhật exam_list.json**: Thêm metadata cho mã đề 1149
 ```json
@@ -208,16 +209,14 @@ THPTQG/
 ```
 3. **Hệ thống tự động cập nhật**: Dropdown sẽ tự động hiển thị mã đề mới
 
-### Cách 2: Sử dụng script tự động (khuyến nghị)
-1. **Cập nhật exam_data.json**: Thêm dữ liệu mã đề mới vào file này
-2. **Chạy script tách dữ liệu**:
+### Cách 2: Sử dụng backup files (nếu cần)
+1. **Phục hồi tool**: Copy `backup/split_data.js` và `backup/exam_data.json` ra ngoài
+2. **Cập nhật exam_data.json**: Thêm dữ liệu mã đề mới vào file này
+3. **Chạy script tách dữ liệu**:
 ```bash
 node split_data.js
 ```
-3. **Script sẽ tự động**:
-   - Tạo file `data/1149.json` 
-   - Cập nhật `exam_list.json`
-   - Đảm bảo tất cả dữ liệu đồng bộ
+4. **Di chuyển tool về backup**: Move lại vào thư mục backup sau khi xong
 
 ## Hướng dẫn sử dụng
 
@@ -267,10 +266,9 @@ node split_data.js
 ## Tùy chỉnh
 
 ### Thêm câu hỏi mới:
-Có 2 cách để thêm câu hỏi mới:
-
-**Cách 1: Chỉnh sửa trực tiếp file data/XXXX.json**
+**Cách khuyến nghị: Chỉnh sửa trực tiếp file JSON**
 ```json
+// Tạo file data/1149.json mới
 {
   "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1149",
   "subject": "TIẾNG ANH", 
@@ -292,17 +290,18 @@ Có 2 cách để thêm câu hỏi mới:
 }
 ```
 
-**Cách 2: Thêm vào exam_data.json và chạy script**
-```json
-// Trong exam_data.json
-{
-  "1149": {
-    "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 1149", 
-    "questions": [...]
-  }
-}
+**Cách khác: Sử dụng backup tool (nếu cần thêm nhiều đề)**
+```bash
+# 1. Copy tool từ backup
+cp backup/split_data.js backup/exam_data.json .
+
+# 2. Cập nhật exam_data.json với dữ liệu mới
+# 3. Chạy script
+node split_data.js
+
+# 4. Di chuyển tool về backup
+mv split_data.js exam_data.json backup/
 ```
-Sau đó chạy: `node split_data.js`
 
 ### Thay đổi thời gian thi:
 ```javascript
