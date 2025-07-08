@@ -1,0 +1,750 @@
+{
+  "1105": {
+    "1": {
+      "question": "Question 1:",
+      "options": ["A. whose", "B. whom", "C. who", "D. which"],
+      "correct": "D. which",
+      "explanation": {
+        "reason": "Vị trí này đứng sau danh từ galleries, cần một đại từ quan hệ để nối mệnh đề quan hệ bổ nghĩa cho nó.",
+        "points": [
+          "Đại từ which được dùng để thay thế cho danh từ chỉ vật (galleries) làm chủ ngữ của mệnh đề quan hệ.",
+          "Công thức: which + động từ (ở đây: \"are derived\"), đúng cấu trúc mệnh đề quan hệ chủ động."
+        ],
+        "wrongAnswers": [
+          "whose: Dùng để chỉ sở hữu (công thức: whose + danh từ), không phù hợp vì sau chỗ trống là động từ \"are\".",
+          "whom: Dùng để chỉ người, đóng vai trò tân ngữ, không phù hợp vì \"galleries\" là vật và cần chủ ngữ.",
+          "who: Dùng để chỉ người, không dùng để thay thế cho danh từ chỉ vật như \"galleries\"."
+        ]
+      }
+    },
+    "2": {
+      "question": "Question 2:",
+      "options": ["A. flying", "B. leading", "C. heading", "D. rating"],
+      "correct": "B. leading",
+      "explanation": {
+        "reason": "Cụm danh từ Vietnam's ______ artists cần một tính từ để bổ nghĩa cho \"artists\".",
+        "points": [
+          "\"leading\" = hàng đầu, nổi bật, phù hợp ngữ cảnh nói về các nghệ sĩ nổi tiếng của Việt Nam."
+        ],
+        "wrongAnswers": [
+          "flying: Không có cụm từ flying artists.",
+          "heading: Không có cụm từ heading artists.",
+          "rating: Không có cụm từ rating artists."
+        ]
+      }
+    },
+    "3": {
+      "question": "Question 3:",
+      "options": ["A. range", "B. amount", "C. deal", "D. number"],
+      "correct": "A. range",
+      "explanation": {
+        "reason": "Câu này kiểm tra kiến thức về collocation.",
+        "points": [
+          "Cụm cố định trong tiếng Anh: \"a wide range of + danh từ số nhiều\" → dùng để diễn tả sự đa dạng về loại hoặc thể loại, phù hợp với ngữ cảnh liệt kê nhiều loại hình nghệ thuật."
+        ],
+        "wrongAnswers": [
+          "amount: Chỉ dùng với danh từ không đếm được (e.g., amount of water), không phù hợp với danh từ số nhiều \"oil paintings, sculptures\".",
+          "deal: \"a great deal of\" đi với danh từ không đếm được; tự \"deal\" không dùng trong cụm \"a wide deal of\".",
+          "number: Thường dùng với \"a large number of\", không phải \"a wide number of\"."
+        ]
+      }
+    },
+    "4": {
+      "question": "Question 4:",
+      "options": ["A. holding", "B. have held", "C. be holding", "D. held"],
+      "correct": "D. held",
+      "explanation": {
+        "reason": "Trích đoạn gốc: \"…and insightful discussions (4) ______ by famous artists and curators…\"",
+        "points": [
+          "Câu đã có mệnh đề chính: \"The event will also feature…\" → phần còn lại chỉ là cụm bổ nghĩa cho danh từ \"discussions\".",
+          "Ta cần rút gọn mệnh đề quan hệ bị động có dạng đầy đủ là: \"discussions which are held by famous artists\"",
+          "Theo quy tắc rút gọn mệnh đề quan hệ bị động: \"which are held\" → held",
+          "Về ngữ nghĩa: \"discussions held by artists\" = các buổi thảo luận được tổ chức bởi các nghệ sĩ → hoàn toàn phù hợp trong ngữ cảnh sự kiện nghệ thuật."
+        ],
+        "wrongAnswers": [
+          "holding: là dạng chủ động (V-ing), dùng khi chủ ngữ tự thực hiện hành động → sai vì \"discussions\" không thể tự tổ chức.",
+          "have held: thì hiện tại hoàn thành, không dùng để bổ nghĩa cho danh từ trong cấu trúc rút gọn.",
+          "be holding: là dạng tiếp diễn, sai chức năng và không phù hợp sau danh từ."
+        ]
+      }
+    },
+    "5": {
+      "question": "Question 5:",
+      "options": ["A. collectively", "B. collective", "C. collect", "D. collectors"],
+      "correct": "D. collectors",
+      "explanation": {
+        "reason": "Trích đoạn gốc: \"This exhibition is a unique opportunity for (5) ______, investors, and art enthusiasts…\"",
+        "points": [
+          "Cấu trúc \"for ___, investors, and art enthusiasts\" là phép liệt kê danh từ → vị trí cần điền phải là một danh từ chỉ người, đồng dạng với các danh từ còn lại.",
+          "Câu đang nói về các đối tượng có thể quan tâm đến triển lãm: người tham dự, nhà đầu tư, người yêu nghệ thuật…",
+          "Đáp án phù hợp nhất là \"collectors\" = những người sưu tầm (tác phẩm nghệ thuật), thường xuất hiện trong các sự kiện triển lãm quy mô."
+        ],
+        "wrongAnswers": [
+          "collective: là tính từ (tập thể, chung) → sai loại từ, không thể đứng trong danh sách danh từ.",
+          "collect: là động từ → sai loại từ, không thể dùng sau \"for\" và liệt kê cùng \"investors\".",
+          "collectively: là trạng từ → hoàn toàn không phù hợp với vị trí danh từ."
+        ]
+      }
+    },
+    "6": {
+      "question": "Question 6:",
+      "options": ["A. pick up", "B. fill up", "C. come up", "D. get up"],
+      "correct": "A. pick up",
+      "explanation": {
+        "reason": "Trích đoạn gốc: \"…a unique opportunity for collectors, investors, and art enthusiasts to discover emerging talents and (6) ______ some artworks.\"",
+        "points": [
+          "Cấu trúc: \"to discover… and ___ some artworks\" → cần một động từ nguyên mẫu song song với \"discover\".",
+          "Về nghĩa: người tham dự được \"khám phá tài năng mới\" và có thể mua / sở hữu một vài tác phẩm tại triển lãm.",
+          "Cụm \"pick up some artworks\" = mua hoặc mang về một tác phẩm, thường dùng trong bối cảnh triển lãm hoặc mua sắm nghệ thuật."
+        ],
+        "wrongAnswers": [
+          "fill up: nghĩa là \"làm đầy\" (thường dùng với bình, túi, form…) → không hợp nghĩa với \"artworks\".",
+          "come up: là nội động từ (xuất hiện, nảy ra) → không thể đi với tân ngữ \"some artworks\".",
+          "get up: nghĩa là \"thức dậy\" → hoàn toàn không liên quan đến ngữ cảnh."
+        ]
+      }
+    },
+    "7": {
+      "question": "Question 7: Which of the following is NOT mentioned in paragraph 1 as a type of collected real-time data?",
+      "options": ["A. weather patterns", "B. soil conditions", "C. data analytics", "D. plant growth"],
+      "correct": "C. data analytics",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu tìm thông tin KHÔNG được đề cập trong danh sách dữ liệu thu thập thời gian thực.",
+        "points": [
+          "Đoạn 1 liệt kê rõ các loại dữ liệu thời gian thực: 'the collected real-time data on soil conditions, weather patterns, and plant growth'",
+          "'data analytics' được nhắc đến ở câu trước như một công cụ để phân tích dữ liệu, không phải loại dữ liệu thu thập",
+          "Câu gốc: 'Advanced technologies such as GPS, sensors, drones, and data analytics are used to optimise agricultural practices'"
+        ],
+        "wrongAnswers": [
+          "weather patterns: Được nhắc trực tiếp trong danh sách 'real-time data on...weather patterns'",
+          "soil conditions: Được nhắc trực tiếp trong danh sách 'real-time data on soil conditions'",
+          "plant growth: Được nhắc trực tiếp trong danh sách 'real-time data on...plant growth'"
+        ]
+      }
+    },
+
+    "8": {
+      "question": "Question 8: The word 'accelerate' in paragraph 1 can be best replaced by _______.",
+      "options": ["A. require", "B. guide", "C. speed", "D. install"],
+      "correct": "C. speed",
+      "explanation": {
+        "reason": "Ngữ cảnh nói về quá trình đưa ra quyết định để tối đa hóa năng suất và giảm lãng phí tài nguyên.",
+        "points": [
+          "Câu gốc: 'enables farmers to accelerate the decision-making process that maximises productivity while minimising resource wastage'",
+          "Nếu dữ liệu giúp nông dân đưa ra quyết định hiệu quả hơn thì mục đích là giúp họ ra quyết định nhanh hơn",
+          "'accelerate' = làm tăng tốc quá trình → 'speed' mang ý nghĩa 'làm nhanh hơn'"
+        ],
+        "wrongAnswers": [
+          "require: nghĩa là 'yêu cầu', không liên quan đến việc làm nhanh",
+          "guide: nghĩa là 'hướng dẫn', liên quan đến hỗ trợ quyết định nhưng không phải tăng tốc",
+          "install: nghĩa là 'cài đặt', hoàn toàn không liên quan đến việc thúc đẩy hay tăng tốc quá trình"
+        ]
+      }
+    },
+    "9": {
+      "question": "Question 9: The word 'curb' in paragraph 2 is OPPOSITE in meaning to _______.",
+      "options": ["A. limit", "B. reduce", "C. monitor", "D. increase"],
+      "correct": "D. increase",
+      "explanation": {
+        "reason": "Từ 'curb' trong ngữ cảnh có nghĩa là hạn chế, làm giảm.",
+        "points": [
+          "Câu gốc: 'Camera traps provide advance warnings of insects, so farmers do not have to treat the whole field. This, therefore, helps curb chemical runoff and save money'",
+          "Việc xử lý có chọn lọc giúp giảm lượng hóa chất chảy tràn và tiết kiệm chi phí",
+          "'curb' = hạn chế/làm giảm → từ trái nghĩa là 'increase' = làm tăng"
+        ],
+        "wrongAnswers": [
+          "limit: nghĩa giống 'curb' = hạn chế → đồng nghĩa, không phải trái nghĩa",
+          "reduce: cũng mang nghĩa giảm thiểu → cùng nhóm với 'curb'",
+          "monitor: nghĩa là theo dõi, giám sát → mang ý kiểm soát như 'curb', không đối lập mà bổ trợ"
+        ]
+      }
+    },
+    "10": {
+      "question": "Question 10: The word 'it' in paragraph 3 refers to _______.",
+      "options": ["A. dryness", "B. equipment", "C. zone", "D. week"],
+      "correct": "C. zone",
+      "explanation": {
+        "reason": "Đại từ 'it' thay thế cho danh từ số ít gần nhất trong ngữ cảnh logic.",
+        "points": [
+          "Câu gốc: 'Automated valves give each zone exactly the water it needs and pause when clouds are approaching'",
+          "Ngữ cảnh mô tả các vùng tưới tiêu riêng biệt, mỗi vùng được cung cấp lượng nước chính xác theo nhu cầu",
+          "'it' thay thế cho 'zone' → mỗi vùng sẽ nhận đúng lượng nước nó cần"
+        ],
+        "wrongAnswers": [
+          "dryness: Chỉ là dữ liệu được báo cáo, không phải đối tượng nhận nước",
+          "equipment: Thiết bị chỉ đóng vai trò báo cáo độ khô, không phải đối tượng nhận nước",
+          "week: Là mốc thời gian dự báo mưa, không liên quan đến đối tượng nhận nước"
+        ]
+      }
+    },
+    "11": {
+      "question": "Question 11: Which of the following best paraphrases the underlined sentence in paragraph 3?",
+      "options": ["A. In places with hot weather, economic projects are possible with money saved from smart irrigation.", "B. Money saved thanks to smart irrigation maintains the economic practicality of projects in dry areas.", "C. Continents with dry climate are the most likely to enjoy financial benefits from smart irrigation projects.", "D. Projects in dry regions are feasible because of the huge budget gained from applying smart irrigation."],
+      "correct": "B. Money saved thanks to smart irrigation maintains the economic practicality of projects in dry areas.",
+      "explanation": {
+        "reason": "Câu gốc 'On dry continents, such savings keep projects economically viable' nói về việc tiết kiệm nước giúp dự án ở vùng khô vẫn hoạt động hiệu quả.",
+        "points": [
+          "'On dry continents' = 'in dry areas' (vùng khô hạn)",
+          "'such savings' = 'money saved thanks to smart irrigation' (tiền tiết kiệm nhờ hệ thống tưới thông minh)",
+          "'keep projects economically viable' = 'maintains the economic practicality of projects' (duy trì tính khả thi về kinh tế)"
+        ],
+        "wrongAnswers": [
+          "A: Nhắc đến 'hot weather' thay vì 'dry', và 'economic projects are possible' không chính xác bằng 'keep viable'",
+          "C: Nói về 'most likely to enjoy benefits' không đúng với ý 'keep viable', và thêm thông tin không có trong câu gốc",
+          "D: 'huge budget gained' không chính xác, câu gốc chỉ nói về 'savings' (tiết kiệm) chứ không phải ngân sách lớn"
+        ]
+      }
+    },
+    "12": {
+      "question": "Question 12: Which of the following is TRUE according to paragraph 4?",
+      "options": ["A. Customers tend to find the entries frozen by blockchain records untrustworthy.", "B. With the help of analytic tools, project farmers can anticipate market demand.", "C. Cloud platforms allow processors to predict demand for the following seasons.", "D. The digital trail would stop after the project partners have gathered their harvest."],
+      "correct": "B. With the help of analytic tools, project farmers can anticipate market demand.",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu tìm thông tin ĐÚNG theo đoạn 4 về công nghệ phân tích và dự đoán nhu cầu thị trường.",
+        "points": [
+          "Câu gốc: 'Analytic tools combine seasons of records to forecast demand...' → Các công cụ phân tích kết hợp dữ liệu qua nhiều mùa để dự đoán nhu cầu",
+          "Cụm 'forecast demand' tương đương với 'anticipate market demand' trong đáp án",
+          "Chủ thể trong câu là project farmers, đúng với 'project farmers can...' trong đáp án",
+          "Đáp án đúng lặp lại toàn bộ ý chính xác của câu gốc, chỉ đổi từ đồng nghĩa"
+        ],
+        "wrongAnswers": [
+          "Customers... untrustworthy: Trái nghĩa với câu gốc 'customers can trust it' - khách hàng có thể tin tưởng được",
+          "Cloud platforms allow processors to predict demand: Câu gốc nói 'cloud platforms' dùng để nhập dữ liệu, còn dự đoán là do 'analytic tools'",
+          "Digital trail would stop...: Sai vì câu gốc nói rõ 'does not stop at the farm gate' → vẫn tiếp tục sau thu hoạch"
+        ]
+      }
+    },
+    "13": {
+      "question": "Question 13: Which paragraph mentions real-time tracking of produce?",
+      "options": ["A. Paragraph 1", "B. Paragraph 4", "C. Paragraph 2", "D. Paragraph 3"],
+      "correct": "B. Paragraph 4",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu xác định đoạn văn nào đề cập đến việc theo dõi nông sản thời gian thực.",
+        "points": [
+          "Đoạn 4 nói: 'Cloud platforms let project farmers, processors, and truck drivers input harvest weights, storage temperatures, and delivery times the moment they change'",
+          "Cụm 'the moment they change' = ngay khi chúng thay đổi → theo dõi thời gian thực",
+          "Đây chính là việc theo dõi thời gian thực (real-time tracking) đối với nông sản sau thu hoạch"
+        ],
+        "wrongAnswers": [
+          "Paragraph 1: Nói về việc thu thập dữ liệu thời gian thực trong sản xuất (đất, thời tiết, sinh trưởng), không phải theo dõi sản phẩm sau thu hoạch",
+          "Paragraph 2: Chỉ mô tả cách GPS và camera giúp gieo hạt và giám sát sâu bệnh trên ruộng, không liên quan đến theo dõi sản phẩm đã thu hoạch",
+          "Paragraph 3: Tập trung vào tưới tiêu tự động và tiết kiệm nước, không đề cập đến việc theo dõi nông sản thời gian thực"
+        ]
+      }
+    },
+    "14": {
+      "question": "Question 14: Which paragraph mentions a preventive measure against biological threats?",
+      "options": ["A. Paragraph 1", "B. Paragraph 4", "C. Paragraph 2", "D. Paragraph 3"],
+      "correct": "C. Paragraph 2",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu tìm đoạn văn đề cập đến biện pháp phòng ngừa mối đe dọa sinh học.",
+        "points": [
+          "Đoạn 2 nói: 'Camera traps provide advance warnings of insects, so farmers do not have to treat the whole field'",
+          "Đây chính là biện pháp phòng ngừa mối đe dọa sinh học (côn trùng gây hại)",
+          "Giúp phát hiện sớm và hạn chế sử dụng hóa chất trên toàn bộ cánh đồng"
+        ],
+        "wrongAnswers": [
+          "Paragraph 1: Nói về công nghệ thu thập dữ liệu và tối ưu hóa sản xuất nói chung, không nêu rõ biện pháp phòng ngừa mối đe dọa sinh học cụ thể",
+          "Paragraph 3: Chỉ đề cập tưới tiêu tự động và tiết kiệm nước, không liên quan tới phòng chống sâu bệnh hay mối đe dọa sinh học",
+          "Paragraph 4: Nói về việc theo dõi, ghi nhận và dự đoán nhu cầu thị trường, không nhắc tới các mối đe dọa sinh học"
+        ]
+      }
+    },
+    "15": {
+      "question": "Question 15: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
+      "options": ["A. d – e – b – a – c", "B. d – b – c – e – a", "C. e – a – d – c – b", "D. e – c – a – b – d"],
+      "correct": "B. d – b – c – e – a",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu sắp xếp các câu về trải nghiệm lao động nông trại theo trật tự logic và mạch lạc.",
+        "points": [
+          "d: Mở đầu bằng trải nghiệm chung (hands-on experience... exhausted me) → mở bài dẫn vào trải nghiệm cá nhân",
+          "b: Dùng 'in fact' để bổ sung suy nghĩ bất ngờ (chưa từng nghĩ làm nông lại vất vả) → liên kết trực tiếp",
+          "c: Kể cụ thể những công việc thực tế (ploughing, fertiliser spreading, grass uprooting) → triển khai chi tiết",
+          "e: Nhấn mạnh cường độ công việc bằng hệ quả thực tế (đổ mồ hôi, sụt cân) → phát triển tác động thể chất",
+          "a: 'This occasion, as a result' → kết nối toàn bộ trải nghiệm → đưa ra bài học và nhận thức → kết luận hợp lý"
+        ],
+        "wrongAnswers": [
+          "A. d – e – b – a – c: e → b → a thiếu mạch thời gian, bài học (a) lại đến trước mô tả trải nghiệm (c)",
+          "C. e – a – d – c – b: Mở đầu bằng hệ quả (e) khi chưa biết người viết đã làm gì → sai trình tự",
+          "D. e – c – a – b – d: Kết thúc bằng d (câu mở bài) → đảo ngược toàn bộ mạch logic"
+        ]
+      }
+    },
+    "16": {
+      "question": "Question 16: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
+      "options": ["A. e – a – d – b – c", "B. c – b – e – a – d", "C. d – a – c – b – e", "D. c – a – d – b – e"],
+      "correct": "C. d – a – c – b – e",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu sắp xếp cuộc hội thoại về cách giữ gìn sức khỏe theo trật tự logic.",
+        "points": [
+          "d: Louis bắt đầu bằng lời khen và câu hỏi (You look awesome. What do you do to keep fit?) → mở chủ đề",
+          "a: Susan trả lời chi tiết về thói quen tập luyện (jogging, swimming, martial arts) → phản hồi trực tiếp",
+          "c: Louis chia sẻ thói quen cá nhân (yoga và chế độ ăn ít béo) → nối tiếp tương tác",
+          "b: Susan đồng tình và mở rộng quan điểm (daily exercise and healthy diet) → thúc đẩy cuộc trò chuyện",
+          "e: Louis chốt lại bằng sự đồng thuận mạnh hơn (Absolutely!) → kết thúc tự nhiên"
+        ],
+        "wrongAnswers": [
+          "A. e – a – d – b – c: e là lời kết thúc không thể đứng đầu; d và b bị lặp vị trí trước khi Louis giới thiệu bản thân",
+          "B. c – b – e – a – d: Không hợp mạch hội thoại: c là trả lời không ai hỏi trước; e lại bị đưa lên quá sớm",
+          "D. c – a – d – b – e: Louis nói trước khi Susan hỏi → ngược logic hội thoại"
+        ]
+      }
+    },
+    "17": {
+      "question": "Question 17: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
+      "options": ["A. a – b – d – e – c", "B. e – d – c – a – b", "C. a – d – b – c – e", "D. e – c – d – b – a"],
+      "correct": "D. e – c – d – b – a",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu sắp xếp đoạn văn về sự phát triển và hiện đại hóa thành phố Marvelli theo trật tự logic.",
+        "points": [
+          "e: Mở đầu với bối cảnh chung (tăng dân số, hạ tầng quá tải) → giới thiệu vấn đề cần giải quyết",
+          "c: Triển khai giải pháp đầu tiên: thay nhà cũ bằng nhà cao tầng, mở rộng trường học và bệnh viện → xử lý vấn đề hạ tầng đô thị",
+          "d: Mô tả giải pháp thứ hai: mở rộng đường và lắp hệ thống giám sát giao thông thông minh → xử lý giao thông",
+          "b: Bắt đầu bằng 'These vital improvements' → tham chiếu trực tiếp đến các hành động ở c và d, nói về kết quả (tăng trưởng kinh tế)",
+          "a: Kết bằng nhận định tổng quát: Marvelli giờ đây năng động và thịnh vượng hơn → kết luận hợp lý"
+        ],
+        "wrongAnswers": [
+          "A. a – b – d – e – c: Mở đầu bằng a (kết luận) → thiếu bối cảnh và lập luận dẫn dắt",
+          "B. e – d – c – a – b: giải pháp mở rộng hạ tầng (c) lại đứng trước giải pháp giao thông (d) dù e nói rõ giao thông là vấn đề chính → thiếu mạch ưu tiên hợp lý",
+          "C. a – d – b – c – e: e (nền tảng bối cảnh) lại nằm cuối → mất trật tự nguyên nhân – kết quả"
+        ]
+      }
+    },
+    "18": {
+      "question": "Question 18: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
+      "options": ["A. c – a – b", "B. a – c – b", "C. c – b – a", "D. a – b – c"],
+      "correct": "C. c – b – a",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu sắp xếp cuộc hội thoại hỏi và chỉ đường đến thư viện công cộng theo trật tự logic.",
+        "points": [
+          "c: Mary mở đầu bằng câu hỏi lịch sự (Excuse me, could you show me the way to the public library?) → đặt vấn đề",
+          "b: John trả lời bằng hướng dẫn chi tiết (keep straight on... second exit...) → phản hồi trực tiếp câu hỏi",
+          "a: Mary cảm ơn sau khi nhận được chỉ đường (Thank you very much for your help!) → kết thúc tự nhiên và lịch sự"
+        ],
+        "wrongAnswers": [
+          "A. c – a – b: a (cảm ơn) chen vào trước khi nhận được chỉ đường → sai trình tự phản hồi",
+          "B. a – c – b: a (lời cảm ơn) lại đứng đầu khi chưa có lời giúp đỡ → thiếu ngữ cảnh",
+          "D. a – b – c: cả ba lượt lời đều đảo lộn vai trò người hỏi – người trả lời → không đúng mạch hội thoại"
+        ]
+      }
+    },
+    "19": {
+      "question": "Question 19: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
+      "options": ["A. e – a – b – d – c", "B. c – e – d – a – b", "C. e – d – b – c – a", "D. e – c – a – b – d"],
+      "correct": "C. e – d – b – c – a",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu sắp xếp thư thông báo thay thế thẻ từ bằng thẻ chip và hướng dẫn sử dụng theo trật tự logic.",
+        "points": [
+          "e: Mở đầu bằng thông báo chính thức (thẻ từ đã được thay bằng thẻ chip và đang được gửi đến) → giới thiệu lý do viết thư",
+          "d: Hướng dẫn nếu đã nhận được thẻ chip thì nên sử dụng ngay (Should you have received... use it instantly) → bước hành động đầu tiên",
+          "b: Nêu hậu quả của việc kích hoạt thẻ chip (thẻ từ sẽ bị hủy và nên cắt bỏ) → giải thích rõ quy trình",
+          "c: Bổ sung cảnh báo về thời hạn thẻ từ (sẽ hết hạn dù thẻ chip có được kích hoạt hay không) → thông tin quan trọng",
+          "a: Nếu chưa nhận thẻ chip thì liên hệ CSKH → hướng dẫn trong trường hợp còn lại"
+        ],
+        "wrongAnswers": [
+          "A. e – a – b – d – c: a (chưa nhận thẻ thì liên hệ) lại chen vào quá sớm trước khi xử lý trường hợp đã nhận thẻ",
+          "B. c – e – d – a – b: c (nói về ngày hết hạn) mở đầu khi người đọc chưa biết lý do thay đổi → thiếu mạch logic",
+          "D. e – c – a – b – d: thứ tự không hợp lý khi đưa thông tin hết hạn trước khi hướng dẫn sử dụng"
+        ]
+      }
+    },
+    "20": {
+      "question": "Question 20: According to paragraph 1, genuine decarbonisation _______.",
+      "options": ["A. is overlooked by corporations", "B. involves hiring an expert agency", "C. is costly and demanding", "D. physically injures those involved"],
+      "correct": "C. is costly and demanding",
+      "explanation": {
+        "reason": "Câu hỏi hỏi theo đoạn 1, việc khử carbon thực sự thì như thế nào, cần xác định cách đoạn 1 mô tả quá trình giảm khí thải thực chất.",
+        "points": [
+          "Câu gốc: 'Genuine decarbonisation would require bruising boardroom discussions, huge capital outlays, and a complete redesign of the firm's model'",
+          "Việc khử carbon thật sự đòi hỏi những cuộc tranh luận gay gắt, chi phí đầu tư khổng lồ và phải thiết kế lại toàn bộ mô hình công ty",
+          "Đây là quá trình vừa tốn kém (costly) vừa phức tạp, nặng nề (demanding)"
+        ],
+        "wrongAnswers": [
+          "A. is overlooked by corporations: Đoạn 1 không nói việc này bị bỏ qua, mà nói họ chọn cách dễ hơn (greenwashing)",
+          "B. involves hiring an expert agency: Đây là cách để tránh khử carbon thật, chứ không phải bản chất của quá trình decarbonisation",
+          "D. physically injures those involved: Từ 'bruising' ở đây mang nghĩa bóng (khó khăn, căng thẳng), không phải bị thương thật"
+        ]
+      }
+    },
+    "21": {
+      "question": "Question 21: Which of the following best summarises paragraph 1?",
+      "options": ["A. The exponential growth of greenwashing is attributable to the environmental benefits the strategy brings to major emitters.", "B. Large-emission enterprises prefer \"net-zero\" or \"carbon-neutral\" tags on their offerings over genuine decarbonisation.", "C. Chief executives' opinions are divided on whether or not genuine decarbonisation should be consistently implemented.", "D. The great pressure to soothe environmental claims urges high-emitting corporations to adopt greenwashing wisely."],
+      "correct": "B. Large-emission enterprises prefer \"net-zero\" or \"carbon-neutral\" tags on their offerings over genuine decarbonisation.",
+      "explanation": {
+        "reason": "Đoạn 1 mở đầu với 'a boom in greenwashing', nêu hiện tượng doanh nghiệp dùng lời nói xanh để che đậy việc vẫn gây ô nhiễm.",
+        "points": [
+          "Đoạn mô tả giám đốc điều hành có công ty thải ra hàng triệu tấn CO2 → đại diện cho các doanh nghiệp phát thải lớn",
+          "Việc khử carbon thực sự thì rất khó: 'bruising boardroom discussions, huge capital outlays, complete redesign'",
+          "Nhưng thay vì làm vậy, họ chọn cách dễ hơn: 'hire a creative agency' để dán nhãn 'carbon-neutral' hoặc 'net-zero'",
+          "Hành động này giúp làm yên lòng nhà đầu tư và người tiêu dùng, nhưng 'emissions continue unsolved' → thực chất không giải quyết được gì"
+        ],
+        "wrongAnswers": [
+          "A: Sai vì greenwashing không mang lại lợi ích môi trường, chỉ là đánh lạc hướng",
+          "C: Sai vì đoạn không nêu bất đồng ý kiến – chỉ nói họ chọn giải pháp dễ",
+          "D: Sai vì từ 'wisely' nghe tích cực, trong khi đoạn mô tả đó là hành vi né tránh trách nhiệm"
+        ]
+      }
+    },
+    "22": {
+      "question": "Question 22: Which of the following is NOT stated as an example of greenwashed products or services?",
+      "options": ["A. net-zero bacon", "B. non-degradable electronics", "C. guilt-free flights", "D. zero-impact fuel"],
+      "correct": "B. non-degradable electronics",
+      "explanation": {
+        "reason": "Câu hỏi hỏi sản phẩm/dịch vụ nào KHÔNG được nêu là ví dụ của greenwashing.",
+        "points": [
+          "Các ví dụ trong đoạn 1: 'Airline websites promise guilt-free flights' → guilt-free flights",
+          "'petrol pumps boast zero-impact fuel' → zero-impact fuel",
+          "'even supermarket bacon is marketed as net-zero' → net-zero bacon",
+          "Không có chỗ nào nhắc đến non-degradable electronics (đồ điện tử không phân hủy)"
+        ],
+        "wrongAnswers": [
+          "A. net-zero bacon: Được nêu rõ trong đoạn 1 như một ví dụ về greenwashing trong thực phẩm",
+          "C. guilt-free flights: Là ví dụ đầu tiên về dịch vụ được gắn nhãn môi trường để xoa dịu cảm giác tội lỗi",
+          "D. zero-impact fuel: Cũng xuất hiện trực tiếp – sản phẩm nhiên liệu được tuyên bố không gây tác động"
+        ]
+      }
+    },
+    "23": {
+      "question": "Question 23: The word glossy in paragraph 2 mostly means _______.",
+      "options": ["A. appealing but superficial", "B. expensive but essential", "C. confusing but engaging", "D. costly but ineffective"],
+      "correct": "A. appealing but superficial",
+      "explanation": {
+        "reason": "Câu gốc: 'many boards prefer glossy PR to structural reform' → nhiều ban lãnh đạo thích truyền thông hào nhoáng hơn là cải cách cấu trúc.",
+        "points": [
+          "Cấu trúc prefer A to B = thích A hơn B → cho thấy A và B mang tính đối lập hoặc tương phản",
+          "Trong câu: 'glossy PR' là làm đẹp bề ngoài, còn 'structural reform' là thay đổi thật sự bên trong",
+          "Ta suy ra 'glossy' mang nghĩa hấp dẫn nhưng hời hợt",
+          "Phù hợp với chủ đề greenwashing - hấp dẫn bề ngoài nhưng che giấu sự thật"
+        ],
+        "wrongAnswers": [
+          "B. expensive but essential: Sai vì 'glossy' không mang nghĩa tích cực hay thiết yếu",
+          "C. confusing but engaging: Đoạn không nhắc đến việc gây nhầm lẫn hay hấp dẫn",
+          "D. costly but ineffective: Không có bằng chứng nào cho thấy 'glossy' là tốn kém – chỉ là bề ngoài bắt mắt"
+        ]
+      }
+    },
+    "24": {
+      "question": "Question 24: The word They in paragraph 2 refers to _______.",
+      "options": ["A. oil and gas giants", "B. the United States", "C. regulators in Europe", "D. rules on environmental claims"],
+      "correct": "A. oil and gas giants",
+      "explanation": {
+        "reason": "'They' là đại từ số nhiều, phải thay thế cho danh từ số nhiều có thể thực hiện hành động 'swapped their tactics...'",
+        "points": [
+          "Chủ ngữ gần nhất là oil and gas giants (các tập đoàn dầu khí)",
+          "Chính họ là người đã dùng chiến lược phủ nhận, rồi chuyển sang greenwashing",
+          "Câu trước đó: 'oil and gas giants have grasped that direct denial is reputationally toxic'",
+          "Câu tiếp theo: 'They have therefore swapped their denial tactics' → 'They' thay thế cho 'oil and gas giants'"
+        ],
+        "wrongAnswers": [
+          "B. the United States: Chỉ là nơi đang cố siết chặt luật → không liên quan gì đến việc thay đổi chiến lược phủ nhận",
+          "C. regulators in Europe: Cũng chỉ được nhắc đến ở ý trước đó, không phải chủ thể thực hiện hành động",
+          "D. rules on environmental claims: Là danh từ không đếm được/số ít → không thể đi với đại từ số nhiều 'they'"
+        ]
+      }
+    },
+    "25": {
+      "question": "Question 25: Which of the following best paraphrases the underlined sentence in paragraph 3?",
+      "options": ["A. Were it not for genuine efforts to reduce emissions, rhetoric about greenwashing could not be brought to light.", "B. Genuine efforts to reduce emissions cannot take the place of rhetoric without greenwashing being uncovered.", "C. Not until genuine efforts to cut down on emissions are recognised could the truth about greenwashing be concealed.", "D. No sooner had empty resolutions minimised emissions than the plain truth about greenwashing was elucidated."],
+      "correct": "B. Genuine efforts to reduce emissions cannot take the place of rhetoric without greenwashing being uncovered.",
+      "explanation": {
+        "reason": "Câu gốc: 'Exposing this deception is essential if clichés are to be replaced by real, measurable emission cuts' → Phơi bày sự lừa dối này là điều cần thiết nếu muốn thay thế những lời nói suông bằng hành động cắt giảm khí thải thực tế.",
+        "points": [
+          "'Exposing this deception is essential' = greenwashing being uncovered là điều bắt buộc",
+          "'if clichés are to be replaced by real, measurable emission cuts' = genuine efforts to reduce emissions cannot take the place of rhetoric nếu chưa phơi bày sự thật",
+          "Câu đúng giữ nguyên logic: phải vạch trần greenwashing trước thì hành động thực mới thay thế được lời nói suông"
+        ],
+        "wrongAnswers": [
+          "A. Were it not for genuine efforts...: Đảo ngược quan hệ nguyên nhân – câu gốc nhấn mạnh phải vạch trần thì mới có thay đổi, không phải ngược lại",
+          "C. Not until genuine efforts... concealed: Sai logic hoàn toàn – không ai muốn sự thật bị giấu đi",
+          "D. No sooner had empty resolutions...: Dùng cấu trúc 'no sooner... than' không phù hợp, và làm câu trở nên tối nghĩa, lệch hướng câu gốc"
+        ]
+      }
+    },
+    "26": {
+      "question": "Question 26: According to the passage, the adoption of \"green\" paint by fossil-fuel companies is mentioned as _______.",
+      "options": ["A. a particular way to dispute the claims about environmental crisis", "B. a typical application of climate science", "C. a prompt response to public demand for eco-friendly products", "D. a specific example of greenwashing"],
+      "correct": "D. a specific example of greenwashing",
+      "explanation": {
+        "reason": "Câu hỏi hỏi việc các công ty nhiên liệu hóa thạch 'tô màu xanh' được nhắc đến như là gì, cần xác định the adoption of 'green' paint là hành động cụ thể gì.",
+        "points": [
+          "Câu gốc đoạn 2: 'They have therefore swapped their denial tactics for a \"green\" paint-sprayer...' → Họ đã chuyển từ phủ nhận sang 'tô vẽ xanh'",
+          "Câu trước đó mô tả các tập đoàn dầu khí từng gieo nghi ngờ về khoa học khí hậu, nhưng giờ chuyển sang dùng ngôn ngữ thân thiện với môi trường",
+          "Cả đoạn 2 nói về việc greenwashing đang lan rộng → và đây là ví dụ cụ thể về ngành gây ô nhiễm cao (fossil fuel) dùng chiêu trò này",
+          "Được đề cập trong phần 'The fossil-fuel sector exemplifies the issue' - minh họa cho vấn đề greenwashing"
+        ],
+        "wrongAnswers": [
+          "A: Sai vì các công ty không còn phủ nhận cuộc khủng hoảng môi trường, mà ngược lại đang giả vờ thân thiện với môi trường",
+          "B: Sai vì 'green paint' là chiến lược đánh bóng hình ảnh, không phải ứng dụng khoa học",
+          "C: Sai vì đây là phản ứng mang tính đánh lạc hướng, không phải đáp ứng thật sự"
+        ]
+      }
+    },
+    "27": {
+      "question": "Question 27: Which of the following can be inferred from the passage?",
+      "options": ["A. The profits that high-emitting firms reap from running a \"green\" marketing campaign provide them with resources to reinvest in renewable ventures.", "B. The perceived action created by greenwashing has stressed the urgency for meaningful regulatory and corporate changes to address climate change.", "C. Regulators have the necessary tools and resources to verify most environmental claims, which enables them to prevent misleading messages from reaching everyday consumers.", "D. Increased public concern about environmental issues, coupled with their complacency with \"eco-friendly\" labelled products, contributes to the rise of greenwashing."],
+      "correct": "D. Increased public concern about environmental issues, coupled with their complacency with \"eco-friendly\" labelled products, contributes to the rise of greenwashing.",
+      "explanation": {
+        "reason": "Câu hỏi hỏi câu nào có thể SUY RA từ toàn bài, cần tổng hợp các ý, không chỉ lặp lại đúng nguyên văn.",
+        "points": [
+          "Đoạn 1 nói người tiêu dùng bị trấn an bởi nhãn 'carbon-neutral', 'net-zero' dù vấn đề vẫn chưa được giải quyết",
+          "Đoạn 2 nói greenwashing bùng nổ do 'public anxiety over global heating and biodiversity loss has intensified' → công chúng ngày càng lo lắng về môi trường",
+          "Đoạn 3: 'greenwashing lulls the public into believing problems are already solved' → khiến công chúng yên tâm giả tạo",
+          "Kết hợp 2 yếu tố: lo lắng môi trường + dễ tin nhãn 'xanh' → góp phần làm greenwashing phát triển"
+        ],
+        "wrongAnswers": [
+          "A: Bài không nói lợi nhuận từ greenwashing được dùng cho năng lượng tái tạo",
+          "B: Ngược nghĩa – greenwashing khiến công chúng nghĩ vấn đề đã được giải quyết, nên giảm áp lực thay đổi thật",
+          "C: Sai vì đoạn 2 nói 'enforcement still lags behind marketing creativity' → họ chưa theo kịp"
+        ]
+      }
+    },
+    "28": {
+      "question": "Question 28: Where in the passage does the following sentence best fit? 'Yet greenwashing is arguably more insidious.'",
+      "options": ["A. [I]", "B. [II]", "C. [III]", "D. [IV]"],
+      "correct": "C. [III]",
+      "explanation": {
+        "reason": "Câu 'Yet greenwashing is arguably more insidious' cần chèn vào vị trí có sự so sánh giữa greenwashing và climate denial.",
+        "points": [
+          "Vị trí [III] đứng sau: 'Whereas denial invites opposition, greenwashing lulls the public into believing problems are already solved'",
+          "'Yet' chỉ sự tương phản, 'insidious' = nguy hiểm âm thầm",
+          "Trước đó có so sánh trực tiếp giữa denial (phủ nhận) và greenwashing (ngụy xanh)",
+          "Rất hợp lý để chèn câu nhấn mạnh rằng greenwashing còn nguy hiểm hơn phủ nhận",
+          "Sau đó, đoạn tiếp tục mô tả hậu quả của greenwashing → mạch logic: so sánh → đánh giá → hậu quả"
+        ],
+        "wrongAnswers": [
+          "A. [I]: Đang giới thiệu greenwashing, chưa có đối tượng để so sánh → 'yet... more insidious' không có nghĩa",
+          "B. [II]: Tập trung vào chiến lược ngành dầu khí, không phải đoạn so sánh tác động",
+          "D. [IV]: Là đoạn kết luận – chèn câu so sánh vào đây sẽ làm đứt mạch và thiếu liên kết ngữ nghĩa"
+        ]
+      }
+    },
+    "29": {
+      "question": "Question 29: Which of the following best summarises the passage?",
+      "options": ["A. Greenwashing has now been pervading everyday products and services, raising customers' awareness of the urgent need to maintain sustainable developments.", "B. Major emitters have opted for open climate denials in preference to more sophisticated greenwashing to preserve profits and reputation instead of reforming their core operations.", "C. A new wave of greenwashing allows corporations to hide ongoing pollution behind reassuring eco-labels, diverting scrutiny from the rapid emission cuts considered vital by scientists.", "D. Greenwashing has significantly grown in its scale and sophistication since its emergence, attracting considerable attention of both the general public and policymakers worldwide."],
+      "correct": "C. A new wave of greenwashing allows corporations to hide ongoing pollution behind reassuring eco-labels, diverting scrutiny from the rapid emission cuts considered vital by scientists.",
+      "explanation": {
+        "reason": "Câu hỏi yêu cầu chọn câu tóm tắt toàn bài, cần đối chiếu nội dung chính từng đoạn và tìm thông điệp trung tâm.",
+        "points": [
+          "Đoạn 1: Giới thiệu greenwashing – doanh nghiệp tô vẽ môi trường để làm dịu dư luận, tránh phải thực hiện hành động cắt giảm khí thải thực sự",
+          "Đoạn 2: Ví dụ cụ thể về hiện tượng greenwashing lan rộng trong đời sống hàng ngày, đặc biệt là ngành nhiên liệu hóa thạch",
+          "Đoạn 3: Greenwashing nguy hiểm hơn denial vì làm công chúng tưởng rằng vấn đề đã được giải quyết",
+          "Toàn bộ bài là cảnh báo: greenwashing không chỉ là trò tiếp thị mà còn là rào cản nguy hiểm trì hoãn nỗ lực ứng phó khủng hoảng khí hậu",
+          "Đáp án C bao quát: 'new wave' (hiện tượng bùng nổ) + 'hide pollution behind eco-labels' (thủ thuật tô vẽ) + 'diverting scrutiny from emission cuts' (tác hại chính)"
+        ],
+        "wrongAnswers": [
+          "A: Sai vì greenwashing không làm 'nâng cao nhận thức' mà đánh lừa nhận thức công chúng",
+          "B: Ngược hoàn toàn! Bài nói các công ty bỏ phủ nhận trực tiếp và chuyển sang greenwashing, không phải ngược lại",
+          "D: Mô tả một phần đúng về sự phát triển nhưng thiếu trọng tâm về việc che giấu ô nhiễm và trì hoãn hành động"
+        ]
+      }
+    },
+    "30": {
+      "question": "Question 30: All holidays involve some element of risk... or (30) _______.",
+      "options": ["A. what are the products we will be certainly seeing directly", "B. until we certainly see its products directly", "C. being uncertain about the product until seeing it directly", "D. for a certain product to be seen directly"],
+      "correct": "C. being uncertain about the product until seeing it directly",
+      "explanation": {
+        "reason": "Chỗ trống nằm trong danh sách các rủi ro, cần một cụm danh động từ (gerund phrase) song song với các yếu tố trước.",
+        "points": [
+          "Câu liệt kê: 'illness, bad weather, being unable to get what we want if we delay booking, or (30)___'",
+          "Cần gerund phrase để song song với 'being unable to get...'",
+          "'being uncertain about the product until seeing it directly' = không chắc chắn về sản phẩm cho đến khi tận mắt thấy → phù hợp ngữ nghĩa (rủi ro về sự không chắc chắn)",
+          "Cấu trúc 'being + adj + about...' khớp với cấu trúc liệt kê có sẵn"
+        ],
+        "wrongAnswers": [
+          "A: 'what are the products...' là mệnh đề danh ngữ, sai cấu trúc và không rõ nghĩa rủi ro",
+          "B: 'until we certainly see...' chỉ là mệnh đề trạng ngữ → không thể dùng như yếu tố rủi ro độc lập trong danh sách",
+          "D: Cấu trúc 'for + O + to V' không song song với 'being unable...' và không diễn đạt ý rủi ro rõ ràng"
+        ]
+      }
+    },
+    "31": {
+      "question": "Question 31: Some tourists relish a degree of risk... (31) _______.",
+      "options": ["A. but do not present any risks and barriers to tourism itself", "B. so the presence of risk is not in itself a barrier to tourism", "C. and tourism itself does not present any barriers or risks", "D. if the barrier of tourism itself is not in the presence of risk"],
+      "correct": "B. so the presence of risk is not in itself a barrier to tourism",
+      "explanation": {
+        "reason": "Cần mệnh đề kết quả logic từ tiền đề 'một số du khách thích rủi ro', sử dụng liên từ 'so' để chỉ kết luận hợp lý.",
+        "points": [
+          "Logic nhân-quả: 'Some tourists relish a degree of risk' → 'so the presence of risk is not in itself a barrier to tourism'",
+          "Cụm 'in itself' = về bản chất, tự nó → nhấn mạnh rủi ro không phải bản chất là rào cản",
+          "Câu này thiết lập luận điểm chính: rủi ro có thể là yếu tố tích cực chứ không phải tiêu cực trong du lịch",
+          "'so' (vì vậy) là liên từ kết quả phù hợp nhất để nối logic từ tiền đề đến kết luận"
+        ],
+        "wrongAnswers": [
+          "A: 'but' thể hiện tương phản, nhưng ở đây không có sự mâu thuẫn. Nội dung 'do not present any risks' cũng không logic",
+          "C: 'and' chỉ bổ sung thông tin song song, không thể hiện mối quan hệ nhân-quả. Nghĩa cũng sai: du lịch vẫn có rủi ro",
+          "D: Cấu trúc câu điều kiện 'if' không phù hợp ngữ cảnh và câu này khó hiểu về mặt ngữ nghĩa"
+        ]
+      }
+    },
+    "32": {
+      "question": "Question 32: Clearly, the significance of the risk will be a key factor. (32) _______.",
+      "options": ["A. People, by contrast, will be far less concerned about the risk of crime than about that of poor weather", "B. As a result, there will be much less concern about the risk of poor weather than about the risk of crime", "C. As earlier mentioned, the risk of crime will be of much greater concern to people than that of poor weather", "D. Similarly, the concern about the risk of poor weather will be much greater than that about the risk of crime"],
+      "correct": "A. People, by contrast, will be far less concerned about the risk of crime than about that of poor weather",
+      "explanation": {
+        "reason": "Cần một câu ví dụ cụ thể minh họa cho khái niệm 'significance of the risk will be a key factor', sử dụng 'by contrast' để so sánh mức độ lo lắng khác nhau giữa các loại rủi ro.",
+        "points": [
+          "Câu trước nói 'significance of the risk will be a key factor' → cần ví dụ minh họa cách mọi người đánh giá tầm quan trọng khác nhau của các rủi ro",
+          "'by contrast' = ngược lại, trái lại → dùng để so sánh và làm nổi bật sự khác biệt trong nhận thức rủi ro",
+          "'far less concerned about crime than about poor weather' = ít lo lắng về tội phạm hơn nhiều so với thời tiết xấu",
+          "Ví dụ thực tế: Du khách thường chấp nhận rủi ro an ninh nhưng rất quan tâm đến thời tiết (vì ảnh hưởng trực tiếp đến trải nghiệm)"
+        ],
+        "wrongAnswers": [
+          "B: 'As a result' = kết quả là → không phù hợp vì đây không phải kết quả trực tiếp mà là ví dụ minh họa. Nội dung cũng ngược với logic thực tế",
+          "C: 'As earlier mentioned' = như đã đề cập trước đó → sai vì chưa có thông tin nào về so sánh crime vs weather được nhắc đến trước đó",
+          "D: 'Similarly' = tương tự → cần có điều gì đó tương tự trước đó để so sánh, nhưng câu trước chỉ nói về khái niệm chung"
+        ]
+      }
+    },
+    "33": {
+      "question": "Question 33: (33) _______. There is evidence that much of the continuing reluctance...",
+      "options": ["A. Customers also book their holidays by choosing the methods without risky factors", "B. Risk is also a factor in the methods chosen by customers to book their holidays", "C. Holidays are also booked after customers choose factors and methods without risk", "D. Also, the factors and methods customers choose to book their holidays are risky"],
+      "correct": "B. Risk is also a factor in the methods chosen by customers to book their holidays",
+      "explanation": {
+        "reason": "Câu này cần dẫn dắt vào đoạn tiếp theo về 'reluctance to book online', cần từ khóa 'also' để kết nối với luận điểm trước và giới thiệu khía cạnh mới về rủi ro trong phương thức đặt chỗ.",
+        "points": [
+          "Câu tiếp theo: 'There is evidence that much of the continuing reluctance...' → cần câu dẫn dắt về chủ đề đặt chỗ và rủi ro",
+          "'also' = cũng vậy → kết nối với các đoạn trước đã nói về rủi ro trong du lịch, giờ mở rộng sang phương thức đặt chỗ",
+          "'Risk is a factor in the methods chosen by customers to book' = rủi ro là yếu tố trong việc chọn phương thức đặt chỗ → thiết lập tiền đề cho việc nói về sự do dự đặt chỗ online",
+          "Cấu trúc ngữ pháp chuẩn: 'Risk is a factor in the methods chosen by customers' (past participle 'chosen' bổ nghĩa cho 'methods')"
+        ],
+        "wrongAnswers": [
+          "A: 'choosing methods without risky factors' = chọn phương thức không có rủi ro → mâu thuẫn với câu tiếp theo nói về 'reluctance' (sự do dự vì rủi ro)",
+          "C: Cấu trúc 'holidays are booked after customers choose...' không tự nhiên và logic không rõ ràng",
+          "D: 'the factors and methods... are risky' = các yếu tố và phương thức đều rủi ro → quá tuyệt đối, không phù hợp tone khách quan của bài"
+        ]
+      }
+    },
+    "34": {
+      "question": "Question 34: ...in part, (34) _______ in favour of the information provider.",
+      "options": ["A. the suspicion that information received through the Internet will be biased", "B. thanks to the biased information received through the Internet with the suspicion", "C. due to the Internet, through which biased and suspicious information is received", "D. the biased information received through the Internet will be suspicious"],
+      "correct": "A. the suspicion that information received through the Internet will be biased",
+      "explanation": {
+        "reason": "Cần cụm danh từ song song với 'the lack of face-to-face contact' trong cấu trúc liệt kê nguyên nhân, với 'that-clause' giải thích nội dung sự nghi ngờ.",
+        "points": [
+          "Cấu trúc song song: 'in part, the lack of face-to-face contact and, in part, (34)___' → cần 1 cụm danh từ bắt đầu bằng 'the'",
+          "'the suspicion that...' = sự nghi ngờ rằng... → cụm danh từ + that-clause (mệnh đề danh ngữ) giải thích nội dung nghi ngờ",
+          "'information received through the Internet will be biased in favour of the information provider' = thông tin nhận được qua Internet sẽ thiên vị về phía nhà cung cấp thông tin",
+          "Logic: Sự do dự đặt chỗ online bao gồm 2 nguyên nhân song song: thiếu tiếp xúc trực tiếp + nghi ngờ thông tin thiên vị"
+        ],
+        "wrongAnswers": [
+          "B: 'thanks to' = nhờ vào → từ nối tích cực, không phù hợp với ngữ cảnh tiêu cực (reluctance, suspicion). Cấu trúc cũng không song song",
+          "C: 'due to the Internet' tạo cấu trúc không song song với 'the lack of...'. Nội dung 'suspicious information' cũng không chính xác (thông tin bị nghi ngờ ≠ sự nghi ngờ về thông tin)",
+          "D: → Đây là một câu hoàn chỉnh có động từ chính \"will be\" → không thể dùng trong cấu trúc song song sau \"in part\".\n→ Lệch nghĩa: nói rằng thông tin \"sẽ đáng ngờ\", thay vì phản ánh \"sự nghi ngờ\" từ phía người dùng."
+        ]
+      }
+    },
+    "35": {
+      "question": "Question 35: ...help you make a routine (35) _______ being active.",
+      "options": ["A. in", "B. to", "C. at", "D. of"],
+      "correct": "D. of",
+      "explanation": {
+        "reason": "Cấu trúc cố định 'make a routine of + V-ing' có nghĩa 'tạo thành thói quen làm gì', bắt buộc phải dùng giới từ 'of'.",
+        "points": [
+          "Cụm từ cố định: 'make a routine of doing something' = biến việc gì đó thành thói quen thường ngày",
+          "Ngữ cảnh: 'help you make a routine of being active' = giúp bạn biến việc vận động thành thói quen",
+          "Đây là collocation thông dụng trong tiếng Anh để diễn tả việc biến một hành động thành phần của cuộc sống hàng ngày"
+        ],
+        "wrongAnswers": [
+          "A: 'make a routine in' là cấu trúc sai ngữ pháp, không dùng để chỉ hành động được lặp lại theo thói quen",
+          "B: 'make a routine to' không phù hợp trong trường hợp này, không tạo thành cụm từ cố định",
+          "C: 'make a routine at' không đúng ngữ pháp và ngữ nghĩa trong cấu trúc này"
+        ]
+      }
+    },
+    "36": {
+      "question": "Question 36: Track your progress using a health app (36) _______ a paper checklist.",
+      "options": ["A. or", "B. nor", "C. so", "D. but"],
+      "correct": "A. or",
+      "explanation": {
+        "reason": "Cấu trúc 'A or B' được dùng để lựa chọn giữa hai phương án thay thế nhau trong câu khẳng định.",
+        "points": [
+          "Ngữ cảnh: 'using a health app (36)___ a paper checklist' → đây là hai lựa chọn thay thế nhau cho việc theo dõi tiến trình",
+          "'or' diễn tả sự lựa chọn: health app HOẶC paper checklist - hai công cụ khác nhau cùng mục đích",
+          "Câu đưa ra lời khuyên đơn giản, khuyến khích người đọc chọn 1 trong 2 phương án → 'or' là liên từ tự nhiên và đúng nhất"
+        ],
+        "wrongAnswers": [
+          "B: 'nor' chỉ dùng trong mệnh đề phủ định (neither...nor) hoặc sau câu phủ định, không hợp với câu khẳng định này",
+          "C: 'so' thể hiện mối quan hệ nhân-quả (kết quả), không phù hợp trong cấu trúc lựa chọn giữa hai phương án",
+          "D: 'but' diễn tả sự đối lập hoặc tương phản, không dùng khi nói về hai lựa chọn tương đương"
+        ]
+      }
+    },
+    "37": {
+      "question": "Question 37: ...carrying (37) _______ and climbing the stairs.",
+      "options": ["A. bags grocery heavy", "B. heavy bags grocery", "C. bags heavy grocery", "D. heavy grocery bags"],
+      "correct": "D. heavy grocery bags",
+      "explanation": {
+        "reason": "Theo quy tắc sắp xếp tính từ trong tiếng Anh: opinion - size - age - shape - color - origin - material - purpose - noun.",
+        "points": [
+          "Trật tự tính từ đúng: 'heavy' (opinion/size) + 'grocery' (purpose) + 'bags' (noun)",
+          "Câu văn nói đến việc nâng đồ nặng như hoạt động rèn luyện sức khỏe → 'heavy grocery bags' đúng về ngữ pháp và logic",
+          "'heavy grocery bags' = túi đồ tạp hóa nặng → phù hợp ngữ cảnh khuyến khích hoạt động thể chất trong sinh hoạt hàng ngày"
+        ],
+        "wrongAnswers": [
+          "A: 'bags grocery heavy' đảo ngược sai trật tự tính từ và danh từ, vi phạm quy tắc ngữ pháp cơ bản",
+          "B: 'heavy bags grocery' sai vì 'grocery' không thể đứng cuối khi nó là tính từ chỉ mục đích, không phải danh từ chính",
+          "C: 'bags heavy grocery' sắp xếp hoàn toàn sai và không tuân theo quy tắc tính từ đứng trước danh từ"
+        ]
+      }
+    },
+    "38": {
+      "question": "Question 38: Invite friends and (38) _______ family members to join in.",
+      "options": ["A. other", "B. the others", "C. another", "D. others"],
+      "correct": "A. other",
+      "explanation": {
+        "reason": "Câu đang liệt kê hai nhóm người: 'friends' và '_____ family members', cần tính từ 'other' để bổ nghĩa cho danh từ số nhiều.",
+        "points": [
+          "Cấu trúc: 'Invite friends and (38)_____ family members' → đang liệt kê hai nhóm người khác nhau",
+          "'other + plural noun' = những... khác → 'other family members' = những người thân khác (ngoài bạn bè)",
+          "Ngữ cảnh khuyến khích mở rộng nhóm tham gia hoạt động → 'other family members' phù hợp và tự nhiên",
+          "'other' ở đây là determiner (từ hạn định), đứng trước danh từ để chỉ những đối tượng khác"
+        ],
+        "wrongAnswers": [
+          "B: 'the others' là đại từ (pronoun), không thể đứng trước danh từ 'family members' → sai ngữ pháp",
+          "C: 'another' chỉ dùng với danh từ số ít → 'another family member' mới đúng, không phù hợp vì câu dùng danh từ số nhiều",
+          "D: 'others' là đại từ, không thể đứng trước danh từ → 'others family members' hoàn toàn sai ngữ pháp"
+        ]
+      }
+    },
+    "39": {
+      "question": "Question 39: ...try (39) _______ everyone's competitive side.",
+      "options": ["A. comparing", "B. contrasting", "C. replacing", "D. engaging"],
+      "correct": "D. engaging",
+      "explanation": {
+        "reason": "Cần động từ mang nghĩa 'thu hút, kích thích' để phù hợp với việc khuyến khích mọi người tham gia hoạt động cạnh tranh.",
+        "points": [
+          "Ngữ cảnh: câu đang nói về việc tạo động lực cho mọi người tham gia hoạt động thể chất thông qua yếu tố cạnh tranh",
+          "'engage someone's competitive side' = kích thích/thu hút tính cạnh tranh của ai đó → collocation tự nhiên",
+          "'engage' = lôi kéo, tạo sự tham gia, kích hoạt → phù hợp với mục đích tạo động lực và khuyến khích tham gia",
+          "Đây là dạng bài về ngữ nghĩa - các đáp án đều là V-ing forms nhưng chỉ 'engaging' phù hợp ngữ cảnh"
+        ],
+        "wrongAnswers": [
+          "A: 'comparing everyone's competitive side' = so sánh tính cạnh tranh → không phù hợp với mục đích khuyến khích tham gia",
+          "B: 'contrasting' = đối chiếu/tương phản → không có ý nghĩa hợp lý trong ngữ cảnh này",
+          "C: 'replacing everyone's competitive side' = thay thế tính cạnh tranh → ngược với mục đích muốn kích thích tính cạnh tranh"
+        ]
+      }
+    },
+    "40": {
+      "question": "Question 40: ...if your plan works (40) _______ to maintain your motivation.",
+      "options": ["A. wonders", "B. legends", "C. values", "D. marvels"],
+      "correct": "A. wonders",
+      "explanation": {
+        "reason": "Cụm thành ngữ 'work wonders' có nghĩa 'có hiệu quả tuyệt vời', phù hợp với ngữ cảnh nói về việc duy trì động lực.",
+        "points": [
+          "Thành ngữ cố định: 'work wonders' = có tác dụng kỳ diệu, hiệu quả tuyệt vời",
+          "Ngữ cảnh: 'if your plan works wonders to maintain your motivation' = nếu kế hoạch có hiệu quả tuyệt vời trong việc duy trì động lực",
+          "Câu đang nói về việc tự thưởng bản thân khi kế hoạch vận động đạt hiệu quả tốt → 'works wonders' là cụm từ thông dụng và chính xác",
+          "Đây là kiến thức về idiom - thành ngữ cố định trong tiếng Anh"
+        ],
+        "wrongAnswers": [
+          "B: 'work legends' không phải thành ngữ trong tiếng Anh, 'legends' nghĩa là truyền thuyết/huyền thoại → không liên quan đến hiệu quả",
+          "C: 'work values' không tạo thành cụm từ có nghĩa, 'values' = giá trị → không phù hợp với ngữ cảnh nói về hiệu quả",
+          "D: 'work marvels' gần nghĩa với 'work wonders' nhưng không phải thành ngữ cố định phổ biến → ít được sử dụng hơn 'work wonders'"
+        ]
+      }
+    }
+  },
+  "1101": {},
+  "1102": {}
+}
