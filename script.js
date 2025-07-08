@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', async function() {
 function initializeApp() {
     setupEventListeners();
     updateTimerDisplay();
+    generateDropdownItems(); // Generate dropdown items dynamically
 }
 
 function setupEventListeners() {
     // Dropdown functionality
     const dropdownHeader = document.getElementById('dropdown-header');
     const dropdownList = document.getElementById('dropdown-list');
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
     
     // Toggle dropdown
     dropdownHeader.addEventListener('click', function() {
@@ -80,23 +80,7 @@ function setupEventListeners() {
         }
     });
     
-    // Handle dropdown item selection
-    dropdownItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const examCode = this.dataset.code;
-            const examTitle = this.querySelector('span').textContent;
-            
-            // Update selected exam display
-            document.getElementById('selected-exam').textContent = examTitle;
-            
-            // Close dropdown
-            dropdownList.classList.remove('open');
-            dropdownHeader.classList.remove('active');
-            
-            // Select exam code
-            selectExamCode(examCode);
-        });
-    });
+    // Note: Dropdown item listeners are added dynamically in generateDropdownItems()
     
     // Start exam button
     document.getElementById('start-exam').addEventListener('click', startExam);
@@ -675,4 +659,51 @@ function restartCurrentExam() {
     window.scrollTo(0, 0);
     
     console.log('Exam restarted successfully - returned to question 1');
+}
+
+// Generate dropdown items dynamically from exam data
+function generateDropdownItems() {
+    const dropdownList = document.getElementById('dropdown-list');
+    
+    // Clear existing items (nếu có)
+    dropdownList.innerHTML = '';
+    
+    // Get exam codes from examData and sort them
+    const examCodes = Object.keys(examData).sort();
+    
+    // Generate dropdown items
+    examCodes.forEach(code => {
+        const examInfo = examData[code];
+        const dropdownItem = document.createElement('div');
+        dropdownItem.className = 'dropdown-item';
+        dropdownItem.setAttribute('data-code', code);
+        
+        dropdownItem.innerHTML = `
+            <i class="fas fa-file-alt"></i>
+            <div>
+                <span>Mã đề ${code}</span>
+                <small>${examInfo.title || 'ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025'}</small>
+            </div>
+        `;
+        
+        // Add click event listener
+        dropdownItem.addEventListener('click', function() {
+            const examCode = this.dataset.code;
+            const examTitle = this.querySelector('span').textContent;
+            
+            // Update selected exam display
+            document.getElementById('selected-exam').textContent = examTitle;
+            
+            // Close dropdown
+            document.getElementById('dropdown-list').classList.remove('open');
+            document.getElementById('dropdown-header').classList.remove('active');
+            
+            // Select exam code
+            selectExamCode(examCode);
+        });
+        
+        dropdownList.appendChild(dropdownItem);
+    });
+    
+    console.log(`Generated ${examCodes.length} dropdown items for exam codes: ${examCodes.join(', ')}`);
 }

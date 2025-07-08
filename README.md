@@ -6,9 +6,10 @@
 ## Tính năng chính
 
 ### 🎯 Chọn mã đề thi
-- Hỗ trợ 3 mã đề: 1101, 1102, 1105
-- Giao diện chọn đề trực quan và dễ sử dụng
+- Hỗ trợ 48 mã đề: từ 1101 đến 1148 (tự động tạo từ dữ liệu JSON)
+- Giao diện chọn đề trực quan và dễ sử dụng với thanh cuộn
 - Tự động tải câu hỏi theo mã đề được chọn
+- Dropdown được tạo động từ dữ liệu, dễ mở rộng
 
 ### ⏰ Đồng hồ đếm ngược
 - Thời gian làm bài: 50 phút (như đề thi thật)
@@ -35,6 +36,27 @@
 - Hiển thị số câu đúng/sai
 - Tính điểm theo thang 10
 - Thống kê thời gian làm bài
+
+## 🎯 **Tối ưu code với Dropdown động**
+
+Thay vì hardcode 48 mã đề trong HTML, hệ thống sử dụng JavaScript để tạo dropdown động:
+
+### **JavaScript Dynamic Generation:**
+- ✅ **Tự động tạo dropdown**: Từ dữ liệu `exam_data.json`
+- ✅ **Code gọn gàng**: Loại bỏ 300+ dòng HTML lặp lại
+- ✅ **Dễ mở rộng**: Chỉ cần thêm mã đề vào JSON là dropdown tự cập nhật
+- ✅ **Sắp xếp tự động**: Các mã đề được sắp xếp theo thứ tự tăng dần
+
+### **Cách thức hoạt động:**
+```javascript
+function generateDropdownItems() {
+    const examCodes = Object.keys(examData).sort(); // Lấy tất cả mã đề
+    examCodes.forEach(code => {
+        // Tạo dropdown item cho mỗi mã đề
+        // Tự động gắn event listener
+    });
+}
+```
 
 ## 🎯 **Dữ liệu đề thi thực tế từ JSON**
 
