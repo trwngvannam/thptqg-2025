@@ -1,12 +1,5 @@
 {
   "1": {
-    "question": "Question 1:",
-    "options": [
-      "A. whose",
-      "B. whom",
-      "C. who",
-      "D. which"
-    ],
     "correct": "D. which",
     "explanation": {
       "reason": "Vị trí này đứng sau danh từ galleries, cần một đại từ quan hệ để nối mệnh đề quan hệ bổ nghĩa cho nó.",
@@ -22,13 +15,6 @@
     }
   },
   "2": {
-    "question": "Question 2:",
-    "options": [
-      "A. flying",
-      "B. leading",
-      "C. heading",
-      "D. rating"
-    ],
     "correct": "B. leading",
     "explanation": {
       "reason": "Cụm danh từ Vietnam's ______ artists cần một tính từ để bổ nghĩa cho \"artists\".",
@@ -43,13 +29,6 @@
     }
   },
   "3": {
-    "question": "Question 3:",
-    "options": [
-      "A. range",
-      "B. amount",
-      "C. deal",
-      "D. number"
-    ],
     "correct": "A. range",
     "explanation": {
       "reason": "Câu này kiểm tra kiến thức về collocation.",
@@ -64,13 +43,6 @@
     }
   },
   "4": {
-    "question": "Question 4:",
-    "options": [
-      "A. holding",
-      "B. have held",
-      "C. be holding",
-      "D. held"
-    ],
     "correct": "D. held",
     "explanation": {
       "reason": "Trích đoạn gốc: \"…and insightful discussions (4) ______ by famous artists and curators…\"",
@@ -88,13 +60,6 @@
     }
   },
   "5": {
-    "question": "Question 5:",
-    "options": [
-      "A. collectively",
-      "B. collective",
-      "C. collect",
-      "D. collectors"
-    ],
     "correct": "D. collectors",
     "explanation": {
       "reason": "Trích đoạn gốc: \"This exhibition is a unique opportunity for (5) ______, investors, and art enthusiasts…\"",
@@ -111,13 +76,6 @@
     }
   },
   "6": {
-    "question": "Question 6:",
-    "options": [
-      "A. pick up",
-      "B. fill up",
-      "C. come up",
-      "D. get up"
-    ],
     "correct": "A. pick up",
     "explanation": {
       "reason": "Trích đoạn gốc: \"…a unique opportunity for collectors, investors, and art enthusiasts to discover emerging talents and (6) ______ some artworks.\"",
@@ -134,13 +92,6 @@
     }
   },
   "7": {
-    "question": "Question 7: Which of the following is NOT mentioned in paragraph 1 as a type of collected real-time data?",
-    "options": [
-      "A. weather patterns",
-      "B. soil conditions",
-      "C. data analytics",
-      "D. plant growth"
-    ],
     "correct": "C. data analytics",
     "explanation": {
       "reason": "Câu hỏi yêu cầu tìm thông tin KHÔNG được đề cập trong danh sách dữ liệu thu thập thời gian thực.",
@@ -157,13 +108,6 @@
     }
   },
   "8": {
-    "question": "Question 8: The word 'accelerate' in paragraph 1 can be best replaced by _______.",
-    "options": [
-      "A. require",
-      "B. guide",
-      "C. speed",
-      "D. install"
-    ],
     "correct": "C. speed",
     "explanation": {
       "reason": "Ngữ cảnh nói về quá trình đưa ra quyết định để tối đa hóa năng suất và giảm lãng phí tài nguyên.",
@@ -180,13 +124,6 @@
     }
   },
   "9": {
-    "question": "Question 9: The word 'curb' in paragraph 2 is OPPOSITE in meaning to _______.",
-    "options": [
-      "A. limit",
-      "B. reduce",
-      "C. monitor",
-      "D. increase"
-    ],
     "correct": "D. increase",
     "explanation": {
       "reason": "Từ 'curb' trong ngữ cảnh có nghĩa là hạn chế, làm giảm.",
@@ -203,13 +140,6 @@
     }
   },
   "10": {
-    "question": "Question 10: The word 'it' in paragraph 3 refers to _______.",
-    "options": [
-      "A. dryness",
-      "B. equipment",
-      "C. zone",
-      "D. week"
-    ],
     "correct": "C. zone",
     "explanation": {
       "reason": "Đại từ 'it' thay thế cho danh từ số ít gần nhất trong ngữ cảnh logic.",
@@ -226,13 +156,6 @@
     }
   },
   "11": {
-    "question": "Question 11: Which of the following best paraphrases the underlined sentence in paragraph 3?",
-    "options": [
-      "A. In places with hot weather, economic projects are possible with money saved from smart irrigation.",
-      "B. Money saved thanks to smart irrigation maintains the economic practicality of projects in dry areas.",
-      "C. Continents with dry climate are the most likely to enjoy financial benefits from smart irrigation projects.",
-      "D. Projects in dry regions are feasible because of the huge budget gained from applying smart irrigation."
-    ],
     "correct": "B. Money saved thanks to smart irrigation maintains the economic practicality of projects in dry areas.",
     "explanation": {
       "reason": "Câu gốc 'On dry continents, such savings keep projects economically viable' nói về việc tiết kiệm nước giúp dự án ở vùng khô vẫn hoạt động hiệu quả.",
@@ -249,13 +172,6 @@
     }
   },
   "12": {
-    "question": "Question 12: Which of the following is TRUE according to paragraph 4?",
-    "options": [
-      "A. Customers tend to find the entries frozen by blockchain records untrustworthy.",
-      "B. With the help of analytic tools, project farmers can anticipate market demand.",
-      "C. Cloud platforms allow processors to predict demand for the following seasons.",
-      "D. The digital trail would stop after the project partners have gathered their harvest."
-    ],
     "correct": "B. With the help of analytic tools, project farmers can anticipate market demand.",
     "explanation": {
       "reason": "Câu hỏi yêu cầu tìm thông tin ĐÚNG theo đoạn 4 về công nghệ phân tích và dự đoán nhu cầu thị trường.",
@@ -273,13 +189,6 @@
     }
   },
   "13": {
-    "question": "Question 13: Which paragraph mentions real-time tracking of produce?",
-    "options": [
-      "A. Paragraph 1",
-      "B. Paragraph 4",
-      "C. Paragraph 2",
-      "D. Paragraph 3"
-    ],
     "correct": "B. Paragraph 4",
     "explanation": {
       "reason": "Câu hỏi yêu cầu xác định đoạn văn nào đề cập đến việc theo dõi nông sản thời gian thực.",
@@ -296,13 +205,6 @@
     }
   },
   "14": {
-    "question": "Question 14: Which paragraph mentions a preventive measure against biological threats?",
-    "options": [
-      "A. Paragraph 1",
-      "B. Paragraph 4",
-      "C. Paragraph 2",
-      "D. Paragraph 3"
-    ],
     "correct": "C. Paragraph 2",
     "explanation": {
       "reason": "Câu hỏi yêu cầu tìm đoạn văn đề cập đến biện pháp phòng ngừa mối đe dọa sinh học.",
@@ -319,13 +221,6 @@
     }
   },
   "15": {
-    "question": "Question 15: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
-    "options": [
-      "A. d – e – b – a – c",
-      "B. d – b – c – e – a",
-      "C. e – a – d – c – b",
-      "D. e – c – a – b – d"
-    ],
     "correct": "B. d – b – c – e – a",
     "explanation": {
       "reason": "Câu hỏi yêu cầu sắp xếp các câu về trải nghiệm lao động nông trại theo trật tự logic và mạch lạc.",
@@ -344,13 +239,6 @@
     }
   },
   "16": {
-    "question": "Question 16: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
-    "options": [
-      "A. e – a – d – b – c",
-      "B. c – b – e – a – d",
-      "C. d – a – c – b – e",
-      "D. c – a – d – b – e"
-    ],
     "correct": "C. d – a – c – b – e",
     "explanation": {
       "reason": "Câu hỏi yêu cầu sắp xếp cuộc hội thoại về cách giữ gìn sức khỏe theo trật tự logic.",
@@ -369,13 +257,6 @@
     }
   },
   "17": {
-    "question": "Question 17: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
-    "options": [
-      "A. a – b – d – e – c",
-      "B. e – d – c – a – b",
-      "C. a – d – b – c – e",
-      "D. e – c – d – b – a"
-    ],
     "correct": "D. e – c – d – b – a",
     "explanation": {
       "reason": "Câu hỏi yêu cầu sắp xếp đoạn văn về sự phát triển và hiện đại hóa thành phố Marvelli theo trật tự logic.",
@@ -394,13 +275,6 @@
     }
   },
   "18": {
-    "question": "Question 18: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
-    "options": [
-      "A. c – a – b",
-      "B. a – c – b",
-      "C. c – b – a",
-      "D. a – b – c"
-    ],
     "correct": "C. c – b – a",
     "explanation": {
       "reason": "Câu hỏi yêu cầu sắp xếp cuộc hội thoại hỏi và chỉ đường đến thư viện công cộng theo trật tự logic.",
@@ -417,13 +291,6 @@
     }
   },
   "19": {
-    "question": "Question 19: Mark the letter A, B, C or D to indicate the best arrangement of utterances or sentences.",
-    "options": [
-      "A. e – a – b – d – c",
-      "B. c – e – d – a – b",
-      "C. e – d – b – c – a",
-      "D. e – c – a – b – d"
-    ],
     "correct": "C. e – d – b – c – a",
     "explanation": {
       "reason": "Câu hỏi yêu cầu sắp xếp thư thông báo thay thế thẻ từ bằng thẻ chip và hướng dẫn sử dụng theo trật tự logic.",
@@ -442,13 +309,6 @@
     }
   },
   "20": {
-    "question": "Question 20: According to paragraph 1, genuine decarbonisation _______.",
-    "options": [
-      "A. is overlooked by corporations",
-      "B. involves hiring an expert agency",
-      "C. is costly and demanding",
-      "D. physically injures those involved"
-    ],
     "correct": "C. is costly and demanding",
     "explanation": {
       "reason": "Câu hỏi hỏi theo đoạn 1, việc khử carbon thực sự thì như thế nào, cần xác định cách đoạn 1 mô tả quá trình giảm khí thải thực chất.",
@@ -465,13 +325,6 @@
     }
   },
   "21": {
-    "question": "Question 21: Which of the following best summarises paragraph 1?",
-    "options": [
-      "A. The exponential growth of greenwashing is attributable to the environmental benefits the strategy brings to major emitters.",
-      "B. Large-emission enterprises prefer \"net-zero\" or \"carbon-neutral\" tags on their offerings over genuine decarbonisation.",
-      "C. Chief executives' opinions are divided on whether or not genuine decarbonisation should be consistently implemented.",
-      "D. The great pressure to soothe environmental claims urges high-emitting corporations to adopt greenwashing wisely."
-    ],
     "correct": "B. Large-emission enterprises prefer \"net-zero\" or \"carbon-neutral\" tags on their offerings over genuine decarbonisation.",
     "explanation": {
       "reason": "Đoạn 1 mở đầu với 'a boom in greenwashing', nêu hiện tượng doanh nghiệp dùng lời nói xanh để che đậy việc vẫn gây ô nhiễm.",
@@ -489,13 +342,6 @@
     }
   },
   "22": {
-    "question": "Question 22: Which of the following is NOT stated as an example of greenwashed products or services?",
-    "options": [
-      "A. net-zero bacon",
-      "B. non-degradable electronics",
-      "C. guilt-free flights",
-      "D. zero-impact fuel"
-    ],
     "correct": "B. non-degradable electronics",
     "explanation": {
       "reason": "Câu hỏi hỏi sản phẩm/dịch vụ nào KHÔNG được nêu là ví dụ của greenwashing.",
@@ -513,13 +359,6 @@
     }
   },
   "23": {
-    "question": "Question 23: The word glossy in paragraph 2 mostly means _______.",
-    "options": [
-      "A. appealing but superficial",
-      "B. expensive but essential",
-      "C. confusing but engaging",
-      "D. costly but ineffective"
-    ],
     "correct": "A. appealing but superficial",
     "explanation": {
       "reason": "Câu gốc: 'many boards prefer glossy PR to structural reform' → nhiều ban lãnh đạo thích truyền thông hào nhoáng hơn là cải cách cấu trúc.",
@@ -537,13 +376,6 @@
     }
   },
   "24": {
-    "question": "Question 24: The word They in paragraph 2 refers to _______.",
-    "options": [
-      "A. oil and gas giants",
-      "B. the United States",
-      "C. regulators in Europe",
-      "D. rules on environmental claims"
-    ],
     "correct": "A. oil and gas giants",
     "explanation": {
       "reason": "'They' là đại từ số nhiều, phải thay thế cho danh từ số nhiều có thể thực hiện hành động 'swapped their tactics...'",
@@ -561,13 +393,6 @@
     }
   },
   "25": {
-    "question": "Question 25: Which of the following best paraphrases the underlined sentence in paragraph 3?",
-    "options": [
-      "A. Were it not for genuine efforts to reduce emissions, rhetoric about greenwashing could not be brought to light.",
-      "B. Genuine efforts to reduce emissions cannot take the place of rhetoric without greenwashing being uncovered.",
-      "C. Not until genuine efforts to cut down on emissions are recognised could the truth about greenwashing be concealed.",
-      "D. No sooner had empty resolutions minimised emissions than the plain truth about greenwashing was elucidated."
-    ],
     "correct": "B. Genuine efforts to reduce emissions cannot take the place of rhetoric without greenwashing being uncovered.",
     "explanation": {
       "reason": "Câu gốc: 'Exposing this deception is essential if clichés are to be replaced by real, measurable emission cuts' → Phơi bày sự lừa dối này là điều cần thiết nếu muốn thay thế những lời nói suông bằng hành động cắt giảm khí thải thực tế.",
@@ -584,13 +409,6 @@
     }
   },
   "26": {
-    "question": "Question 26: According to the passage, the adoption of \"green\" paint by fossil-fuel companies is mentioned as _______.",
-    "options": [
-      "A. a particular way to dispute the claims about environmental crisis",
-      "B. a typical application of climate science",
-      "C. a prompt response to public demand for eco-friendly products",
-      "D. a specific example of greenwashing"
-    ],
     "correct": "D. a specific example of greenwashing",
     "explanation": {
       "reason": "Câu hỏi hỏi việc các công ty nhiên liệu hóa thạch 'tô màu xanh' được nhắc đến như là gì, cần xác định the adoption of 'green' paint là hành động cụ thể gì.",
@@ -608,13 +426,6 @@
     }
   },
   "27": {
-    "question": "Question 27: Which of the following can be inferred from the passage?",
-    "options": [
-      "A. The profits that high-emitting firms reap from running a \"green\" marketing campaign provide them with resources to reinvest in renewable ventures.",
-      "B. The perceived action created by greenwashing has stressed the urgency for meaningful regulatory and corporate changes to address climate change.",
-      "C. Regulators have the necessary tools and resources to verify most environmental claims, which enables them to prevent misleading messages from reaching everyday consumers.",
-      "D. Increased public concern about environmental issues, coupled with their complacency with \"eco-friendly\" labelled products, contributes to the rise of greenwashing."
-    ],
     "correct": "D. Increased public concern about environmental issues, coupled with their complacency with \"eco-friendly\" labelled products, contributes to the rise of greenwashing.",
     "explanation": {
       "reason": "Câu hỏi hỏi câu nào có thể SUY RA từ toàn bài, cần tổng hợp các ý, không chỉ lặp lại đúng nguyên văn.",
@@ -632,13 +443,6 @@
     }
   },
   "28": {
-    "question": "Question 28: Where in the passage does the following sentence best fit? 'Yet greenwashing is arguably more insidious.'",
-    "options": [
-      "A. [I]",
-      "B. [II]",
-      "C. [III]",
-      "D. [IV]"
-    ],
     "correct": "C. [III]",
     "explanation": {
       "reason": "Câu 'Yet greenwashing is arguably more insidious' cần chèn vào vị trí có sự so sánh giữa greenwashing và climate denial.",
@@ -657,13 +461,6 @@
     }
   },
   "29": {
-    "question": "Question 29: Which of the following best summarises the passage?",
-    "options": [
-      "A. Greenwashing has now been pervading everyday products and services, raising customers' awareness of the urgent need to maintain sustainable developments.",
-      "B. Major emitters have opted for open climate denials in preference to more sophisticated greenwashing to preserve profits and reputation instead of reforming their core operations.",
-      "C. A new wave of greenwashing allows corporations to hide ongoing pollution behind reassuring eco-labels, diverting scrutiny from the rapid emission cuts considered vital by scientists.",
-      "D. Greenwashing has significantly grown in its scale and sophistication since its emergence, attracting considerable attention of both the general public and policymakers worldwide."
-    ],
     "correct": "C. A new wave of greenwashing allows corporations to hide ongoing pollution behind reassuring eco-labels, diverting scrutiny from the rapid emission cuts considered vital by scientists.",
     "explanation": {
       "reason": "Câu hỏi yêu cầu chọn câu tóm tắt toàn bài, cần đối chiếu nội dung chính từng đoạn và tìm thông điệp trung tâm.",
@@ -682,13 +479,6 @@
     }
   },
   "30": {
-    "question": "Question 30: All holidays involve some element of risk... or (30) _______.",
-    "options": [
-      "A. what are the products we will be certainly seeing directly",
-      "B. until we certainly see its products directly",
-      "C. being uncertain about the product until seeing it directly",
-      "D. for a certain product to be seen directly"
-    ],
     "correct": "C. being uncertain about the product until seeing it directly",
     "explanation": {
       "reason": "Chỗ trống nằm trong danh sách các rủi ro, cần một cụm danh động từ (gerund phrase) song song với các yếu tố trước.",
@@ -706,13 +496,6 @@
     }
   },
   "31": {
-    "question": "Question 31: Some tourists relish a degree of risk... (31) _______.",
-    "options": [
-      "A. but do not present any risks and barriers to tourism itself",
-      "B. so the presence of risk is not in itself a barrier to tourism",
-      "C. and tourism itself does not present any barriers or risks",
-      "D. if the barrier of tourism itself is not in the presence of risk"
-    ],
     "correct": "B. so the presence of risk is not in itself a barrier to tourism",
     "explanation": {
       "reason": "Cần mệnh đề kết quả logic từ tiền đề 'một số du khách thích rủi ro', sử dụng liên từ 'so' để chỉ kết luận hợp lý.",
@@ -730,13 +513,6 @@
     }
   },
   "32": {
-    "question": "Question 32: Clearly, the significance of the risk will be a key factor. (32) _______.",
-    "options": [
-      "A. People, by contrast, will be far less concerned about the risk of crime than about that of poor weather",
-      "B. As a result, there will be much less concern about the risk of poor weather than about the risk of crime",
-      "C. As earlier mentioned, the risk of crime will be of much greater concern to people than that of poor weather",
-      "D. Similarly, the concern about the risk of poor weather will be much greater than that about the risk of crime"
-    ],
     "correct": "A. People, by contrast, will be far less concerned about the risk of crime than about that of poor weather",
     "explanation": {
       "reason": "Cần một câu ví dụ cụ thể minh họa cho khái niệm 'significance of the risk will be a key factor', sử dụng 'by contrast' để so sánh mức độ lo lắng khác nhau giữa các loại rủi ro.",
@@ -754,13 +530,6 @@
     }
   },
   "33": {
-    "question": "Question 33: (33) _______. There is evidence that much of the continuing reluctance...",
-    "options": [
-      "A. Customers also book their holidays by choosing the methods without risky factors",
-      "B. Risk is also a factor in the methods chosen by customers to book their holidays",
-      "C. Holidays are also booked after customers choose factors and methods without risk",
-      "D. Also, the factors and methods customers choose to book their holidays are risky"
-    ],
     "correct": "B. Risk is also a factor in the methods chosen by customers to book their holidays",
     "explanation": {
       "reason": "Câu này cần dẫn dắt vào đoạn tiếp theo về 'reluctance to book online', cần từ khóa 'also' để kết nối với luận điểm trước và giới thiệu khía cạnh mới về rủi ro trong phương thức đặt chỗ.",
@@ -778,13 +547,6 @@
     }
   },
   "34": {
-    "question": "Question 34: ...in part, (34) _______ in favour of the information provider.",
-    "options": [
-      "A. the suspicion that information received through the Internet will be biased",
-      "B. thanks to the biased information received through the Internet with the suspicion",
-      "C. due to the Internet, through which biased and suspicious information is received",
-      "D. the biased information received through the Internet will be suspicious"
-    ],
     "correct": "A. the suspicion that information received through the Internet will be biased",
     "explanation": {
       "reason": "Cần cụm danh từ song song với 'the lack of face-to-face contact' trong cấu trúc liệt kê nguyên nhân, với 'that-clause' giải thích nội dung sự nghi ngờ.",
@@ -802,13 +564,6 @@
     }
   },
   "35": {
-    "question": "Question 35: ...help you make a routine (35) _______ being active.",
-    "options": [
-      "A. in",
-      "B. to",
-      "C. at",
-      "D. of"
-    ],
     "correct": "D. of",
     "explanation": {
       "reason": "Cấu trúc cố định 'make a routine of + V-ing' có nghĩa 'tạo thành thói quen làm gì', bắt buộc phải dùng giới từ 'of'.",
@@ -825,13 +580,6 @@
     }
   },
   "36": {
-    "question": "Question 36: Track your progress using a health app (36) _______ a paper checklist.",
-    "options": [
-      "A. or",
-      "B. nor",
-      "C. so",
-      "D. but"
-    ],
     "correct": "A. or",
     "explanation": {
       "reason": "Cấu trúc 'A or B' được dùng để lựa chọn giữa hai phương án thay thế nhau trong câu khẳng định.",
@@ -848,13 +596,6 @@
     }
   },
   "37": {
-    "question": "Question 37: ...carrying (37) _______ and climbing the stairs.",
-    "options": [
-      "A. bags grocery heavy",
-      "B. heavy bags grocery",
-      "C. bags heavy grocery",
-      "D. heavy grocery bags"
-    ],
     "correct": "D. heavy grocery bags",
     "explanation": {
       "reason": "Theo quy tắc sắp xếp tính từ trong tiếng Anh: opinion - size - age - shape - color - origin - material - purpose - noun.",
@@ -871,13 +612,6 @@
     }
   },
   "38": {
-    "question": "Question 38: Invite friends and (38) _______ family members to join in.",
-    "options": [
-      "A. other",
-      "B. the others",
-      "C. another",
-      "D. others"
-    ],
     "correct": "A. other",
     "explanation": {
       "reason": "Câu đang liệt kê hai nhóm người: 'friends' và '_____ family members', cần tính từ 'other' để bổ nghĩa cho danh từ số nhiều.",
@@ -895,13 +629,6 @@
     }
   },
   "39": {
-    "question": "Question 39: ...try (39) _______ everyone's competitive side.",
-    "options": [
-      "A. comparing",
-      "B. contrasting",
-      "C. replacing",
-      "D. engaging"
-    ],
     "correct": "D. engaging",
     "explanation": {
       "reason": "Cần động từ mang nghĩa 'thu hút, kích thích' để phù hợp với việc khuyến khích mọi người tham gia hoạt động cạnh tranh.",
@@ -919,13 +646,6 @@
     }
   },
   "40": {
-    "question": "Question 40: ...if your plan works (40) _______ to maintain your motivation.",
-    "options": [
-      "A. wonders",
-      "B. legends",
-      "C. values",
-      "D. marvels"
-    ],
     "correct": "A. wonders",
     "explanation": {
       "reason": "Cụm thành ngữ 'work wonders' có nghĩa 'có hiệu quả tuyệt vời', phù hợp với ngữ cảnh nói về việc duy trì động lực.",
