@@ -190,27 +190,62 @@ body {
 }
 
 .dropdown-list.open {
-    max-height: 240px; /* Chiều cao cho khoảng 3 item (mỗi item ~80px) */
-    overflow-y: auto; /* Thêm thanh cuộn dọc */
+    max-height: 300px; /* Tăng chiều cao để chứa ô tìm kiếm */
+    overflow: visible; /* Để ô tìm kiếm luôn hiển thị */
     border-color: #4facfe;
 }
 
+.dropdown-search {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 1001;
+}
+
+.dropdown-search i {
+    color: #666;
+    font-size: 1rem;
+}
+
+.dropdown-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #333;
+    background: transparent;
+}
+
+.dropdown-search input::placeholder {
+    color: #999;
+}
+
+.dropdown-items {
+    max-height: 200px; /* Chiều cao cho danh sách các item */
+    overflow-y: auto; /* Thanh cuộn cho danh sách */
+}
+
 /* Style cho thanh cuộn */
-.dropdown-list::-webkit-scrollbar {
+.dropdown-items::-webkit-scrollbar {
     width: 6px;
 }
 
-.dropdown-list::-webkit-scrollbar-track {
+.dropdown-items::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 3px;
 }
 
-.dropdown-list::-webkit-scrollbar-thumb {
+.dropdown-items::-webkit-scrollbar-thumb {
     background: #4facfe;
     border-radius: 3px;
 }
 
-.dropdown-list::-webkit-scrollbar-thumb:hover {
+.dropdown-items::-webkit-scrollbar-thumb:hover {
     background: #3a8bfd;
 }
 

@@ -68,6 +68,461 @@
         "D. Such trait is so impulsive that it proves to be valuable to purchasers"
       ],
       "correct": 2
+    },
+    {
+      "id": 6,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 6. The word settle in paragraph 1 mostly means ______.",
+      "options": [
+        "A. expect",
+        "B. announce", 
+        "C. exchange",
+        "D. decide"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 7,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 7. Which of the following is NOT mentioned in paragraph 1 as information displayed on a live, shared picture?",
+      "options": [
+        "A. plant growth",
+        "B. weather shifts",
+        "C. soil types",
+        "D. drones"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 8,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 8. The word their in paragraph 2 refers to ______.",
+      "options": [
+        "A. planting plans",
+        "B. seeding machines",
+        "C. fields",
+        "D. farmers"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 9,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 9. Which of the following best paraphrases the underlined sentence in paragraph 2?",
+      "options": [
+        "A. Precise application of fertilisers and sprays to required areas raises crop output but in turn increases chemical wastage.",
+        "B. As resources are directed to the areas that need them, harvests increase and pollution from excess chemicals declines.",
+        "C. There is an increase in chemical wastage and crop output though fewer resources are used for the indicated land area.",
+        "D. When chemicals are placed only where they are needed, productivity increases yet more overdue chemicals are released."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 10. The word slashing in paragraph 3 is OPPOSITE in meaning to ______.",
+      "options": [
+        "A. disposing",
+        "B. reducing",
+        "C. increasing",
+        "D. converting"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 11,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 11. Which of the following is TRUE according to paragraph 4?",
+      "options": [
+        "A. Project partners are unable to forecast prices of crops in the following season.",
+        "B. Buyers have little reliable information on harvest weights and storage temperatures.",
+        "C. Farmers regard cloud platforms the best tools to improve the quality of their crops.",
+        "D. Analytic tools offer suggestions for better planting plans for the following season."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 12,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 12. Which paragraph mentions approaches to different weather patterns?",
+      "options": [
+        "A. Paragraph 3",
+        "B. Paragraph 2",
+        "C. Paragraph 1",
+        "D. Paragraph 4"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 13,
+      "instruction": "Read the following passage about memory and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 6 to 13.",
+      "passage": "When several farmers merge plots into a single \"project farm\", they use digital tools to make that teamwork far more effective. GPS mapping, drones, and in-field sensors build a live, shared picture of soil types, weather shifts, and plant growth. Because everyone works on the same data, the team can settle seeding dates, determine when to spray, and track machinery in real time. What once depended on guesswork is now driven by verifiable information.\n\nWith GPS technology, farmers can accurately map out their fields and create customised planting plans. Seeding machines change their rate on the fly, drones spray pests on targeted zones, and smart spreaders apply fertiliser only where data shows a need. Because inputs go exactly where they help, fields yield more while chemical runoff falls. Trials report considerable savings on seed, fuel, and sprays – benefits the partners split at the season's end.\n\nWater management is just as precise. Specialised equipment tracks moisture every hour, and forecast apps predict rain, wind, or heatwaves. Automated pumps deliver measured water amounts to thirsty zones and stop when a storm is coming, slashing waste and energy bills. The result is steadier yields in dry years, fewer nutrients washed away, and a smaller water footprint for the whole partnership. Smart irrigation also helps limit weed growth, reducing herbicide use.\n\nThe journey from field to market is equally digital. Cloud platforms record harvest weights, storage temperatures, and shipment times the moment they change, while blockchain records freeze each entry so customers can rely on it. Analytic tools browse the records to indicate weak points in the procedure, forecast prices, and suggest better planting plans for the next season to project partners. This makes project farming both profitable and sustainable.",
+      "text": "Question 13. Which paragraph mentions real-time tracking of produce?",
+      "options": [
+        "A. Paragraph 4",
+        "B. Paragraph 3",
+        "C. Paragraph 2",
+        "D. Paragraph 1"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 14,
+      "instruction": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 14 to 18.",
+      "context": "a. Tom: Then, text me when you're home.\nb. Tom: It's getting late. Would you like me to give you a lift home?\nc. Mary: Thanks, but I'm going to walk to the supermarket and then take a bus home.",
+      "text": "Question 14.",
+      "options": [
+        "A. b – a – c",
+        "B. a – c – b", 
+        "C. a – b – c",
+        "D. b – c – a"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 15,
+      "instruction": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 14 to 18.",
+      "context": "a. David: I used to, but now I use social media and news apps.\nb. Lisa: Same here! It's more convenient, but I think traditional newspapers have their own charm.\nc. Lisa: Do you still read newspapers?\nd. Lisa: I believe each type has its own value that we can make full use of.\ne. David: You're right. They fill us with nostalgia that's hard to replace.",
+      "text": "Question 15.",
+      "options": [
+        "A. d – e – b – a – c",
+        "B. d – a – c – e – b",
+        "C. c – e – d – a – b", 
+        "D. c – a – b – e – d"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 16,
+      "instruction": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 14 to 18.",
+      "context": "Dear Ms Smith,\na. This has been pre-approved, but you need to have this letter and your identification card produced at the nearest branch to apply.\nb. The offer is exclusive and expires on December 31st.\nc. Your application will be processed, and your card will be issued within 48 hours for immediate use.\nd. It is our honour to offer you credit facilities of $6000, affordable with the monthly instalment of $99.\ne. Should you require further details, please call 0123888888, or visit any of our branches.\nYours sincerely,\nABC Bank",
+      "text": "Question 16.",
+      "options": [
+        "A. b – d – a – e – c",
+        "B. a – c – d – b – e",
+        "C. c – a – d – b – e",
+        "D. d – a – c – b – e"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 17,
+      "instruction": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 14 to 18.",
+      "context": "a. I had to burn the midnight oil to make engaging lesson plans, expecting to capture my students' attention.\nb. The reality, however, was not what I had expected when I completely failed to keep the class under control despite shouting loudly.\nc. This valuable experience was indeed memorable and made me more confident in my career of choice.\nd. Working as an intern at a local high school motivated me to pursue a teaching career, a demanding but rewarding one.\ne. Instead of giving up, I reflected on what I had done and made improvements in the following lessons.",
+      "text": "Question 17.",
+      "options": [
+        "A. d – a – b – e – c",
+        "B. c – b – e – a – d",
+        "C. d – b – e – c – a",
+        "D. c – a – e – d – b"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 18,
+      "instruction": "Mark the letter A, B, C, or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text in each of the following questions from 14 to 18.",
+      "context": "a. The developments demonstrate a clear trend of the modernisation of the city of Paragon, transforming it from a primarily residential locality into a more diverse and economically vibrant area.\nb. This was further evidenced by the industrialisation of the surrounding agricultural land, with the appearance of some plants and factories.\nc. Residential areas were relocated away from the city centre, and instead of established terraced housing with new dwellings and the relocation of residents.\nd. Simultaneously, a significant expansion of the commercial infrastructure took place, most prominently in North Massion, where retail shops and a high-tech business park were much more active.\ne. Between 2000 and 2015, the outskirts of Paragon City underwent a range of major changes, prompting the move towards urban regeneration and development.",
+      "text": "Question 18.",
+      "options": [
+        "A. e – c – d – b – a",
+        "B. e – d – b – a – c",
+        "C. e – b – a – c – d",
+        "D. e – c – a – d – b"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 19,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 19.",
+      "options": [
+        "A. level",
+        "B. volume",
+        "C. amount",
+        "D. number"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 20,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 20.",
+      "options": [
+        "A. competition",
+        "B. competitive",
+        "C. competitively", 
+        "D. compete"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 21,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 21.",
+      "options": [
+        "A. is managing",
+        "B. managed",
+        "C. has managed",
+        "D. managing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 22.",
+      "options": [
+        "A. high",
+        "B. smart",
+        "C. top",
+        "D. quick"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 23,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 23.",
+      "options": [
+        "A. when",
+        "B. which",
+        "C. why",
+        "D. who"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 24,
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 19 to 24.",
+      "passage": "DA NANG INTERNATIONAL FIREWORKS FESTIVAL (DIFF) 2025\n\nWith ten teams worldwide, DIFF 2025 features the largest .................... (19) of participating teams in its history, and is predicted to be the most thrilling .................... (20) so far.\n\nZ121 Vina Pyrotech, a company .................... (21) by Vietnam Ministry of National Defence, is a newcomer this year. With thirty years of experience in fireworks, Z121 Vina Pyrotech is expected to deliver a breathtaking performance. It is among the .................... (22) candidates to win the championship.\n\nFrom May 31st to July 12th, DIFF 2025 promises a series of spectacular fireworks displays, .................... (23) is hoped to bring spectators a world-class entertainment experience.\n\nOver the past twelve years, the Da Nang International Fireworks Festival has helped the city .................... (24) the reputation as \"The City of Fireworks\" and become an attractive tourist destination.",
+      "text": "Question 24.",
+      "options": [
+        "A. look up",
+        "B. go up",
+        "C. build up",
+        "D. come up"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 25,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 25.",
+      "options": [
+        "A. However",
+        "B. Otherwise",
+        "C. Though",
+        "D. While"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 26,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 26.",
+      "options": [
+        "A. in",
+        "B. to",
+        "C. at",
+        "D. on"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 27.",
+      "options": [
+        "A. many",
+        "B. some",
+        "C. each",
+        "D. much"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 28,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 28.",
+      "options": [
+        "A. affordable product quality",
+        "B. products quality affordable",
+        "C. products affordable quality",
+        "D. affordable quality products"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 29,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 29.",
+      "options": [
+        "A. excessive",
+        "B. objective",
+        "C. possessive",
+        "D. restrictive"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 30,
+      "instruction": "Read the following leaflet and mark the letter A, B, C, or D on your answer sheet to indicate the option that best fits each of the numbered blanks from 25 to 30.",
+      "passage": "HOW TO MANAGE YOUR MONEY WISELY?\n\nManaging your finances properly is essential for a stable and secure life. .................... (25), many people struggle with budgeting and saving and give up their financial plans sooner or later, eventually leading .................... (26) overspending and financial stress. Here are some tips to well manage your pocket:\n\n• Invest some of your money if possible.\n• Have a bank account with an increasing amount of savings .................... (27) month by setting realistic financial goals.\n• Buy .................... (28) within your price range.\n• Track your spending carefully to avoid .................... (29) expenditure on unnecessary purchases.\n• Prioritise things that bring you lasting happiness and financial security to get your money's .................... (30)!",
+      "text": "Question 30.",
+      "options": [
+        "A. cost",
+        "B. price",
+        "C. rate",
+        "D. worth"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 31,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "According to paragraph 1, having products claimed as eco-friendly rather than conducting meaningful decarbonisation will ___________.",
+      "options": [
+        "A. lead to delays without solving the current emission problem",
+        "B. bring about a full redesign of the business model of a company",
+        "C. cause physical injuries to those involved in the negotiation",
+        "D. involve spending a huge amount of money paying the agency"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 32,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "The word manipulated in paragraph 2 mostly means ______.",
+      "options": [
+        "A. legally regulated",
+        "B. purposely adjusted",
+        "C. randomly deployed",
+        "D. hastily produced"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 33,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "Which of the following best summarises paragraph 2?",
+      "options": [
+        "A. The stories about greenwashing reach a much wider audience due to the joint effort of social media and traditional marketing channels.",
+        "B. Commercials for everyday products and services, ranging from holiday bookings to petrol pumps and bacon packs, are prevalent on unconventional marketing channels.",
+        "C. Social media influencers and impressive reports have a role to play in the dissemination of deceptive environmental claims.",
+        "D. Sustainability buzzwords now fill every sector, with their reach being amplified by influencers and polished reports."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 34,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "What causes corporate boards to adopt greenwashing?",
+      "options": [
+        "A. Increasing public concern about environmental issues",
+        "B. Public belief that carbon reductions are unnecessary",
+        "C. Growing public interest in the development of climate science",
+        "D. Public pressure on corporations to opt for PR campaigns"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 35,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "What challenge do regulators face in monitoring greenwashing claims?",
+      "options": [
+        "A. Insufficient public support",
+        "B. Enforcement that falls behind corporate creativity",
+        "C. Conflicting laws on both sides of the Atlantic",
+        "D. A lack of clear terminology"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 36,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "The phrase the practice in paragraph 3 refers to ______.",
+      "options": [
+        "A. global heating",
+        "B. climate science",
+        "C. scrutiny",
+        "D. greenwashing"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 37,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "Which of the following best paraphrases the underlined sentence in paragraph 4?",
+      "options": [
+        "A. For empty slogans to be realised into moves, revelations about greenwashing and practical measures to reduce carbon are required.",
+        "B. Greenwashing is, in fact, a fallacy and therefore should be replaced by feasible actions which are encouraged through public movements.",
+        "C. The real solution to the issue of carbon is to verify and measure carbon reductions rather than just raise public awareness through campaigns.",
+        "D. To make way for meaningful activities in reality, it is vital to expose the public to proper and specific measures to reduce emissions."
+      ],
+      "correct": 0
+    },
+    {
+      "id": 38,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "Which of the following can be inferred from the passage?",
+      "options": [
+        "A. Investors who value long-term environmental impact put pressure on companies to implement substantial structural reforms.",
+        "B. The shift from denying climate science to applying \"green\" paint reflects high-emitting industries' genuine commitment to renewables.",
+        "C. Greenwashing brings corporations benefits in terms of finance and reputation without having to reform their core operations.",
+        "D. Regulators are effectively utilising the tools and resources to verify most environmental claims, tackling the wide spread of eco-labels."
+      ],
+      "correct": 2
+    },
+    {
+      "id": 39,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "Where in the passage does the following sentence best fit?\nYet greenwashing is arguably more insidious.",
+      "options": [
+        "A. [IV]",
+        "B. [I]",
+        "C. [III]",
+        "D. [II]"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 40,
+      "instruction": "Read the following passage about greenwashing and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions from 31 to 40.",
+      "passage": "We seem to be entering a boom era for greenwashing – the tactic of covering routine pollution in eco-friendly language. [I] Picture running a high-emitting corporation: meaningful decarbonisation would demand painful negotiations, huge capital outlays, and a full redesign of the business model. Hiring an expert agency to splash \"carbon-neutral\" or \"net-zero\" across products is far easier, buying time while emissions remain untouched.\n\nConsumers meet this sleight of hand everywhere. Airlines sell \"carbon-neutral\" flights, filling stations boast about \"net-zero\" fuel, and breakfast bacon is re-labelled as planet-safe. Advertising spin is old, yet today it is manipulated to conceal ongoing environmental damage. Social media influencers and glossy sustainability reports amplify these claims, broadcasting the narrative far beyond traditional marketing channels.\n\nThe term greenwashing emerged in the 1980s, an era of oil spills and growing climate science, but the practice has exploded only recently. [II] Intensifying public anxiety over global heating and ecosystem collapse has placed companies under sharp scrutiny; many boards therefore choose eye-catching PR over the tougher route of restructuring supply chains, energy sources, and product lines. Regulators on both sides of the Atlantic are struggling to police false eco-claims, yet enforcement still lags behind corporate ingenuity. Investors, eager to protect short-term returns, frequently applaud these surface-level initiatives, reinforcing the cycle. [III] No sector illustrates the issue better than oil and gas. Having realised that denying climate science now backfires, the industry has swapped denial for \"green\" paint. Press releases trumpet potential renewable ventures while drilling plans expand unabated.\n\nWhy does this matter? Greenwashing and climate denial share a core objective: to postpone the deep emission cuts claimed by scientists as urgent this decade. [IV] Whereas denial disputes the crisis, greenwashing misleads the public into believing problems are solved, thereby eroding consumer advocacy of genuine environmental actions and stalling regulatory reforms. In effect, it acts as a soothing lullaby, guiding society ever closer to ecological breakdown while fostering a false sense of progress. Exposing the facade – and insisting on verifiable, measurable carbon reductions – is essential if rhetoric is to give way to real action.\n\n(Adapted from https://www.greenpeace.org.uk)",
+      "text": "Which of the following best summarises the passage?",
+      "options": [
+        "A. High-emitting sectors follow the trend of greenwashing, boasting about promising renewable ventures in press releases while quietly going on damaging the environment.",
+        "B. Once a prevalent strategy of corporations in response to public scrutiny, climate denial is losing its effectiveness and has to be replaced by greenwashing.",
+        "C. Greenwashing is surging as firms cover ongoing pollution in eco-friendly rhetoric, distracting the public and postponing the deep emission cuts scientists deem urgent.",
+        "D. Instead of investing in meaningful decarbonisation, major emitters have a tendency to opt for denying the claim of \"carbon-neutral\" or \"net-zero\" on their product lines."
+      ],
+      "correct": 2
     }
   ]
 }
