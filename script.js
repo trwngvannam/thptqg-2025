@@ -52,25 +52,39 @@ async function loadSpecificExamData(examCode) {
     }
 }
 
-// Load explanations data
-async function loadExplanationsData() {
+// Load explanations data for specific exam (lazy loading)
+async function loadExplanationsData(examCode) {
     try {
-        const response = await fetch('explanations.json');
+        const response = await fetch(`explanations/${examCode}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        window.explanationsData = await response.json();
-        console.log('Đã tải giải thích đáp án thành công');
+        const explanations = await response.json();
+        
+        // Initialize global explanationsData if not exist
+        if (!window.explanationsData) {
+            window.explanationsData = {};
+        }
+        
+        // Store explanations for this exam code
+        window.explanationsData[examCode] = explanations;
+        console.log(`Đã tải giải thích đáp án cho mã đề ${examCode} thành công`);
+        return explanations;
     } catch (error) {
-        console.error('Lỗi khi tải giải thích đáp án:', error);
-        window.explanationsData = {};
+        console.error(`Lỗi khi tải giải thích đáp án cho mã đề ${examCode}:`, error);
+        // Initialize empty explanations for this exam code
+        if (!window.explanationsData) {
+            window.explanationsData = {};
+        }
+        window.explanationsData[examCode] = {};
+        return {};
     }
 }
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async function() {
     await loadExamListData();
-    await loadExplanationsData(); // Load explanations data
+    // Note: Explanations will be loaded lazily when exam is selected
     initializeApp();
 });
 
@@ -169,6 +183,9 @@ async function startExam() {
         document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
         return;
     }
+    
+    // Load explanations for this exam code (lazy loading)
+    await loadExplanationsData(selectedExamCode);
     
     // Initialize exam
     currentExam = examData;
