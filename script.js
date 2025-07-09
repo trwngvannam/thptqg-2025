@@ -43,13 +43,18 @@ async function loadSpecificExamData(examCode) {
         if (!response.ok) {
             throw new Error(`Không thể tải dữ liệu đề thi ${examCode}`);
         }
-        currentExamData = await response.json();
+        const examData = await response.json();
+        
+        // Kiểm tra xem đề thi có nội dung không (ít nhất 10 câu)
+        if (!examData.questions || examData.questions.length < 10) {
+            return { isEmpty: true, code: examCode };
+        }
+        
         console.log(`Đã tải dữ liệu đề thi ${examCode} thành công`);
-        return currentExamData;
+        return examData;
     } catch (error) {
         console.error(`Lỗi khi tải dữ liệu đề thi ${examCode}:`, error);
-        alert(`Không thể tải dữ liệu đề thi ${examCode}. Vui lòng thử lại.`);
-        return null;
+        return { isEmpty: true, code: examCode };
     }
 }
 
@@ -229,8 +234,11 @@ async function startExam() {
     
     // Load specific exam data
     const examData = await loadSpecificExamData(selectedExamCode);
-    if (!examData) {
+    
+    // Xử lý trường hợp đề thi chưa có nội dung
+    if (!examData || examData.isEmpty) {
         document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
+        showEmptyExamNotification(selectedExamCode);
         return;
     }
     
@@ -911,6 +919,98 @@ function showNoResultsMessage(show) {
     } else if (!show && noResultsMessage) {
         noResultsMessage.remove();
     }
+}
+
+// Hiển thị thông báo khi đề thi chưa có nội dung
+function showEmptyExamNotification(examCode) {
+    const notificationHTML = `
+        <div id="empty-exam-notification" class="empty-exam-notification">
+            <div class="notification-content">
+                <div class="notification-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h3>Mã đề ${examCode}</h3>
+                <p class="notification-message">
+                    Nội dung mã đề này sẽ sớm được cập nhật.<br>
+                    Vui lòng chọn mã đề khác hoặc quay lại sau.
+                </p>
+                <div class="notification-buttons">
+                    <button onclick="closeEmptyExamNotification()" class="btn-select-other">
+                        <i class="fas fa-list"></i> Chọn mã đề khác
+                    </button>
+                    <button onclick="goToHomePage()" class="btn-home">
+                        <i class="fas fa-home"></i> Về trang chủ
+                    </button>
+                </div>
+            </div>
+            <div class="notification-overlay" onclick="closeEmptyExamNotification()"></div>
+        </div>
+    `;
+    
+    // Thêm notification vào body
+    document.body.insertAdjacentHTML('beforeend', notificationHTML);
+    
+    // Show notification with animation
+    setTimeout(() => {
+        const notification = document.getElementById('empty-exam-notification');
+        if (notification) {
+            notification.classList.add('show');
+        }
+    }, 100);
+}
+
+// Đóng thông báo và cho phép chọn mã đề khác
+function closeEmptyExamNotification() {
+    const notification = document.getElementById('empty-exam-notification');
+    if (notification) {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }
+    
+    // Reset selected exam code
+    selectedExamCode = null;
+    document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
+    checkStartButtonState();
+    
+    // Tự động mở dropdown để người dùng chọn mã đề mới
+    setTimeout(() => {
+        const dropdownHeader = document.getElementById('dropdown-header');
+        const dropdownList = document.getElementById('dropdown-list');
+        
+        if (dropdownHeader && dropdownList) {
+            dropdownList.classList.add('open');
+            dropdownHeader.classList.add('active');
+            
+            // Focus vào ô tìm kiếm nếu có
+            const searchInput = document.getElementById('exam-search');
+            if (searchInput) {
+                searchInput.focus();
+            }
+        }
+    }, 400); // Delay để đảm bảo notification đã ẩn
+}
+
+// Quay về trang chủ
+function goToHomePage() {
+    const notification = document.getElementById('empty-exam-notification');
+    if (notification) {
+        notification.remove();
+    }
+    
+    // Reset toàn bộ form
+    selectedExamCode = null;
+    document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
+    document.getElementById('student-name').value = '';
+    document.getElementById('student-id').value = '';
+    checkStartButtonState();
+    
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 
