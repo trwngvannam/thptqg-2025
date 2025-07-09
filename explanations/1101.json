@@ -1,1 +1,82 @@
-{}
+{
+  "1": {
+    "correct": "D. being uncertain about the product until seeing it directly",
+    "explanation": {
+      "reason": "Câu này nói về rủi ro khi đi nghỉ mát. Cụm từ cần điền đứng sau giới từ 'or', giữ vai trò cụm danh từ để tương ứng với các cụm trước đó.",
+      "points": [
+        "Cụm cần điền phải song song với 'illness, bad weather, being unable to get what we want if we delay booking'.",
+        "Đáp án D là cụm danh động từ (gerund phrase), có nghĩa là 'không chắc chắn về sản phẩm cho đến khi thấy nó trực tiếp'.",
+        "Đây là một rủi ro hợp lý trong bối cảnh du lịch - không biết chất lượng thực tế cho đến khi trải nghiệm."
+      ],
+      "wrongAnswers": [
+        "A: Cấu trúc 'for + O + to V' không song song với 'being unable...' và không diễn đạt ý rủi ro rõ ràng.",
+        "B: 'what are the products...' là mệnh đề danh ngữ, không song song với cấu trúc gerund phrase của các cụm khác.",
+        "C: 'until we certainly see...' chỉ là mệnh đề trạng ngữ chỉ thời gian, không thể đứng độc lập như yếu tố rủi ro."
+      ]
+    }
+  },
+  "2": {
+    "correct": "C. so the presence of risk is not in itself a barrier to tourism",
+    "explanation": {
+      "reason": "Câu này nói về việc một số du khách thích các rủi ro. Cần mệnh đề kết quả logic từ tiền đề 'Some tourists relish a degree of risk'.",
+      "points": [
+        "Logic nhân-quả: 'Some tourists relish a degree of risk' → 'so the presence of risk is not in itself a barrier to tourism'.",
+        "Cụm 'in itself' = về bản chất, tự nó → nhấn mạnh rủi ro không phải bản chất là rào cản.",
+        "'so' (vì vậy) là liên từ kết quả phù hợp nhất để nối logic từ tiền đề đến kết luận."
+      ],
+      "wrongAnswers": [
+        "A: 'but' thể hiện tương phản, nhưng ở đây không có sự mâu thuẫn. Nội dung 'do not present any risks' cũng không logic.",
+        "B: Cấu trúc câu điều kiện 'if' không phù hợp ngữ cảnh và câu này khó hiểu về mặt ngữ nghĩa.",
+        "D: 'and' chỉ bổ sung thông tin song song, không thể hiện mối quan hệ nhân-quả. Nghĩa cũng sai: du lịch vẫn có rủi ro."
+      ]
+    }
+  },
+  "3": {
+    "correct": "A. As a result, there will be much less concern about the risk of poor weather than about the risk of crime",
+    "explanation": {
+      "reason": "Cần một câu ví dụ cụ thể minh họa cho khái niệm 'significance of the risk will be a key factor', sử dụng 'by contrast' để so sánh mức độ lo lắng khác nhau giữa các loại rủi ro.",
+      "points": [
+        "Câu trước nói 'significance of the risk will be a key factor' → cần ví dụ minh họa cách mọi người đánh giá tầm quan trọng khác nhau của các rủi ro.",
+        "'by contrast' = ngược lại, trái lại → dùng để so sánh và làm nổi bật sự khác biệt trong nhận thức rủi ro.",
+        "Ví dụ thực tế: Du khách thường chấp nhận rủi ro an ninh nhưng rất quan tâm đến thời tiết (vì ảnh hưởng trực tiếp đến trải nghiệm)."
+      ],
+      "wrongAnswers": [
+        "B: 'As a result' = kết quả là → không phù hợp vì đây không phải kết quả trực tiếp mà là ví dụ minh họa. Nội dung cũng ngược với logic thực tế.",
+        "C: 'As earlier mentioned' = như đã đề cập trước đó → sai vì chưa có thông tin nào về so sánh crime vs weather được nhắc đến trước đó.",
+        "D: 'Similarly' = tương tự → cần có điều gì đó tương tự trước đó để so sánh, nhưng câu trước chỉ nói về khái niệm chung."
+      ]
+    }
+  },
+  "4": {
+    "correct": "B. Risk is also a factor in the methods chosen by customers to book their holidays",
+    "explanation": {
+      "reason": "Câu này cần dẫn dắt vào đoạn tiếp theo về 'reluctance to book online', cần từ khóa 'also' để kết nối với luận điểm trước và giới thiệu khía cạnh mới về rủi ro trong phương thức đặt chỗ.",
+      "points": [
+        "Câu tiếp theo: 'There is evidence that much of the continuing reluctance...' → cần câu dẫn dắt về chủ đề đặt chỗ và rủi ro.",
+        "'also' = cũng vậy → kết nối với các đoạn trước đã nói về rủi ro trong du lịch, giờ mở rộng sang phương thức đặt chỗ.",
+        "'Risk is a factor in the methods chosen by customers to book' = rủi ro là yếu tố trong việc chọn phương thức đặt chỗ → thiết lập tiền đề cho việc nói về sự do dự đặt chỗ online."
+      ],
+      "wrongAnswers": [
+        "A: 'choosing methods without risky factors' = chọn phương thức không có rủi ro → mâu thuẫn với câu tiếp theo nói về 'reluctance' (sự do dự vì rủi ro).",
+        "C: Cấu trúc 'holidays are booked after customers choose...' không tự nhiên và logic không rõ ràng.",
+        "D: 'the factors and methods... are risky' = các yếu tố và phương thức đều rủi ro → quá tuyệt đối, không phù hợp tone khách quan của bài."
+      ]
+    }
+  },
+  "5": {
+    "correct": "A. the suspicion that information received through the Internet will be biased",
+    "explanation": {
+      "reason": "Cần cụm danh từ song song với 'the lack of face-to-face contact' trong cấu trúc liệt kê nguyên nhân, với 'that-clause' giải thích nội dung sự nghi ngờ.",
+      "points": [
+        "Cấu trúc song song: 'in part, the lack of face-to-face contact and, in part, (5)___' → cần 1 cụm danh từ bắt đầu bằng 'the'.",
+        "'the suspicion that...' = sự nghi ngờ rằng... → cụm danh từ + that-clause (mệnh đề danh ngữ) giải thích nội dung nghi ngờ.",
+        "Logic: Sự do dự đặt chỗ online bao gồm 2 nguyên nhân song song: thiếu tiếp xúc trực tiếp + nghi ngờ thông tin thiên vị."
+      ],
+      "wrongAnswers": [
+        "B: 'thanks to' = nhờ vào → từ nối tích cực, không phù hợp với ngữ cảnh tiêu cực (reluctance, suspicion). Cấu trúc cũng không song song.",
+        "C: 'due to the Internet' tạo cấu trúc không song song với 'the lack of...'. Nội dung 'suspicious information' cũng không chính xác (thông tin bị nghi ngờ ≠ sự nghi ngờ về thông tin).",
+        "D: Đây là một câu hoàn chỉnh có động từ chính 'will be' → không thể dùng trong cấu trúc song song sau 'in part'. Lệch nghĩa: nói rằng thông tin 'sẽ đáng ngờ', thay vì phản ánh 'sự nghi ngờ' từ phía người dùng."
+      ]
+    }
+  }
+}
