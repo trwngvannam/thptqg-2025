@@ -11,6 +11,7 @@ let examTimer = null;
 let timeRemaining = 50 * 60; // 50 phút như đề thi thật
 let selectedExamCode = null;
 let examSubmitted = false; // Theo dõi trạng thái đã nộp bài
+let timeUpAlertShown = false; // Theo dõi đã hiển thị alert hết giờ chưa
 
 // DOM elements
 const welcomeScreen = document.getElementById('welcome-screen');
@@ -88,6 +89,45 @@ document.addEventListener('DOMContentLoaded', async function() {
     initializeApp();
 });
 
+// Đồng bộ timer khi user quay lại tab
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden && examTimer && examStartTime) {
+        // User quay lại tab, đồng bộ lại timer
+        syncTimer();
+    }
+});
+
+// Function để đồng bộ timer với thời gian thực
+function syncTimer() {
+    if (!examStartTime || examSubmitted) return;
+    
+    const examDuration = 50 * 60 * 1000; // 50 phút
+    const examEndTime = new Date(examStartTime.getTime() + examDuration);
+    const now = new Date();
+    const remainingMs = examEndTime - now;
+    
+    if (remainingMs <= 0) {
+        // Hết giờ rồi
+        timeRemaining = 0;
+        updateTimerDisplay();
+        if (!examSubmitted && !timeUpAlertShown) {
+            // Chỉ hiện alert một lần và nộp bài
+            timeUpAlertShown = true;
+            alert('Hết giờ làm bài! Bài thi sẽ được nộp tự động.');
+            submitExam();
+        }
+    } else {
+        // Cập nhật thời gian còn lại
+        timeRemaining = Math.ceil(remainingMs / 1000);
+        updateTimerDisplay();
+        
+        // Warning when 10 minutes left
+        if (timeRemaining <= 600) {
+            timer.classList.add('warning');
+        }
+    }
+}
+
 function initializeApp() {
     setupEventListeners();
     updateTimerDisplay();
@@ -123,6 +163,16 @@ function setupEventListeners() {
     
     // Start exam button
     document.getElementById('start-exam').addEventListener('click', startExam);
+    
+    // Home button (scroll to top) - Added to exam navigation
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('#home-btn')) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
     
     // Navigation buttons
     document.getElementById('prev-btn').addEventListener('click', previousQuestion);
@@ -193,6 +243,7 @@ async function startExam() {
     userAnswers = {};
     examStartTime = new Date();
     examSubmitted = false; // Reset trạng thái nộp bài
+    timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Update UI
     document.getElementById('exam-code-display').textContent = `Mã đề: ${selectedExamCode}`;
@@ -424,33 +475,38 @@ function nextQuestion() {
 }
 
 function startTimer() {
-    updateTimerDisplay();
+    // Lưu thời gian bắt đầu làm bài (đã có examStartTime)
+    const examDuration = 50 * 60 * 1000; // 50 phút tính bằng milliseconds
+    const examEndTime = new Date(examStartTime.getTime() + examDuration);
+    
+    // Đồng bộ lần đầu
+    syncTimer();
     
     examTimer = setInterval(() => {
-        timeRemaining--;
-        updateTimerDisplay();
+        // Sử dụng syncTimer để đảm bảo tính chính xác
+        syncTimer();
         
-        // Warning when 10 minutes left
-        if (timeRemaining <= 600) {
-            timer.classList.add('warning');
-        }
-        
-        // Auto submit when time is up
-        if (timeRemaining <= 0) {
+        // Nếu đã nộp bài hoặc hết giờ, dừng timer
+        if (examSubmitted || timeRemaining <= 0) {
             clearInterval(examTimer);
-            alert('Hết giờ làm bài! Bài thi sẽ được nộp tự động.');
-            submitExam();
+            examTimer = null;
         }
     }, 1000);
 }
 
 function submitExam() {
-    if (examTimer && confirm('Bạn có chắc chắn muốn nộp bài không?')) {
-        clearInterval(examTimer);
-        examSubmitted = true;
-        calculateResults();
-    } else if (!examTimer) {
-        // Hết giờ, nộp tự động
+    // Nếu vẫn còn timer (người dùng tự nộp), hỏi xác nhận
+    if (examTimer && timeRemaining > 0) {
+        if (confirm('Bạn có chắc chắn muốn nộp bài không?')) {
+            clearInterval(examTimer);
+            examSubmitted = true;
+            calculateResults();
+        }
+    } else {
+        // Hết giờ hoặc timer đã dừng, nộp tự động không cần xác nhận
+        if (examTimer) {
+            clearInterval(examTimer);
+        }
         examSubmitted = true;
         calculateResults();
     }
@@ -572,8 +628,7 @@ function restartExam() {
     timeRemaining = 50 * 60; // Reset về 50 phút
     selectedExamCode = null;
     examSubmitted = false; // Reset trạng thái nộp bài
-    selectedExamCode = null;
-    examSubmitted = false; // Reset trạng thái nộp bài
+    timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Clear form
     document.getElementById('student-name').value = '';
@@ -618,6 +673,7 @@ function newExam() {
     timeRemaining = 50 * 60; // Reset về 50 phút
     selectedExamCode = null;
     examSubmitted = false; // Reset trạng thái nộp bài
+    timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Keep student name but clear exam selection
     // (Giữ lại tên thí sinh để tiện chọn đề mới)
@@ -667,6 +723,7 @@ function restartCurrentExam() {
     examStartTime = null;
     timeRemaining = currentExam.time_limit * 60; // Reset về thời gian gốc
     examSubmitted = false;
+    timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Stop timer hiện tại nếu có
     if (timerInterval) {
@@ -855,3 +912,5 @@ function showNoResultsMessage(show) {
         noResultsMessage.remove();
     }
 }
+
+
