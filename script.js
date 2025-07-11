@@ -6,6 +6,7 @@ let currentExamData = null; // Dữ liệu chi tiết của đề đang làm
 let currentExam = null;
 let currentQuestionIndex = 0;
 let userAnswers = {};
+let flaggedQuestions = {}; // Theo dõi các câu hỏi được đánh dấu
 let examStartTime = null;
 let examTimer = null;
 let timeRemaining = 50 * 60; // 50 phút như đề thi thật
@@ -91,6 +92,21 @@ document.addEventListener('DOMContentLoaded', async function() {
     initializeApp();
 });
 
+// Global event delegation for home button và các elements khác
+document.addEventListener('click', function(e) {
+    // Xử lý home button
+    if (e.target.matches('.home-btn') || e.target.closest('.home-btn')) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Home button clicked - scrolling to top'); 
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        return;
+    }
+});
+
 // Đồng bộ timer khi user quay lại tab
 document.addEventListener('visibilitychange', function() {
     if (!document.hidden && examTimer && examStartTime) {
@@ -166,16 +182,6 @@ function setupEventListeners() {
     // Start exam button
     document.getElementById('start-exam').addEventListener('click', startExam);
     
-    // Home button (scroll to top) - Added to exam navigation
-    document.addEventListener('click', function(e) {
-        if (e.target.closest('#home-btn')) {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    });
-    
     // Navigation buttons
     document.getElementById('prev-btn').addEventListener('click', previousQuestion);
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
@@ -193,12 +199,14 @@ function setupEventListeners() {
     document.getElementById('student-name').addEventListener('input', checkStartButtonState);
 }
 
+// Hàm cập nhật hiển thị thời gian còn lại
 function updateTimerDisplay() {
     const minutes = Math.floor(timeRemaining / 60);
     const seconds = timeRemaining % 60;
     timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
+// Hàm chọn mã đề thi
 function selectExamCode(code) {
     selectedExamCode = code;
     
@@ -206,6 +214,7 @@ function selectExamCode(code) {
     checkStartButtonState();
 }
 
+// Hàm kiểm tra trạng thái nút bắt đầu
 function checkStartButtonState() {
     const startBtn = document.getElementById('start-exam');
     const studentName = document.getElementById('student-name').value.trim();
@@ -217,6 +226,7 @@ function checkStartButtonState() {
     }
 }
 
+// Hàm bắt đầu làm bài thi
 async function startExam() {
     const studentName = document.getElementById('student-name').value.trim();
     const studentId = document.getElementById('student-id').value.trim();
@@ -265,6 +275,7 @@ async function startExam() {
     startTimer();
 }
 
+// Hàm tạo lưới câu hỏi
 function createQuestionGrid() {
     const questionGrid = document.getElementById('question-grid');
     questionGrid.innerHTML = '';
@@ -281,13 +292,28 @@ function createQuestionGrid() {
     questionGrid.children[0].classList.add('current');
 }
 
+// Hàm tải câu hỏi
 function loadQuestion(index) {
     currentQuestionIndex = index;
     const question = currentExam.questions[index];
     
     // Update question content
     const totalQuestions = currentExam.total_questions || currentExam.questions.length;
-    document.getElementById('question-number').textContent = `Câu ${index + 1}/${totalQuestions}`;
+    const isFlagged = flaggedQuestions[index] || false;
+    
+    // Cập nhật header với số câu và nút đánh dấu
+    document.getElementById('question-number').innerHTML = `
+        <div class="question-header-content">
+            <span class="question-text">Câu ${index + 1}/${totalQuestions}</span>
+            <button class="flag-btn ${isFlagged ? 'flagged' : ''}" 
+                    onclick="toggleFlag(${index})" 
+                    title="${isFlagged ? 'Bỏ đánh dấu' : 'Đánh dấu câu hỏi'}"
+                    ${examSubmitted ? 'disabled' : ''}>
+                <i class="fas fa-flag"></i>
+                <span class="flag-text">${isFlagged ? 'Đã đánh dấu' : 'Đánh dấu'}</span>
+            </button>
+        </div>
+    `;
     
     let questionHTML = '';
     
@@ -415,6 +441,7 @@ function generateExplanationHTML(questionNumber) {
     }
 }
 
+// Hàm chọn đáp án cho câu hỏi
 function selectAnswer(questionIndex, answerIndex) {
     if (examSubmitted) return; // Không cho phép chọn sau khi nộp bài
     
@@ -432,11 +459,12 @@ function selectAnswer(questionIndex, answerIndex) {
     updateQuestionGrid();
 }
 
+// Hàm cập nhật lưới câu hỏi
 function updateQuestionGrid() {
     const questionGrid = document.getElementById('question-grid');
     
     Array.from(questionGrid.children).forEach((btn, index) => {
-        btn.classList.remove('current', 'answered', 'correct', 'wrong');
+        btn.classList.remove('current', 'answered', 'correct', 'wrong', 'flagged');
         
         if (index === currentQuestionIndex) {
             btn.classList.add('current');
@@ -451,9 +479,15 @@ function updateQuestionGrid() {
                 btn.classList.add(isCorrect ? 'correct' : 'wrong');
             }
         }
+        
+        // Thêm class flagged cho câu đã đánh dấu
+        if (flaggedQuestions[index]) {
+            btn.classList.add('flagged');
+        }
     });
 }
 
+// Hàm cập nhật nút điều hướng trước/sau
 function updateNavigationButtons() {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
@@ -462,23 +496,27 @@ function updateNavigationButtons() {
     nextBtn.disabled = currentQuestionIndex === currentExam.questions.length - 1;
 }
 
+// Hàm cập nhật thanh tiến độ
 function updateProgressBar() {
     const progress = ((currentQuestionIndex + 1) / currentExam.questions.length) * 100;
     document.getElementById('progress-fill').style.width = `${progress}%`;
 }
 
+// Hàm quay lại câu hỏi trước
 function previousQuestion() {
     if (currentQuestionIndex > 0) {
         loadQuestion(currentQuestionIndex - 1);
     }
 }
 
+// Hàm chuyển đến câu hỏi tiếp theo
 function nextQuestion() {
     if (currentQuestionIndex < currentExam.questions.length - 1) {
         loadQuestion(currentQuestionIndex + 1);
     }
 }
 
+// Hàm bắt đầu đếm thời gian làm bài
 function startTimer() {
     // Lưu thời gian bắt đầu làm bài (đã có examStartTime)
     const examDuration = 50 * 60 * 1000; // 50 phút tính bằng milliseconds
@@ -499,10 +537,35 @@ function startTimer() {
     }, 1000);
 }
 
+// Hàm nộp bài thi
 function submitExam() {
     // Nếu vẫn còn timer (người dùng tự nộp), hỏi xác nhận
     if (examTimer && timeRemaining > 0) {
-        if (confirm('Bạn có chắc chắn muốn nộp bài không?')) {
+        // Tính số câu đã làm và chưa làm
+        const totalQuestions = currentExam.questions.length;
+        const answeredQuestions = Object.keys(userAnswers).length;
+        const unansweredQuestions = totalQuestions - answeredQuestions;
+        const flaggedCount = Object.keys(flaggedQuestions).filter(key => flaggedQuestions[key]).length;
+        
+        let confirmMessage = `Bạn có chắc chắn muốn nộp bài không?\n\n`;
+        confirmMessage += `📊 Trạng thái bài làm của bạn:\n`;
+        confirmMessage += `✅ Đã làm: ${answeredQuestions}/${totalQuestions} câu\n`;
+        
+        if (unansweredQuestions > 0) {
+            confirmMessage += `❌ Chưa làm: ${unansweredQuestions} câu\n`;
+        }
+        
+        if (flaggedCount > 0) {
+            confirmMessage += `🚩 Đã đánh dấu: ${flaggedCount} câu\n`;
+        }
+        
+        if (unansweredQuestions > 0) {
+            confirmMessage += `\n⚠️ Lưu ý: Những câu chưa làm sẽ được tính là sai!`;
+        } else {
+            confirmMessage += `\n🎉 Bạn đã hoàn thành tất cả câu hỏi!`;
+        }
+        
+        if (confirm(confirmMessage)) {
             clearInterval(examTimer);
             examSubmitted = true;
             calculateResults();
@@ -517,6 +580,7 @@ function submitExam() {
     }
 }
 
+// Hàm tính toán kết quả bài thi
 function calculateResults() {
     const totalQuestions = currentExam.questions.length;
     let correctAnswers = 0;
@@ -544,6 +608,7 @@ function calculateResults() {
     displayResults(correctAnswers, totalQuestions, score, minutes, seconds);
 }
 
+// Hàm hiển thị kết quả bài thi
 function displayResults(correct, total, score, minutes, seconds) {
     // Hiển thị kết quả trong exam screen thay vì chuyển màn hình
     showResultsInExamScreen(correct, total, score, minutes, seconds);
@@ -553,6 +618,7 @@ function displayResults(correct, total, score, minutes, seconds) {
     document.getElementById('submit-exam').style.display = 'none';
 }
 
+// Hàm hiển thị kết quả trong màn hình thi
 function showResultsInExamScreen(correct, total, score, minutes, seconds) {
     // Tạo hoặc cập nhật phần hiển thị kết quả ở đầu exam screen
     let resultBanner = document.getElementById('result-banner');
@@ -569,6 +635,11 @@ function showResultsInExamScreen(correct, total, score, minutes, seconds) {
     // Lấy thông tin thí sinh
     const studentName = document.getElementById('student-name').value;
     const studentId = document.getElementById('student-id').value;
+    
+    // Tính số câu đã làm và chưa làm
+    const answeredQuestions = Object.keys(userAnswers).length;
+    const unansweredQuestions = total - answeredQuestions;
+    const flaggedCount = Object.keys(flaggedQuestions).filter(key => flaggedQuestions[key]).length;
     
     // Tạo HTML cho thông tin thí sinh
     let studentInfoHTML = `
@@ -598,6 +669,22 @@ function showResultsInExamScreen(correct, total, score, minutes, seconds) {
                 </div>
                 ${studentInfoHTML}
                 <div class="result-item">
+                    <span class="label">Đã làm:</span>
+                    <span class="value">${answeredQuestions}/${total} câu</span>
+                </div>
+                ${unansweredQuestions > 0 ? `
+                <div class="result-item">
+                    <span class="label">Chưa làm:</span>
+                    <span class="value unanswered">${unansweredQuestions} câu</span>
+                </div>
+                ` : ''}
+                ${flaggedCount > 0 ? `
+                <div class="result-item">
+                    <span class="label">Đã đánh dấu:</span>
+                    <span class="value flagged">${flaggedCount} câu</span>
+                </div>
+                ` : ''}
+                <div class="result-item">
                     <span class="label">Số câu đúng:</span>
                     <span class="value">${correct}/${total}</span>
                 </div>
@@ -624,11 +711,13 @@ function showResultsInExamScreen(correct, total, score, minutes, seconds) {
     `;
 }
 
+// Hàm khởi động lại bài thi
 function restartExam() {
     // Reset all variables
     currentExam = null;
     currentQuestionIndex = 0;
     userAnswers = {};
+    flaggedQuestions = {}; // Reset các câu đã đánh dấu
     examStartTime = null;
     timeRemaining = 50 * 60; // Reset về 50 phút
     selectedExamCode = null;
@@ -665,10 +754,23 @@ function restartExam() {
     welcomeScreen.style.display = 'block';
     timer.style.display = 'none';
     
+    // Reset any inline styles that might affect positioning
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    
+    // Scroll to top to center the welcome screen
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, 100);
+    
     // Check start button state
     checkStartButtonState();
 }
 
+// Hàm chọn đề mới
 function newExam() {
     // Reset all variables except keeping student info
     currentExam = null;
@@ -710,10 +812,23 @@ function newExam() {
     welcomeScreen.style.display = 'block';
     timer.style.display = 'none';
     
+    // Reset any inline styles that might affect positioning
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    
+    // Scroll to top to center the welcome screen
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, 100);
+    
     // Check start button state
     checkStartButtonState();
 }
 
+// Hàm khởi động lại đề thi hiện tại
 function restartCurrentExam() {
     if (!currentExam) return;
     
@@ -725,15 +840,16 @@ function restartCurrentExam() {
     // Reset hoàn toàn tất cả variables
     currentQuestionIndex = 0;
     userAnswers = {};
-    examStartTime = null;
-    timeRemaining = currentExam.time_limit * 60; // Reset về thời gian gốc
+    flaggedQuestions = {}; // Reset các câu đã đánh dấu
+    examStartTime = new Date(); // Set thời gian bắt đầu mới
+    timeRemaining = 50 * 60; // Reset về 50 phút (cố định như đề thi thật)
     examSubmitted = false;
     timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Stop timer hiện tại nếu có
-    if (timerInterval) {
-        clearInterval(timerInterval);
-        timerInterval = null;
+    if (examTimer) {
+        clearInterval(examTimer);
+        examTimer = null;
     }
     
     // Reset timer display và remove warning class
@@ -755,7 +871,7 @@ function restartCurrentExam() {
     }
     
     // Reset question grid và setup lại từ đầu
-    setupQuestionGrid();
+    createQuestionGrid();
     
     // Load câu hỏi đầu tiên (sẽ tự động clear UI vì userAnswers = {})
     loadQuestion(0);
@@ -1004,6 +1120,54 @@ function goToHomePage() {
         top: 0,
         behavior: 'smooth'
     });
+}
+
+// Function để đánh dấu/bỏ đánh dấu câu hỏi
+function toggleFlag(questionIndex) {
+    if (examSubmitted) return; // Không cho phép đánh dấu sau khi nộp bài
+    
+    // Toggle flag status
+    flaggedQuestions[questionIndex] = !flaggedQuestions[questionIndex];
+    
+    // Update flag button
+    const flagBtn = document.querySelector('.flag-btn');
+    const flagText = flagBtn.querySelector('.flag-text');
+    
+    if (flaggedQuestions[questionIndex]) {
+        flagBtn.classList.add('flagged');
+        flagBtn.title = 'Bỏ đánh dấu';
+        if (flagText) flagText.textContent = 'Đã đánh dấu';
+    } else {
+        flagBtn.classList.remove('flagged');
+        flagBtn.title = 'Đánh dấu câu hỏi';
+        if (flagText) flagText.textContent = 'Đánh dấu';
+    }
+    
+    // Update question grid to show flagged questions
+    updateQuestionGrid();
+}
+
+// Function để chuyển đến câu hỏi đã đánh dấu tiếp theo
+function goToNextFlaggedQuestion() {
+    const flaggedIndexes = Object.keys(flaggedQuestions)
+        .map(Number)
+        .filter(index => flaggedQuestions[index])
+        .sort((a, b) => a - b);
+    
+    if (flaggedIndexes.length === 0) {
+        alert('Không có câu hỏi nào được đánh dấu!');
+        return;
+    }
+    
+    // Tìm câu đánh dấu tiếp theo sau câu hiện tại
+    const nextFlagged = flaggedIndexes.find(index => index > currentQuestionIndex);
+    
+    if (nextFlagged !== undefined) {
+        loadQuestion(nextFlagged);
+    } else {
+        // Nếu không có câu nào sau, quay về câu đánh dấu đầu tiên
+        loadQuestion(flaggedIndexes[0]);
+    }
 }
 
 
