@@ -915,16 +915,16 @@ function generateDropdownItems() {
         
         dropdownItem.innerHTML = `
             <i class="fas fa-file-alt"></i>
-            <div>
-                <span>Mã đề ${code}</span>
-                <small>${examInfo.title || 'ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025'}</small>
+            <div class="dropdown-item-content">
+                <div class="dropdown-item-code">Mã đề ${code}</div>
+                <div class="dropdown-item-title">THPTQG 2025</div>
             </div>
         `;
         
         // Add click event listener
         dropdownItem.addEventListener('click', function() {
             const examCode = this.dataset.code;
-            const examTitle = this.querySelector('span').textContent;
+            const examTitle = this.querySelector('.dropdown-item-code').textContent;
             
             // Update selected exam display
             document.getElementById('selected-exam').textContent = examTitle;

@@ -128,8 +128,9 @@ body {
 .exam-dropdown {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto 2rem auto;
+    min-width: 400px;
 }
 
 .dropdown-header {
@@ -192,7 +193,7 @@ body {
 }
 
 .dropdown-list.open {
-    max-height: 300px;
+    max-height: 280px;
     overflow-y: auto;
     border-color: #4facfe;
 }
@@ -228,8 +229,10 @@ body {
 }
 
 .dropdown-items {
-    max-height: 200px; /* Chiều cao cho danh sách các item */
-    overflow-y: auto; /* Thanh cuộn cho danh sách */
+    max-height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Style cho thanh cuộn */
@@ -252,13 +255,16 @@ body {
 }
 
 .dropdown-item {
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     transition: background-color 0.2s ease, color 0.2s ease;
     border-bottom: 1px solid #f0f0f0;
+    min-height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .dropdown-item:last-child {
@@ -273,31 +279,42 @@ body {
 .dropdown-item i {
     color: #4facfe;
     font-size: 1.1rem;
-    margin-top: 0.2rem;
+    flex-shrink: 0;
 }
 
 .dropdown-item:hover i {
     color: white;
 }
 
-.dropdown-item > div {
+.dropdown-item-content {
     flex: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    align-items: center;
+    min-height: 2.5rem;
 }
 
-.dropdown-item span {
-    font-weight: 500;
-    display: block;
+.dropdown-item-code {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    white-space: nowrap;
 }
 
-.dropdown-item small {
-    color: #666;
-    font-size: 0.8rem;
-    display: block;
-    margin-top: 0.2rem;
+.dropdown-item-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    white-space: nowrap;
 }
 
-.dropdown-item:hover small {
-    color: rgba(255, 255, 255, 0.8);
+.dropdown-item:hover .dropdown-item-code {
+    color: white;
+}
+
+.dropdown-item:hover .dropdown-item-title {
+    color: white;
 }
 
 .student-info {
