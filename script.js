@@ -29,7 +29,6 @@ async function loadExamListData() {
         }
         const data = await response.json();
         examListData = data.exams;
-        console.log('Đã tải danh sách đề thi thành công');
     } catch (error) {
         console.error('Lỗi khi tải danh sách đề thi:', error);
         alert('Không thể tải danh sách đề thi. Vui lòng kiểm tra kết nối mạng.');
@@ -50,7 +49,6 @@ async function loadSpecificExamData(examCode) {
             return { isEmpty: true, code: examCode };
         }
         
-        console.log(`Đã tải dữ liệu đề thi ${examCode} thành công`);
         return examData;
     } catch (error) {
         console.error(`Lỗi khi tải dữ liệu đề thi ${examCode}:`, error);
@@ -74,7 +72,6 @@ async function loadExplanationsData(examCode) {
         
         // Store explanations for this exam code
         window.explanationsData[examCode] = explanations;
-        console.log(`Đã tải giải thích đáp án cho mã đề ${examCode} thành công`);
         return explanations;
     } catch (error) {
         console.error(`Lỗi khi tải giải thích đáp án cho mã đề ${examCode}:`, error);
@@ -774,8 +771,6 @@ function restartCurrentExam() {
     
     // Scroll to top
     window.scrollTo(0, 0);
-    
-    console.log('Exam restarted successfully - returned to question 1');
 }
 
 // Generate dropdown items dynamically from exam data
@@ -835,8 +830,6 @@ function generateDropdownItems() {
     
     // Setup search functionality
     setupExamSearch();
-    
-    console.log(`Generated ${examCodes.length} dropdown items for exam codes: ${examCodes.join(', ')}`);
 }
 
 // Function to setup search functionality
