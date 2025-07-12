@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thi Tiếng Anh THPTQG Online</title>
+    <title>Thi Đại học Quốc gia Online - THPTQG 2025</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,10 +24,34 @@
                 <div class="welcome-icon">
                     <i class="fas fa-book-open"></i>
                 </div>
-                <h2>Chào mừng đến với bài thi Tiếng Anh THPTQG</h2>
-                <p>Chọn mã đề và bắt đầu làm bài thi của bạn</p>
+                <h2>Chào mừng đến với hệ thống thi THPTQG Online</h2>
+                <p>Chọn môn thi, mã đề và bắt đầu làm bài thi của bạn</p>
                 
-                <div class="exam-selector">
+                <div class="subject-selector">
+                    <h3>Chọn môn thi:</h3>
+                    <div class="subject-options">
+                        <div class="subject-option" data-subject="english">
+                            <div class="subject-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="subject-info">
+                                <h4>Tiếng Anh</h4>
+                                <p>40 câu - 50 phút</p>
+                            </div>
+                        </div>
+                        <div class="subject-option" data-subject="math">
+                            <div class="subject-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="subject-info">
+                                <h4>Toán học</h4>
+                                <p>50 câu - 90 phút</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exam-selector" id="exam-selector" style="display: none;">
                     <h3>Chọn mã đề:</h3>
                     <div class="exam-dropdown">
                         <div class="dropdown-header" id="dropdown-header">
@@ -52,14 +76,14 @@
                     <input type="text" id="student-id" placeholder="Số báo danh (tùy chọn)">
                 </div>
 
-                <div class="exam-info">
+                <div class="exam-info" id="exam-info" style="display: none;">
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
-                        <span>Thời gian: 50 phút</span>
+                        <span id="exam-time">Thời gian: 50 phút</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-question-circle"></i>
-                        <span>40 câu hỏi</span>
+                        <span id="exam-questions">40 câu hỏi</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-star"></i>

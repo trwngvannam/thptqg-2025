@@ -11,6 +11,7 @@ let examStartTime = null;
 let examTimer = null;
 let timeRemaining = 50 * 60; // 50 phút như đề thi thật
 let selectedExamCode = null;
+let selectedSubject = null; // Thêm biến để theo dõi môn thi đã chọn
 let examSubmitted = false; // Theo dõi trạng thái đã nộp bài
 let timeUpAlertShown = false; // Theo dõi đã hiển thị alert hết giờ chưa
 
@@ -39,7 +40,18 @@ async function loadExamListData() {
 // Load specific exam data (lazy loading)
 async function loadSpecificExamData(examCode) {
     try {
-        const response = await fetch(`data/${examCode}.json`);
+        // Determine subject folder based on selected subject or exam code
+        let subjectFolder = selectedSubject;
+        if (!subjectFolder) {
+            // Fallback to exam code detection
+            if (examCode.startsWith('11')) {
+                subjectFolder = 'english';
+            } else if (examCode.startsWith('01')) {
+                subjectFolder = 'math';
+            }
+        }
+        
+        const response = await fetch(`data/${subjectFolder}/${examCode}.json`);
         if (!response.ok) {
             throw new Error(`Không thể tải dữ liệu đề thi ${examCode}`);
         }
@@ -60,7 +72,18 @@ async function loadSpecificExamData(examCode) {
 // Load explanations data for specific exam (lazy loading)
 async function loadExplanationsData(examCode) {
     try {
-        const response = await fetch(`explanations/${examCode}.json`);
+        // Determine subject folder based on selected subject or exam code
+        let subjectFolder = selectedSubject;
+        if (!subjectFolder) {
+            // Fallback to exam code detection
+            if (examCode.startsWith('11')) {
+                subjectFolder = 'english';
+            } else if (examCode.startsWith('01')) {
+                subjectFolder = 'math';
+            }
+        }
+        
+        const response = await fetch(`explanations/${subjectFolder}/${examCode}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -119,8 +142,8 @@ document.addEventListener('visibilitychange', function() {
 function syncTimer() {
     if (!examStartTime || examSubmitted) return;
     
-    const examDuration = 50 * 60 * 1000; // 50 phút
-    const examEndTime = new Date(examStartTime.getTime() + examDuration);
+    const examDurationMs = (selectedSubject === 'english' ? 50 : 90) * 60 * 1000;
+    const examEndTime = new Date(examStartTime.getTime() + examDurationMs);
     const now = new Date();
     const remainingMs = examEndTime - now;
     
@@ -153,6 +176,9 @@ function initializeApp() {
 }
 
 function setupEventListeners() {
+    // Subject selection
+    setupSubjectSelection();
+    
     // Dropdown functionality
     const dropdownHeader = document.getElementById('dropdown-header');
     const dropdownList = document.getElementById('dropdown-list');
@@ -219,7 +245,7 @@ function checkStartButtonState() {
     const startBtn = document.getElementById('start-exam');
     const studentName = document.getElementById('student-name').value.trim();
     
-    if (selectedExamCode && studentName) {
+    if (selectedSubject && selectedExamCode && studentName) {
         startBtn.disabled = false;
     } else {
         startBtn.disabled = true;
@@ -231,8 +257,8 @@ async function startExam() {
     const studentName = document.getElementById('student-name').value.trim();
     const studentId = document.getElementById('student-id').value.trim();
     
-    if (!selectedExamCode || !studentName) {
-        alert('Vui lòng chọn mã đề và nhập họ tên!');
+    if (!selectedSubject || !selectedExamCode || !studentName) {
+        alert('Vui lòng chọn môn thi, mã đề và nhập họ tên!');
         return;
     }
     
@@ -259,6 +285,13 @@ async function startExam() {
     examStartTime = new Date();
     examSubmitted = false; // Reset trạng thái nộp bài
     timeUpAlertShown = false; // Reset trạng thái alert hết giờ
+    
+    // Set time remaining based on subject
+    if (selectedSubject === 'english') {
+        timeRemaining = 50 * 60; // 50 minutes
+    } else if (selectedSubject === 'math') {
+        timeRemaining = 90 * 60; // 90 minutes
+    }
     
     // Update UI
     document.getElementById('exam-code-display').textContent = `Mã đề: ${selectedExamCode}`;
@@ -519,8 +552,8 @@ function nextQuestion() {
 // Hàm bắt đầu đếm thời gian làm bài
 function startTimer() {
     // Lưu thời gian bắt đầu làm bài (đã có examStartTime)
-    const examDuration = 50 * 60 * 1000; // 50 phút tính bằng milliseconds
-    const examEndTime = new Date(examStartTime.getTime() + examDuration);
+    const examDurationMs = timeRemaining * 1000; // Convert to milliseconds
+    const examEndTime = new Date(examStartTime.getTime() + examDurationMs);
     
     // Đồng bộ lần đầu
     syncTimer();
@@ -721,6 +754,7 @@ function restartExam() {
     examStartTime = null;
     timeRemaining = 50 * 60; // Reset về 50 phút
     selectedExamCode = null;
+    selectedSubject = null; // Reset subject selection
     examSubmitted = false; // Reset trạng thái nộp bài
     timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
@@ -728,10 +762,19 @@ function restartExam() {
     document.getElementById('student-name').value = '';
     document.getElementById('student-id').value = '';
     
-    // Reset dropdown selection
+    // Reset dropdown selection and subject selection
     document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
     document.getElementById('dropdown-list').classList.remove('open');
     document.getElementById('dropdown-header').classList.remove('active');
+    
+    // Reset subject selection
+    document.querySelectorAll('.subject-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Hide exam selector and exam info
+    document.getElementById('exam-selector').style.display = 'none';
+    document.getElementById('exam-info').style.display = 'none';
     
     // Reset timer display
     timer.classList.remove('warning');
@@ -779,16 +822,26 @@ function newExam() {
     examStartTime = null;
     timeRemaining = 50 * 60; // Reset về 50 phút
     selectedExamCode = null;
+    selectedSubject = null; // Reset subject selection
     examSubmitted = false; // Reset trạng thái nộp bài
     timeUpAlertShown = false; // Reset trạng thái alert hết giờ
     
     // Keep student name but clear exam selection
     // (Giữ lại tên thí sinh để tiện chọn đề mới)
     
-    // Reset dropdown selection
+    // Reset dropdown selection and subject selection
     document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
     document.getElementById('dropdown-list').classList.remove('open');
     document.getElementById('dropdown-header').classList.remove('active');
+    
+    // Reset subject selection
+    document.querySelectorAll('.subject-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Hide exam selector and exam info
+    document.getElementById('exam-selector').style.display = 'none';
+    document.getElementById('exam-info').style.display = 'none';
     
     // Reset timer display
     timer.classList.remove('warning');
@@ -891,61 +944,9 @@ function restartCurrentExam() {
 
 // Generate dropdown items dynamically from exam data
 function generateDropdownItems() {
-    const dropdownItems = document.getElementById('dropdown-items');
-    
-    // Clear existing items (nếu có)
-    dropdownItems.innerHTML = '';
-    
-    // Check if examListData is loaded
-    if (!examListData || Object.keys(examListData).length === 0) {
-        console.warn('examListData chưa được tải hoặc rỗng');
-        return;
-    }
-    
-    // Get exam codes from examListData and sort them
-    const examCodes = Object.keys(examListData).sort();
-    
-    // Generate dropdown items
-    examCodes.forEach(code => {
-        const examInfo = examListData[code];
-        const dropdownItem = document.createElement('div');
-        dropdownItem.className = 'dropdown-item';
-        dropdownItem.setAttribute('data-code', code);
-        dropdownItem.setAttribute('data-search', `${code} ${examInfo.title || ''}`);
-        
-        dropdownItem.innerHTML = `
-            <i class="fas fa-file-alt"></i>
-            <div class="dropdown-item-content">
-                <div class="dropdown-item-code">Mã đề ${code}</div>
-                <div class="dropdown-item-title">THPTQG 2025</div>
-            </div>
-        `;
-        
-        // Add click event listener
-        dropdownItem.addEventListener('click', function() {
-            const examCode = this.dataset.code;
-            const examTitle = this.querySelector('.dropdown-item-code').textContent;
-            
-            // Update selected exam display
-            document.getElementById('selected-exam').textContent = examTitle;
-            
-            // Close dropdown
-            document.getElementById('dropdown-list').classList.remove('open');
-            document.getElementById('dropdown-header').classList.remove('active');
-            
-            // Clear search input
-            document.getElementById('exam-search').value = '';
-            showAllExamItems();
-            
-            // Select exam code
-            selectExamCode(examCode);
-        });
-        
-        dropdownItems.appendChild(dropdownItem);
-    });
-    
-    // Setup search functionality
-    setupExamSearch();
+    // This function is now handled by generateDropdownItemsForSubject
+    // Keep for backward compatibility but don't generate anything
+    console.log('generateDropdownItems called - now using subject-specific generation');
 }
 
 // Function to setup search functionality
@@ -1083,22 +1084,24 @@ function closeEmptyExamNotification() {
     document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
     checkStartButtonState();
     
-    // Tự động mở dropdown để người dùng chọn mã đề mới
-    setTimeout(() => {
-        const dropdownHeader = document.getElementById('dropdown-header');
-        const dropdownList = document.getElementById('dropdown-list');
-        
-        if (dropdownHeader && dropdownList) {
-            dropdownList.classList.add('open');
-            dropdownHeader.classList.add('active');
+    // Tự động mở dropdown để người dùng chọn mã đề mới (chỉ khi đã chọn subject)
+    if (selectedSubject) {
+        setTimeout(() => {
+            const dropdownHeader = document.getElementById('dropdown-header');
+            const dropdownList = document.getElementById('dropdown-list');
             
-            // Focus vào ô tìm kiếm nếu có
-            const searchInput = document.getElementById('exam-search');
-            if (searchInput) {
-                searchInput.focus();
+            if (dropdownHeader && dropdownList) {
+                dropdownList.classList.add('open');
+                dropdownHeader.classList.add('active');
+                
+                // Focus vào ô tìm kiếm nếu có
+                const searchInput = document.getElementById('exam-search');
+                if (searchInput) {
+                    searchInput.focus();
+                }
             }
-        }
-    }, 400); // Delay để đảm bảo notification đã ẩn
+        }, 400); // Delay để đảm bảo notification đã ẩn
+    }
 }
 
 // Quay về trang chủ
@@ -1110,9 +1113,20 @@ function goToHomePage() {
     
     // Reset toàn bộ form
     selectedExamCode = null;
+    selectedSubject = null;
     document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
     document.getElementById('student-name').value = '';
     document.getElementById('student-id').value = '';
+    
+    // Reset subject selection UI
+    document.querySelectorAll('.subject-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Hide exam selector and exam info
+    document.getElementById('exam-selector').style.display = 'none';
+    document.getElementById('exam-info').style.display = 'none';
+    
     checkStartButtonState();
     
     // Scroll to top
@@ -1168,6 +1182,147 @@ function goToNextFlaggedQuestion() {
         // Nếu không có câu nào sau, quay về câu đánh dấu đầu tiên
         loadQuestion(flaggedIndexes[0]);
     }
+}
+
+// Setup subject selection functionality
+function setupSubjectSelection() {
+    const subjectOptions = document.querySelectorAll('.subject-option');
+    
+    subjectOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const subject = this.dataset.subject;
+            selectSubject(subject);
+        });
+    });
+}
+
+// Function to select a subject
+function selectSubject(subject) {
+    selectedSubject = subject;
+    
+    // Update UI - remove selected class from all options
+    document.querySelectorAll('.subject-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Add selected class to chosen option
+    document.querySelector(`[data-subject="${subject}"]`).classList.add('selected');
+    
+    // Show exam selector and exam info
+    document.getElementById('exam-selector').style.display = 'block';
+    document.getElementById('exam-info').style.display = 'flex';
+    
+    // Update exam info based on subject
+    updateExamInfo(subject);
+    
+    // Reset exam selection
+    selectedExamCode = null;
+    document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
+    
+    // Generate dropdown items for selected subject
+    generateDropdownItemsForSubject(subject);
+    
+    // Check start button state
+    checkStartButtonState();
+}
+
+// Update exam info based on selected subject
+function updateExamInfo(subject) {
+    const examTime = document.getElementById('exam-time');
+    const examQuestions = document.getElementById('exam-questions');
+    
+    if (subject === 'english') {
+        examTime.textContent = 'Thời gian: 50 phút';
+        examQuestions.textContent = '40 câu hỏi';
+        timeRemaining = 50 * 60; // 50 minutes for English
+    } else if (subject === 'math') {
+        examTime.textContent = 'Thời gian: 90 phút';
+        examQuestions.textContent = '50 câu hỏi';
+        timeRemaining = 90 * 60; // 90 minutes for Math
+    }
+}
+
+// Generate dropdown items for specific subject
+function generateDropdownItemsForSubject(subject) {
+    const dropdownItems = document.getElementById('dropdown-items');
+    
+    // Clear existing items
+    dropdownItems.innerHTML = '';
+    
+    // Check if examListData is loaded
+    if (!examListData || Object.keys(examListData).length === 0) {
+        console.warn('examListData chưa được tải hoặc rỗng');
+        return;
+    }
+    
+    // Filter exam codes based on subject and sort them
+    const examCodes = Object.keys(examListData).filter(code => {
+        const examInfo = examListData[code];
+        if (subject === 'english') {
+            return code.startsWith('11') || (examInfo.subject && examInfo.subject.toLowerCase().includes('tiếng anh'));
+        } else if (subject === 'math') {
+            return code.startsWith('01') || (examInfo.subject && examInfo.subject.toLowerCase().includes('toán'));
+        }
+        return false;
+    }).sort();
+    
+    if (examCodes.length === 0) {
+        dropdownItems.innerHTML = `
+            <div class="no-exams-message">
+                <div style="padding: 2rem; text-align: center; color: #666;">
+                    <i class="fas fa-info-circle" style="font-size: 2rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                    <div>Chưa có đề thi nào cho môn này</div>
+                    <small>Vui lòng chọn môn khác</small>
+                </div>
+            </div>
+        `;
+        return;
+    }
+    
+    // Generate dropdown items
+    examCodes.forEach(code => {
+        const examInfo = examListData[code];
+        const dropdownItem = document.createElement('div');
+        dropdownItem.className = 'dropdown-item';
+        dropdownItem.setAttribute('data-code', code);
+        dropdownItem.setAttribute('data-search', `${code} ${examInfo.title || ''}`);
+        
+        // Determine subject icon
+        const subjectIcon = subject === 'english' ? 'fas fa-globe' : 'fas fa-calculator';
+        
+        dropdownItem.innerHTML = `
+            <i class="${subjectIcon}"></i>
+            <div class="dropdown-item-content">
+                <div class="dropdown-item-code">Mã đề ${code}</div>
+                <div class="dropdown-item-title">THPTQG 2025</div>
+            </div>
+        `;
+        
+        // Add click event listener
+        dropdownItem.addEventListener('click', function() {
+            const examCode = this.dataset.code;
+            const examTitle = this.querySelector('.dropdown-item-code').textContent;
+            
+            // Update selected exam display
+            document.getElementById('selected-exam').textContent = examTitle;
+            
+            // Close dropdown
+            document.getElementById('dropdown-list').classList.remove('open');
+            document.getElementById('dropdown-header').classList.remove('active');
+            
+            // Clear search input
+            document.getElementById('exam-search').value = '';
+            showAllExamItems();
+            
+            // Select exam code
+            selectExamCode(examCode);
+        });
+        
+        dropdownItems.appendChild(dropdownItem);
+    });
+    
+    // Setup search functionality
+    setupExamSearch();
 }
 
 
