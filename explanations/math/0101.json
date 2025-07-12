@@ -1,0 +1,795 @@
+{
+  "1": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Hàm số f(x) = x² - 2x + 3 có đạo hàm f'(x) = 2x - 2. Cho f'(x) = 0 ta có x = 1. Tại x = 1: f(1) = 1 - 2 + 3 = 2",
+      "points": [
+        "Tìm đạo hàm của hàm số",
+        "Giải phương trình f'(x) = 0",
+        "Tính giá trị hàm số tại điểm tìm được"
+      ],
+      "wrongAnswers": [
+        "A. Sai vì chưa tính đúng giá trị nhỏ nhất",
+        "C. Sai vì đây là giá trị tại x = 0",
+        "D. Sai vì tính toán không chính xác"
+      ]
+    }
+  },
+  "2": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Đạo hàm của sin(u) là cos(u).u'. Với u = 2x + 1, ta có u' = 2. Vậy y' = cos(2x + 1) × 2 = 2cos(2x + 1)",
+      "points": [
+        "Áp dụng quy tắc đạo hàm hàm hợp",
+        "sin(u)' = cos(u) × u'",
+        "u = 2x + 1 nên u' = 2"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu hệ số 2 từ đạo hàm của (2x + 1)",
+        "C. Nhầm lẫn với đạo hàm của cos",
+        "D. Nhầm lẫn công thức đạo hàm"
+      ]
+    }
+  },
+  "3": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Tam giác ABC vuông tại A, theo định lý Pythagore: BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25. Vậy BC = 5",
+      "points": [
+        "Áp dụng định lý Pythagore",
+        "BC² = AB² + AC²",
+        "BC = √25 = 5"
+      ],
+      "wrongAnswers": [
+        "B. Tính toán sai",
+        "C. Không áp dụng đúng định lý Pythagore",
+        "D. Kết quả không chính xác"
+      ]
+    }
+  },
+  "4": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Giải phương trình: 2x + 3 = 7 ⟹ 2x = 7 - 3 = 4 ⟹ x = 4/2 = 2",
+      "points": [
+        "Chuyển vế: 2x = 7 - 3",
+        "Tính: 2x = 4",
+        "Chia cho 2: x = 2"
+      ],
+      "wrongAnswers": [
+        "A. Tính toán sai",
+        "C. Nhầm lẫn trong phép chia",
+        "D. Kết quả không đúng"
+      ]
+    }
+  },
+  "5": {
+    "correct": "B",
+    "explanation": {
+      "reason": "∫₀¹ x² dx = [x³/3]₀¹ = 1³/3 - 0³/3 = 1/3",
+      "points": [
+        "Tìm nguyên hàm: ∫x² dx = x³/3",
+        "Áp dụng công thức Newton-Leibniz",
+        "Tính: [x³/3]₀¹ = 1/3 - 0 = 1/3"
+      ],
+      "wrongAnswers": [
+        "A. Sai công thức tính tích phân",
+        "C. Nhầm lẫn trong tính toán",
+        "D. Kết quả không chính xác"
+      ]
+    }
+  },
+  "6": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Phân tích tam thức: x² - 5x + 6 = (x - 2)(x - 3) = 0. Vậy x = 2 hoặc x = 3",
+      "points": [
+        "Tìm hai số có tích 6 và tổng 5",
+        "Phân tích: (x - 2)(x - 3)",
+        "Nghiệm: x = 2, x = 3"
+      ],
+      "wrongAnswers": [
+        "B. Không thỏa mãn phương trình",
+        "C. Dấu sai",
+        "D. Chỉ có một nghiệm đúng"
+      ]
+    }
+  },
+  "7": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Phân tích tử số: x² - 4 = (x-2)(x+2). Giới hạn = lim(x+2) khi x→2 = 4",
+      "points": [
+        "Phân tích: x² - 4 = (x-2)(x+2)",
+        "Rút gọn: (x+2)",
+        "Tính giới hạn: x→2 cho x+2 = 4"
+      ],
+      "wrongAnswers": [
+        "A. Chưa rút gọn biểu thức",
+        "C. Tính sai",
+        "D. Giới hạn tồn tại"
+      ]
+    }
+  },
+  "8": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Để căn bậc hai có nghĩa, cần x - 1 ≥ 0, tức x ≥ 1",
+      "points": [
+        "Điều kiện: x - 1 ≥ 0",
+        "Giải: x ≥ 1",
+        "Tập xác định: [1, +∞)"
+      ],
+      "wrongAnswers": [
+        "A. Không có điều kiện",
+        "C. Thiếu điểm x = 1",
+        "D. Dấu bất đẳng thức sai"
+      ]
+    }
+  },
+  "9": {
+    "correct": "B",
+    "explanation": {
+      "reason": "log₂ 8 = log₂ 2³ = 3",
+      "points": [
+        "Viết 8 = 2³",
+        "log₂ 2³ = 3log₂ 2",
+        "log₂ 2 = 1, nên kết quả là 3"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với log₄ 8",
+        "C. Tính sai",
+        "D. Nhầm với cơ số"
+      ]
+    }
+  },
+  "10": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Thể tích hình lập phương = a³ = 2³ = 8",
+      "points": [
+        "Công thức: V = a³",
+        "Thay a = 2",
+        "V = 2³ = 8"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với diện tích một mặt",
+        "B. Nhầm với chu vi",
+        "D. Tính sai công thức"
+      ]
+    }
+  },
+  "11": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Đạo hàm của e^x chính là e^x",
+      "points": [
+        "Công thức cơ bản: (e^x)' = e^x",
+        "Hàm mũ cơ số e có đạo hàm bằng chính nó"
+      ],
+      "wrongAnswers": [
+        "B. Nhầm với đạo hàm của x^n",
+        "C. Đây là đạo hàm của ln x",
+        "D. Đây là nguyên hàm của 1/x"
+      ]
+    }
+  },
+  "12": {
+    "correct": "A",
+    "explanation": {
+      "reason": "sin x = 1 có nghiệm x = π/2 + k2π (k ∈ Z)",
+      "points": [
+        "sin x = 1 khi x = π/2",
+        "Chu kỳ của sin là 2π",
+        "Nghiệm tổng quát: x = π/2 + k2π"
+      ],
+      "wrongAnswers": [
+        "B. Đây là nghiệm của sin x = 0",
+        "C. Chu kỳ sai",
+        "D. Đây cũng là nghiệm của sin x = 0"
+      ]
+    }
+  },
+  "13": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Trong cấp số cộng: uₙ = u₁ + (n-1)d. u₅ = 3 + 4×2 = 11",
+      "points": [
+        "Công thức: uₙ = u₁ + (n-1)d",
+        "u₅ = u₁ + 4d = 3 + 4×2",
+        "u₅ = 3 + 8 = 11"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu một bước",
+        "C. Tính thừa",
+        "D. Sai công thức"
+      ]
+    }
+  },
+  "14": {
+    "correct": "A",
+    "explanation": {
+      "reason": "y = -x² + 4x - 1. Đỉnh parabol tại x = 2, y(2) = -4 + 8 - 1 = 3",
+      "points": [
+        "Hàm bậc 2 hệ số a < 0 có max tại đỉnh",
+        "x = -b/2a = -4/(-2) = 2",
+        "y(2) = -4 + 8 - 1 = 3"
+      ],
+      "wrongAnswers": [
+        "B. Chưa tính đúng giá trị tại đỉnh",
+        "C. Tính sai",
+        "D. Kết quả không chính xác"
+      ]
+    }
+  },
+  "15": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Thể tích hình cầu V = (4/3)πR³ = (4/3)π×27 = 36π",
+      "points": [
+        "Công thức: V = (4/3)πR³",
+        "R³ = 3³ = 27",
+        "V = (4/3)π×27 = 36π"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với diện tích mặt cầu",
+        "C. Tính sai",
+        "D. Trùng với đáp án B"
+      ]
+    }
+  },
+  "16": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Mô-đun của z = a + bi là |z| = √(a² + b²) = √(9 + 16) = 5",
+      "points": [
+        "Công thức: |z| = √(a² + b²)",
+        "a = 3, b = 4",
+        "|z| = √(9 + 16) = √25 = 5"
+      ],
+      "wrongAnswers": [
+        "A. Chỉ là phần thực",
+        "B. Chỉ là phần ảo",
+        "D. Là tổng phần thực và ảo"
+      ]
+    }
+  },
+  "17": {
+    "correct": "C",
+    "explanation": {
+      "reason": "∫₀^π sin x dx = [-cos x]₀^π = -cos π + cos 0 = 1 + 1 = 2",
+      "points": [
+        "Nguyên hàm của sin x là -cos x",
+        "[-cos x]₀^π = -cos π - (-cos 0)",
+        "= -(-1) + 1 = 2"
+      ],
+      "wrongAnswers": [
+        "A. Tính sai dấu",
+        "B. Thiếu một phần",
+        "D. Nhầm với giới hạn tích phân"
+      ]
+    }
+  },
+  "18": {
+    "correct": "C",
+    "explanation": {
+      "reason": "y' = 3x² - 3. y' = 0 khi x = ±1. Có 2 điểm cực trị",
+      "points": [
+        "Tính đạo hàm: y' = 3x² - 3",
+        "Giải y' = 0: 3x² = 3, x = ±1",
+        "Có 2 nghiệm nên 2 điểm cực trị"
+      ],
+      "wrongAnswers": [
+        "A. Có điểm cực trị",
+        "B. Có nhiều hơn 1 điểm",
+        "D. Chỉ có 2 điểm cực trị"
+      ]
+    }
+  },
+  "19": {
+    "correct": "B",
+    "explanation": {
+      "reason": "2^x = 16 = 2⁴, nên x = 4",
+      "points": [
+        "Viết 16 = 2⁴",
+        "2^x = 2⁴",
+        "So sánh số mũ: x = 4"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với 2²",
+        "C. Nhầm với 2³",
+        "D. Nhầm với cơ số"
+      ]
+    }
+  },
+  "20": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Tam giác vuông (3,4,5). Diện tích = (1/2) × 3 × 4 = 6",
+      "points": [
+        "Nhận biết tam giác vuông: 3² + 4² = 5²",
+        "Công thức: S = (1/2) × cạnh góc vuông",
+        "S = (1/2) × 3 × 4 = 6"
+      ],
+      "wrongAnswers": [
+        "B. Tính sai công thức",
+        "C. Nhầm với chu vi",
+        "D. Tính sai"
+      ]
+    }
+  },
+  "21": {
+    "correct": "B",
+    "explanation": {
+      "reason": "y = x⁴, y' = 4x³, y'' = 12x²",
+      "points": [
+        "Đạo hàm cấp 1: y' = 4x³",
+        "Đạo hàm cấp 2: y'' = (4x³)' = 12x²"
+      ],
+      "wrongAnswers": [
+        "A. Đây là đạo hàm cấp 1",
+        "C. Tính thừa một lần nữa",
+        "D. Đạo hàm cấp 3"
+      ]
+    }
+  },
+  "22": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Trong cấp số nhân: uₙ = u₁ × q^(n-1). u₄ = 2 × 3³ = 2 × 27 = 54",
+      "points": [
+        "Công thức: uₙ = u₁ × q^(n-1)",
+        "u₄ = u₁ × q³ = 2 × 3³",
+        "u₄ = 2 × 27 = 54"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu một lũy thừa",
+        "B. Tính sai",
+        "D. Tính thừa"
+      ]
+    }
+  },
+  "23": {
+    "correct": "B",
+    "explanation": {
+      "reason": "cos x = 0 khi x = π/2 + kπ (k ∈ Z)",
+      "points": [
+        "cos x = 0 tại π/2, 3π/2, ...",
+        "Khoảng cách giữa các nghiệm là π",
+        "Nghiệm tổng quát: x = π/2 + kπ"
+      ],
+      "wrongAnswers": [
+        "A. Đây là nghiệm của sin x = 0",
+        "C. Khoảng cách sai",
+        "D. Chu kỳ sai"
+      ]
+    }
+  },
+  "24": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Với hàm phân thức, tiệm cận ngang là tỉ số hệ số bậc cao nhất: 2/1 = 2",
+      "points": [
+        "Bậc tử = bậc mẫu",
+        "Tiệm cận ngang = hệ số x tử / hệ số x mẫu",
+        "y = 2/1 = 2"
+      ],
+      "wrongAnswers": [
+        "A. Chỉ đúng khi bậc tử < bậc mẫu",
+        "B. Không phải tỉ số đúng",
+        "D. Đây là tiệm cận đứng"
+      ]
+    }
+  },
+  "25": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Thể tích chóp = (1/3) × S_đáy × h = (1/3) × 16 × 3 = 16",
+      "points": [
+        "Diện tích đáy hình vuông: 4² = 16",
+        "Công thức: V = (1/3) × S × h",
+        "V = (1/3) × 16 × 3 = 16"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu hệ số 1/3",
+        "C. Tính thừa",
+        "D. Sai công thức"
+      ]
+    }
+  },
+  "26": {
+    "correct": "C",
+    "explanation": {
+      "reason": "tan 45° = 1",
+      "points": [
+        "Trong tam giác vuông cân",
+        "tan 45° = đối/kề = 1/1 = 1"
+      ],
+      "wrongAnswers": [
+        "A. Đây là sin 30°",
+        "B. Đây là cos 45°",
+        "D. Đây là tan 60°"
+      ]
+    }
+  },
+  "27": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Δ = 4 - 20 = -16 < 0, nên phương trình vô nghiệm",
+      "points": [
+        "Tính biệt thức: Δ = b² - 4ac",
+        "Δ = 4 - 4×1×5 = -16",
+        "Δ < 0 nên vô nghiệm"
+      ],
+      "wrongAnswers": [
+        "B. Δ ≠ 0",
+        "C. Phương trình bậc 2 có tối đa 2 nghiệm",
+        "D. Sai"
+      ]
+    }
+  },
+  "28": {
+    "correct": "B",
+    "explanation": {
+      "reason": "C₅² = 5!/(2!×3!) = (5×4)/(2×1) = 10",
+      "points": [
+        "Công thức: C_n^k = n!/(k!(n-k)!)",
+        "C₅² = 5!/(2!×3!)",
+        "= (5×4)/(2×1) = 10"
+      ],
+      "wrongAnswers": [
+        "A. Tính thiếu",
+        "C. Nhầm với chỉnh hợp A₅²",
+        "D. Tính sai"
+      ]
+    }
+  },
+  "29": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Đạo hàm của ln x là 1/x",
+      "points": [
+        "Công thức cơ bản: (ln x)' = 1/x",
+        "Với x > 0"
+      ],
+      "wrongAnswers": [
+        "B. Đây là nguyên hàm",
+        "C. Đạo hàm của e^x",
+        "D. Đây là chính hàm ln x"
+      ]
+    }
+  },
+  "30": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Diện tích hình tròn S = πr² = π × 5² = 25π",
+      "points": [
+        "Công thức: S = πr²",
+        "r = 5",
+        "S = π × 25 = 25π"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với chu vi",
+        "C. Tính thừa",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "31": {
+    "correct": "A",
+    "explanation": {
+      "reason": "2x - 3 > 5 ⟹ 2x > 8 ⟹ x > 4",
+      "points": [
+        "Chuyển vế: 2x > 5 + 3 = 8",
+        "Chia cho 2: x > 4"
+      ],
+      "wrongAnswers": [
+        "B. Tính sai phép chia",
+        "C. Đảo dấu bất đẳng thức",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "32": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Độ dài véc-tơ |a⃗| = √(3² + 4²) = √25 = 5",
+      "points": [
+        "Công thức: |a⃗| = √(x² + y²)",
+        "x = 3, y = 4",
+        "|a⃗| = √(9 + 16) = 5"
+      ],
+      "wrongAnswers": [
+        "A. Chỉ là thành phần x",
+        "B. Chỉ là thành phần y",
+        "D. Là tổng các thành phần"
+      ]
+    }
+  },
+  "33": {
+    "correct": "A",
+    "explanation": {
+      "reason": "∫3x² dx = 3∫x² dx = 3 × (x³/3) + C = x³ + C",
+      "points": [
+        "∫x^n dx = x^(n+1)/(n+1) + C",
+        "∫3x² dx = 3 × (x³/3) + C",
+        "= x³ + C"
+      ],
+      "wrongAnswers": [
+        "B. Đây là đạo hàm",
+        "C. Sai công thức",
+        "D. Thiếu hệ số"
+      ]
+    }
+  },
+  "34": {
+    "correct": "D",
+    "explanation": {
+      "reason": "Số hoán vị của 4 phần tử là P₄ = 4! = 24",
+      "points": [
+        "Sắp xếp n phần tử: P_n = n!",
+        "P₄ = 4! = 4 × 3 × 2 × 1 = 24"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu một phần tử",
+        "B. Tính sai",
+        "C. Cũng tính sai"
+      ]
+    }
+  },
+  "35": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Hàm số y = 1/x không xác định tại x = 0, nên x = 0 là tiệm cận đứng",
+      "points": [
+        "Hàm số không xác định tại x = 0",
+        "lim(x→0) |1/x| = +∞",
+        "Vậy x = 0 là tiệm cận đứng"
+      ],
+      "wrongAnswers": [
+        "B. x = 1 không làm hàm số vô định",
+        "C. y = 0 là tiệm cận ngang",
+        "D. y = 1 không phải tiệm cận"
+      ]
+    }
+  },
+  "36": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Phương trình đường thẳng: y - y₀ = k(x - x₀). y - 2 = 3(x - 1) ⟹ y = 3x - 1",
+      "points": [
+        "Công thức: y - y₀ = k(x - x₀)",
+        "y - 2 = 3(x - 1)",
+        "y = 3x - 3 + 2 = 3x - 1"
+      ],
+      "wrongAnswers": [
+        "B. Quên trừ 3",
+        "C. Sai hệ số góc",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "37": {
+    "correct": "A",
+    "explanation": {
+      "reason": "z₁ + z₂ = (2 + 3i) + (1 - i) = (2 + 1) + (3 - 1)i = 3 + 2i",
+      "points": [
+        "Cộng phần thực: 2 + 1 = 3",
+        "Cộng phần ảo: 3i + (-i) = 2i",
+        "Kết quả: 3 + 2i"
+      ],
+      "wrongAnswers": [
+        "B. Cộng sai phần ảo",
+        "C. Cộng sai cả hai phần",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "38": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Diện tích elip S = πab = π × 5 × 3 = 15π",
+      "points": [
+        "Công thức: S = πab",
+        "a = 5, b = 3",
+        "S = π × 5 × 3 = 15π"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu một thừa số",
+        "C. Tính thừa",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "39": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Áp dụng BĐT AM-GM: x² + 4/x² ≥ 2√(x² × 4/x²) = 4. Dấu \"=\" khi x² = 2",
+      "points": [
+        "Áp dụng BĐT AM-GM",
+        "x² + 4/x² ≥ 2√(4) = 4",
+        "Min = 4 khi x² = 2"
+      ],
+      "wrongAnswers": [
+        "A. Nhỏ hơn giá trị thực",
+        "C. Lớn hơn min",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "40": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Diện tích đáy tam giác đều: S = (a²√3)/4 = √3. Thể tích V = S × h = √3 × 4 = 4√3",
+      "points": [
+        "Diện tích đáy: (2²√3)/4 = √3",
+        "Thể tích: V = S × h",
+        "V = √3 × 4 = 4√3"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu hệ số 2",
+        "C. Tính thừa",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "41": {
+    "correct": "C",
+    "explanation": {
+      "reason": "log₃ x = 2 ⟹ x = 3² = 9",
+      "points": [
+        "Định nghĩa logarit: log_a b = c ⟺ a^c = b",
+        "log₃ x = 2 ⟹ 3² = x",
+        "x = 9"
+      ],
+      "wrongAnswers": [
+        "A. Nhầm với 3 × 2",
+        "B. Tính sai",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "42": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Det(A) = 1×4 - 2×3 = 4 - 6 = -2",
+      "points": [
+        "Công thức: det = ad - bc",
+        "Det(A) = 1×4 - 2×3",
+        "= 4 - 6 = -2"
+      ],
+      "wrongAnswers": [
+        "B. Tính thiếu",
+        "C. Đảo dấu",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "43": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Tổng cấp số cộng: S = n(u₁ + uₙ)/2 = 100(1 + 100)/2 = 5050",
+      "points": [
+        "Công thức: S = n(a₁ + aₙ)/2",
+        "S = 100(1 + 100)/2",
+        "S = 100 × 101/2 = 5050"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu 50",
+        "C. Tính thừa",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "44": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Chu kỳ của sin(ax) là 2π/|a|. Với a = 2, chu kỳ = 2π/2 = π",
+      "points": [
+        "Công thức: T = 2π/|a|",
+        "a = 2",
+        "T = 2π/2 = π"
+      ],
+      "wrongAnswers": [
+        "A. Chia thừa 2",
+        "C. Đây là chu kỳ của sin(x)",
+        "D. Tính sai"
+      ]
+    }
+  },
+  "45": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Khoảng cách từ điểm đến đường thẳng: d = |ax₀ + by₀ + c|/√(a² + b²) = |2 + 3 - 1|/√2 = 4/√2 = 2√2",
+      "points": [
+        "Công thức: d = |ax₀ + by₀ + c|/√(a² + b²)",
+        "d = |1×2 + 1×3 - 1|/√(1² + 1²)",
+        "d = 4/√2 = 2√2"
+      ],
+      "wrongAnswers": [
+        "A. Chưa chia cho √2",
+        "C. Chưa chia cho √(a² + b²)",
+        "D. Chính là 2√2"
+      ]
+    }
+  },
+  "46": {
+    "correct": "A",
+    "explanation": {
+      "reason": "Thể tích hình nón V = (1/3)πr²h = (1/3)π × 9 × 4 = 12π",
+      "points": [
+        "Công thức: V = (1/3)πr²h",
+        "V = (1/3)π × 3² × 4",
+        "V = (1/3)π × 36 = 12π"
+      ],
+      "wrongAnswers": [
+        "B. Thiếu hệ số 1/3",
+        "C. Tính sai",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "47": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Đặt t = x². Phương trình trở thành t² - 5t + 4 = 0. Giải được t = 1, t = 4. Từ đó x = ±1, ±2 (4 nghiệm)",
+      "points": [
+        "Đặt t = x², được t² - 5t + 4 = 0",
+        "Giải: t = 1 hoặc t = 4",
+        "x² = 1 (x = ±1) và x² = 4 (x = ±2): 4 nghiệm"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu 2 nghiệm",
+        "B. Thiếu 1 nghiệm",
+        "D. Phương trình bậc 4 có tối đa 4 nghiệm"
+      ]
+    }
+  },
+  "48": {
+    "correct": "A",
+    "explanation": {
+      "reason": "f'(x) = 3x² + 6x - 9. f'(0) = -9",
+      "points": [
+        "Tính đạo hàm: f'(x) = 3x² + 6x - 9",
+        "Thay x = 0: f'(0) = 0 + 0 - 9 = -9"
+      ],
+      "wrongAnswers": [
+        "B. Đây là hệ số x²",
+        "C. Đây là f(0)",
+        "D. Đảo dấu"
+      ]
+    }
+  },
+  "49": {
+    "correct": "B",
+    "explanation": {
+      "reason": "Véc-tơ AB⃗ = (-1,1,0), AC⃗ = (-1,0,1). Diện tích = (1/2)|AB⃗ × AC⃗| = (1/2)√3",
+      "points": [
+        "AB⃗ = (-1,1,0), AC⃗ = (-1,0,1)",
+        "AB⃗ × AC⃗ = (1,1,1), |AB⃗ × AC⃗| = √3",
+        "S = (1/2)√3"
+      ],
+      "wrongAnswers": [
+        "A. Thiếu hệ số √3",
+        "C. Thiếu hệ số 1/2",
+        "D. Sai hoàn toàn"
+      ]
+    }
+  },
+  "50": {
+    "correct": "C",
+    "explanation": {
+      "reason": "Đây là cấp số nhân với u₁ = 1, q = 1/2. Tổng = u₁/(1-q) = 1/(1-1/2) = 2",
+      "points": [
+        "Cấp số nhân lùi vô hạn với |q| < 1",
+        "S = a/(1-q) = 1/(1-1/2)",
+        "S = 1/(1/2) = 2"
+      ],
+      "wrongAnswers": [
+        "A. Chỉ là số hạng đầu",
+        "B. Tính thiếu",
+        "D. Tính thừa"
+      ]
+    }
+  }
+}

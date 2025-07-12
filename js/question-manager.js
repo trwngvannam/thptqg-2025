@@ -61,6 +61,7 @@ function loadQuestion(index) {
     questionHTML += `
         <div class="question">
             <div class="question-text">${question.text}</div>
+            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Hình minh họa" style="max-width: 100%; height: auto; margin: 1rem 0; border: 1px solid #ddd; border-radius: 8px;"/></div>` : ''}
             <div class="options">
                 ${question.options.map((option, i) => {
                     const isSelected = window.AppState.userAnswers[index] === i;
@@ -89,6 +90,13 @@ function loadQuestion(index) {
     }
     
     document.getElementById('question-content').innerHTML = questionHTML;
+    
+    // Re-render MathJax for math formulas
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([document.getElementById('question-content')]).catch(function (err) {
+            console.log('MathJax typeset failed: ' + err.message);
+        });
+    }
     
     // Update question grid
     updateQuestionGrid();

@@ -52,6 +52,13 @@ async function startExam() {
     createQuestionGrid();
     loadQuestion(0);
     startTimer();
+    
+    // Re-render MathJax for the exam content
+    setTimeout(() => {
+        if (typeof renderMathJax === 'function') {
+            renderMathJax();
+        }
+    }, 100);
 }
 
 // Hàm nộp bài thi

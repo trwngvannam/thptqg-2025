@@ -78,3 +78,21 @@ function restartCurrentExam() {
     // Scroll to top
     window.scrollTo(0, 0);
 }
+
+// Hàm render MathJax cho các công thức toán học
+function renderMathJax(element = document) {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([element]).catch(function (err) {
+            console.log('MathJax typeset failed: ' + err.message);
+        });
+    }
+}
+
+// Hàm re-render MathJax toàn bộ trang
+function rerenderAllMath() {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise().catch(function (err) {
+            console.log('MathJax full re-render failed: ' + err.message);
+        });
+    }
+}

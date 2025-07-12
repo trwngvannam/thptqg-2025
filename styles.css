@@ -724,11 +724,6 @@ body {
     line-height: 1.5;
 }
 
-.option.selected .option-text {
-    color: white;
-    font-weight: 500;
-}
-
 /* Result Screen */
 .result-screen {
     display: flex;
@@ -1843,4 +1838,44 @@ body {
     .subject-info p {
         font-size: 0.85rem;
     }
+}
+
+/* MathJax styling for mathematical formulas */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+.MathJax_Display {
+    margin: 0.5em 0 !important;
+}
+
+/* Ensure math formulas are properly spaced in questions */
+.question-text .MathJax,
+.option-text .MathJax {
+    display: inline-block;
+    margin: 0 0.2em;
+    vertical-align: middle;
+}
+
+/* Math formulas in explanations */
+.answer-explanation .MathJax {
+    font-size: 1em !important;
+}
+
+/* Math formulas in results and titles */
+.result-banner .MathJax,
+.exam-title .MathJax {
+    font-size: 0.95em !important;
+}
+
+/* Ensure math renders properly in different contexts */
+mjx-container {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+
+mjx-container[display="true"] {
+    display: block !important;
+    text-align: center !important;
+    margin: 0.5em 0 !important;
 }

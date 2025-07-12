@@ -383,6 +383,14 @@
       "total_questions": 40,
       "has_content": false,
       "file": "data/english/1148.json"
+    },
+    "0101": {
+      "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 0101",
+      "subject": "TOÁN",
+      "time_limit": 90,
+      "total_questions": 50,
+      "has_content": true,
+      "file": "data/math/0101.json"
     }
   }
 }

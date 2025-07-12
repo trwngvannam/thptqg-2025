@@ -99,6 +99,13 @@ function showResultsInExamScreen(correct, total, score, minutes, seconds) {
             </div>
         </div>
     `;
+    
+    // Re-render MathJax for math formulas in results
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([resultBanner]).catch(function (err) {
+            console.log('MathJax typeset failed: ' + err.message);
+        });
+    }
 }
 
 // Hàm tạo HTML giải thích đáp án
