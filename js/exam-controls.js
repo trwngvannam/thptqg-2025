@@ -134,7 +134,11 @@ function newExam() {
 
 // Function để đánh dấu/bỏ đánh dấu câu hỏi
 function toggleFlag(questionIndex) {
-    if (window.AppState.examSubmitted) return; // Không cho phép đánh dấu sau khi nộp bài
+    if (window.AppState.examSubmitted) {
+        // Sau khi nộp bài, không cho phép thay đổi flag nhưng vẫn hiển thị thông báo
+        showNotification('Không thể đánh dấu sau khi nộp bài', 'warning');
+        return;
+    }
     
     // Toggle flag status
     window.AppState.flaggedQuestions[questionIndex] = !window.AppState.flaggedQuestions[questionIndex];
@@ -155,4 +159,78 @@ function toggleFlag(questionIndex) {
     
     // Update question grid to show flagged questions
     updateQuestionGrid();
+    
+    // Update flagged button in navigation
+    updateFlaggedButton();
+}
+
+// Function để chuyển đến câu đã đánh dấu tiếp theo
+function goToNextFlaggedQuestion() {
+    // Cho phép navigation đến câu đã đánh dấu ngay cả sau khi nộp bài
+    const flaggedIndexes = Object.keys(window.AppState.flaggedQuestions)
+        .filter(index => window.AppState.flaggedQuestions[index])
+        .map(index => parseInt(index))
+        .sort((a, b) => a - b);
+    
+    if (flaggedIndexes.length === 0) {
+        showNotification('Không có câu nào được đánh dấu', 'warning');
+        return;
+    }
+    
+    // Tìm câu đã đánh dấu tiếp theo sau câu hiện tại
+    const currentIndex = window.AppState.currentQuestionIndex;
+    let nextFlaggedIndex = flaggedIndexes.find(index => index > currentIndex);
+    
+    // Nếu không tìm thấy câu nào sau câu hiện tại, quay về câu đầu tiên được đánh dấu
+    if (nextFlaggedIndex === undefined) {
+        nextFlaggedIndex = flaggedIndexes[0];
+    }
+    
+    // Chuyển đến câu đã đánh dấu
+    goToQuestion(nextFlaggedIndex);
+}
+
+// Function để hiển thị thông báo ngắn
+function showNotification(message, type = 'info') {
+    // Tạo notification element
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'warning' ? '#ff9800' : type === 'info' ? '#2196f3' : '#4caf50'};
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 10000;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+        max-width: 300px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    `;
+    notification.textContent = message;
+    
+    // Thêm vào body
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+        notification.style.opacity = '1';
+        notification.style.transform = 'translateX(0)';
+    }, 10);
+    
+    // Animate out và remove
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
 }

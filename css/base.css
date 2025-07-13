@@ -1,0 +1,81 @@
+/* ==========================================================================
+   BASE STYLES - Reset CSS và Global Styles
+   ========================================================================== */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body và Container */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    margin: 0;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+}
+
+/* Global Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MathJax styling for mathematical formulas */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+.MathJax_Display {
+    margin: 0.5em 0 !important;
+}
+
+.MathJax,
+.option-text .MathJax {
+    display: inline-block;
+    margin: 0 0.2em;
+    vertical-align: middle;
+}
+
+mjx-container {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+
+mjx-container[display="true"] {
+    display: block !important;
+    text-align: center !important;
+    margin: 0.5em 0 !important;
+}

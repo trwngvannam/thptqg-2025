@@ -54,3 +54,51 @@ function nextQuestion() {
         loadQuestion(window.AppState.currentQuestionIndex + 1);
     }
 }
+
+// Hàm chuyển đến câu hỏi cụ thể theo index
+function goToQuestion(questionIndex) {
+    if (questionIndex >= 0 && questionIndex < window.AppState.currentExam.questions.length) {
+        loadQuestion(questionIndex);
+    }
+}
+
+// Hàm cập nhật nút "Đã đánh dấu"
+function updateFlaggedButton() {
+    const flaggedBtn = document.getElementById('flagged-btn');
+    if (!flaggedBtn) return;
+    
+    const flaggedCount = Object.keys(window.AppState.flaggedQuestions)
+        .filter(index => window.AppState.flaggedQuestions[index]).length;
+    
+    // Cập nhật text và hiển thị số lượng
+    const btnText = flaggedBtn.querySelector('span') || flaggedBtn.childNodes[flaggedBtn.childNodes.length - 1];
+    if (flaggedCount > 0) {
+        flaggedBtn.disabled = false;
+        const statusText = window.AppState.examSubmitted ? ' (đã nộp bài)' : '';
+        flaggedBtn.title = `Chuyển đến câu đã đánh dấu tiếp theo (${flaggedCount} câu)${statusText}`;
+        
+        // Cập nhật text nếu là text node
+        if (btnText && btnText.nodeType === Node.TEXT_NODE) {
+            btnText.textContent = ` Đã đánh dấu (${flaggedCount})`;
+        } else {
+            // Tìm text node để cập nhật
+            const textNodes = Array.from(flaggedBtn.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+            if (textNodes.length > 0) {
+                textNodes[textNodes.length - 1].textContent = ` Đã đánh dấu (${flaggedCount})`;
+            }
+        }
+    } else {
+        flaggedBtn.disabled = true;
+        flaggedBtn.title = 'Chưa có câu nào được đánh dấu';
+        
+        // Reset text
+        if (btnText && btnText.nodeType === Node.TEXT_NODE) {
+            btnText.textContent = ' Đã đánh dấu';
+        } else {
+            const textNodes = Array.from(flaggedBtn.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+            if (textNodes.length > 0) {
+                textNodes[textNodes.length - 1].textContent = ' Đã đánh dấu';
+            }
+        }
+    }
+}

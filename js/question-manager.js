@@ -28,10 +28,11 @@ function loadQuestion(index) {
     document.getElementById('question-number').innerHTML = `
         <div class="question-header-content">
             <span class="question-text">Câu ${index + 1}/${totalQuestions}</span>
-            <button class="flag-btn ${isFlagged ? 'flagged' : ''}" 
+            <button class="flag-btn ${isFlagged ? 'flagged' : ''} ${window.AppState.examSubmitted ? 'disabled' : ''}" 
                     onclick="toggleFlag(${index})" 
-                    title="${isFlagged ? 'Bỏ đánh dấu' : 'Đánh dấu câu hỏi'}"
-                    ${window.AppState.examSubmitted ? 'disabled' : ''}>
+                    title="${window.AppState.examSubmitted 
+                        ? (isFlagged ? 'Câu đã được đánh dấu (không thể thay đổi)' : 'Câu chưa được đánh dấu') 
+                        : (isFlagged ? 'Bỏ đánh dấu' : 'Đánh dấu câu hỏi')}">
                 <i class="fas fa-flag"></i>
                 <span class="flag-text">${isFlagged ? 'Đã đánh dấu' : 'Đánh dấu'}</span>
             </button>
@@ -106,6 +107,9 @@ function loadQuestion(index) {
     
     // Update progress bar
     updateProgressBar();
+    
+    // Update flagged button
+    updateFlaggedButton();
 }
 
 // Hàm chọn đáp án cho câu hỏi

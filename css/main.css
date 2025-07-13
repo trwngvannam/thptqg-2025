@@ -1,0 +1,16 @@
+/* ==========================================================================
+   THPTQG 2025 - Main Stylesheet
+   Tách module để dễ quản lý và bảo trì
+   ========================================================================== */
+
+/* Import all CSS modules */
+@import url('./base.css');
+@import url('./header.css');
+@import url('./welcome.css');
+@import url('./components.css');
+@import url('./exam.css');
+@import url('./results.css');
+@import url('./responsive.css');
+
+/* Google Fonts - Inter font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
