@@ -47,7 +47,9 @@ function setupEventListeners() {
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
     
     // Submit exam button
-    document.getElementById('submit-exam').addEventListener('click', submitExam);
+    document.getElementById('submit-exam').addEventListener('click', function(e) {
+        submitExam();
+    });
     
     // Restart exam button
     document.getElementById('restart-exam').addEventListener('click', restartExam);

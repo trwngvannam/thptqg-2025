@@ -2,19 +2,55 @@
 function updateQuestionGrid() {
     const questionGrid = document.getElementById('question-grid');
     
-    Array.from(questionGrid.children).forEach((btn, index) => {
+    // Lấy tất cả button, bất kể layout
+    const allButtons = questionGrid.querySelectorAll('.question-btn');
+    
+    allButtons.forEach((btn, index) => {
         btn.classList.remove('current', 'answered', 'correct', 'wrong', 'flagged');
         
         if (index === window.AppState.currentQuestionIndex) {
             btn.classList.add('current');
         }
         
-        if (window.AppState.userAnswers.hasOwnProperty(index)) {
+        // Kiểm tra xem câu hỏi đã được trả lời chưa
+        const question = window.AppState.currentExam.questions[index];
+        let hasAnswered = false;
+        let isCorrect = false;
+        
+        if (question.sub_questions) {
+            // Câu hỏi đúng/sai - kiểm tra tất cả sub questions
+            hasAnswered = question.sub_questions.every((_, subIndex) => 
+                window.AppState.userAnswers.hasOwnProperty(`${index}_${subIndex}`)
+            );
+            
+            if (window.AppState.examSubmitted && hasAnswered) {
+                isCorrect = question.sub_questions.every((sub, subIndex) => 
+                    window.AppState.userAnswers[`${index}_${subIndex}`] === sub.correct
+                );
+            }
+        } else if (question.answer_type) {
+            // Câu hỏi điền đáp án
+            hasAnswered = window.AppState.userAnswers.hasOwnProperty(index) && 
+                         window.AppState.userAnswers[index] !== '';
+            
+            if (window.AppState.examSubmitted && hasAnswered) {
+                isCorrect = window.AppState.userAnswers[index].toString().trim() === 
+                           question.correct_answer.toString().trim();
+            }
+        } else {
+            // Câu hỏi trắc nghiệm thường
+            hasAnswered = window.AppState.userAnswers.hasOwnProperty(index);
+            
+            if (window.AppState.examSubmitted && hasAnswered) {
+                isCorrect = window.AppState.userAnswers[index] === question.correct;
+            }
+        }
+        
+        if (hasAnswered) {
             btn.classList.add('answered');
             
             // Sau khi nộp bài, hiển thị câu đúng/sai
             if (window.AppState.examSubmitted) {
-                const isCorrect = window.AppState.userAnswers[index] === window.AppState.currentExam.questions[index].correct;
                 btn.classList.add(isCorrect ? 'correct' : 'wrong');
             }
         }

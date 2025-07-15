@@ -5,7 +5,7 @@
       "reason": "Trong hình lăng trụ $ABC.A'B'C'$, ta có $\\vec{A'C'} = \\vec{AC}$ (tính chất hình lăng trụ). Áp dụng quy tắc hình bình hành: $\\vec{BA} + \\vec{AC} = \\vec{BC}$. Do đó $\\vec{BA} + \\vec{A'C'} = \\vec{BC'}$ (vì $\\vec{BC'} = \\vec{BC} + \\vec{CC'} = \\vec{BC} + \\vec{AA'}$).",
       "points": [
         "Tính chất hình lăng trụ: $\\vec{A'C'} = \\vec{AC}$",
-        "Áp dụng quy tắc hình bình hành trong mặt phẳng $ABC$",
+        "Áp dụng quy tắc hình bình hành: $\\vec{BA} + \\vec{AC} = \\vec{BC}$",
         "Sử dụng tính chất vector trong không gian 3D"
       ],
       "wrongAnswers": [
@@ -14,6 +14,43 @@
         "D. Sai vì $\\vec{A'A} = -\\vec{AA'}$, ngược hướng với vector cần tìm"
       ]
     }
+  },
+  "21": {
+    "cac_buoc_giai": [
+      "Bước 1: Phân tích bài toán",
+      "- Có 7 quyển sách khác nhau và 4 ngăn được đánh số 1, 2, 3, 4",
+      "- Mỗi ngăn phải có ít nhất 1 quyển sách",
+      "- Thứ tự sách trong mỗi ngăn có ý nghĩa (từ trái sang phải)",
+      "",
+      "Bước 2: Phương pháp đặt vách ngăn",
+      "- Xếp 7 quyển sách thành một hàng: có $7!$ cách",
+      "- Giữa 7 quyển sách có 6 khoảng trống để đặt vách ngăn",
+      "- Cần đặt 3 vách ngăn để tạo ra 4 ngăn",
+      "- Số cách chọn 3 vị trí từ 6 khoảng trống: $\\binom{6}{3}$",
+      "",
+      "Bước 3: Tính toán kết quả",
+      "- Tổng số cách xếp: $T = 7! \\times \\binom{6}{3}$",
+      "- $7! = 5040$",
+      "- $\\binom{6}{3} = \\frac{6!}{3! \\times 3!} = \\frac{6 \\times 5 \\times 4}{3 \\times 2 \\times 1} = 20$",
+      "- $T = 5040 \\times 20 = 100800$"
+    ],
+    "phan_tich_truong_hop": [
+      "- Phương pháp vách ngăn (Stars and Bars) được áp dụng",
+      "- Điều kiện mỗi ngăn có ít nhất 1 quyển được đảm bảo bằng cách đặt vách giữa các sách",
+      "- Thứ tự sách trong mỗi ngăn được bảo toàn do sắp xếp ban đầu"
+    ],
+    "tinh_toan_cuoi": [
+      "- $T = 7! \\times \\binom{6}{3} = 5040 \\times 20 = 100800$",
+      "- Đề bài hỏi: $\\frac{T}{100} = \\frac{100800}{100} = 1008$",
+      "- Vậy đáp án là 1008"
+    ],
+    "diem_quan_trong": [
+      "📚 Bài toán tổ hợp với điều kiện ràng buộc",
+      "🔢 Phương pháp vách ngăn (Stars and Bars) để phân chia đối tượng",
+      "📖 Thứ tự trong mỗi nhóm có ý nghĩa → sử dụng chỉnh hợp",
+      "⚠️ Điều kiện mỗi ngăn có ít nhất 1 sách → đặt vách giữa các sách",
+      "🎯 Kết quả: $\\frac{T}{100} = 1008$"
+    ]
   },
   "2": {
     "correct": "C",
@@ -32,764 +69,525 @@
     }
   },
   "3": {
-    "correct": "A",
+    "correct": "C",
     "explanation": {
-      "reason": "Tam giác ABC vuông tại A, theo định lý Pythagore: BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25. Vậy BC = 5",
+      "reason": "Cỡ mẫu $n = 40$. Vị trí tứ phân vị thứ ba: $Q_3 = \\frac{x_{30} + x_{31}}{2}$. Tần số tích lũy: [0;40): 11, [0;80): 21, [0;120): 27, [0;160): 35. Do $x_{30}, x_{31} \\in [120;160)$, áp dụng công thức: $Q_3 = 120 + \\frac{\\frac{3}{4} \\cdot 40 - 27}{8} \\cdot 40 = 120 + \\frac{30 - 27}{8} \\cdot 40 = 135$",
       "points": [
-        "Áp dụng định lý Pythagore",
-        "BC² = AB² + AC²",
-        "BC = √25 = 5"
+        "Tính cỡ mẫu: $n = 11 + 10 + 6 + 8 + 4 + 1 = 40$",
+        "Xác định vị trí $Q_3$: $\\frac{3n}{4} = 30$, cần tìm $\\frac{x_{30} + x_{31}}{2}$",
+        "Tần số tích lũy đến nhóm [80;120): $11 + 10 + 6 = 27 < 30$",
+        "Nhóm chứa $Q_3$: [120;160) với tần số 8",
+        "Công thức: $Q_3 = L + \\frac{\\frac{3n}{4} - CF}{f} \\cdot h = 120 + \\frac{30 - 27}{8} \\cdot 40 = 135$"
       ],
       "wrongAnswers": [
-        "B. Tính toán sai",
-        "C. Không áp dụng đúng định lý Pythagore",
-        "D. Kết quả không chính xác"
+        "A. Sai vì tính nhầm trong công thức nội suy",
+        "B. Sai vì chưa áp dụng đúng công thức tính tứ phân vị",
+        "D. Sai vì tính thiếu trong quá trình nội suy"
       ]
     }
   },
   "4": {
-    "correct": "B",
+    "correct": "D",
     "explanation": {
-      "reason": "Giải phương trình: 2x + 3 = 7 ⟹ 2x = 7 - 3 = 4 ⟹ x = 4/2 = 2",
+      "reason": "Đường thẳng có phương trình chính tắc $\\frac{x - 3}{4} = \\frac{y + 2}{-5} = \\frac{z - 1}{2}$. Vectơ chỉ phương của đường thẳng có tọa độ là các hệ số ở mẫu số: $\\vec{v} = (4; -5; 2)$.",
       "points": [
-        "Chuyển vế: 2x = 7 - 3",
-        "Tính: 2x = 4",
-        "Chia cho 2: x = 2"
+        "Phương trình chính tắc đường thẳng: $\\frac{x - x_0}{a} = \\frac{y - y_0}{b} = \\frac{z - z_0}{c}$",
+        "Vectơ chỉ phương: $\\vec{v} = (a; b; c)$",
+        "Từ phương trình đã cho: $\\vec{v} = (4; -5; 2)$"
       ],
       "wrongAnswers": [
-        "A. Tính toán sai",
-        "C. Nhầm lẫn trong phép chia",
-        "D. Kết quả không đúng"
+        "A. Sai vì lấy nhầm dấu của tọa độ thứ hai",
+        "B. Sai vì lấy tọa độ điểm đi qua thay vì hệ số chỉ phương", 
+        "C. Sai vì lấy nhầm cả dấu và tọa độ"
       ]
     }
   },
   "5": {
-    "correct": "B",
+    "correct": "A",
     "explanation": {
-      "reason": "∫₀¹ x² dx = [x³/3]₀¹ = 1³/3 - 0³/3 = 1/3",
+      "reason": "Áp dụng công thức nguyên hàm: $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$ với $n \\neq -1$. Do đó: $\\int x^2 dx = \\frac{x^{2+1}}{2+1} + C = \\frac{x^3}{3} + C = \\frac{1}{3}x^3 + C$.",
       "points": [
-        "Tìm nguyên hàm: ∫x² dx = x³/3",
-        "Áp dụng công thức Newton-Leibniz",
-        "Tính: [x³/3]₀¹ = 1/3 - 0 = 1/3"
+        "Công thức nguyên hàm cơ bản: $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$",
+        "Với $f(x) = x^2$, ta có $n = 2$",
+        "$\\int x^2 dx = \\frac{x^3}{3} + C = \\frac{1}{3}x^3 + C$"
       ],
       "wrongAnswers": [
-        "A. Sai công thức tính tích phân",
-        "C. Nhầm lẫn trong tính toán",
-        "D. Kết quả không chính xác"
+        "B. Sai vì nhầm công thức, thiếu chia cho $(n+1)$",
+        "C. Sai vì nhầm hoàn toàn công thức nguyên hàm",
+        "D. Sai vì chia cho số sai (chia cho 2 thay vì 3)"
       ]
     }
   },
   "6": {
-    "correct": "A",
+    "correct": "C",
     "explanation": {
-      "reason": "Phân tích tam thức: x² - 5x + 6 = (x - 2)(x - 3) = 0. Vậy x = 2 hoặc x = 3",
+      "reason": "Trong cấp số cộng, công thức số hạng tổng quát: $u_n = u_1 + (n-1)d$. Với $u_1 = 4$, $d = -3$ và $n = 5$: $u_5 = u_1 + 4d = 4 + 4 \\times (-3) = 4 - 12 = -8$.",
       "points": [
-        "Tìm hai số có tích 6 và tổng 5",
-        "Phân tích: (x - 2)(x - 3)",
-        "Nghiệm: x = 2, x = 3"
+        "Công thức cấp số cộng: $u_n = u_1 + (n-1)d$",
+        "Thay $n = 5$: $u_5 = u_1 + 4d$",
+        "$u_5 = 4 + 4 \\times (-3) = 4 - 12 = -8$"
       ],
       "wrongAnswers": [
-        "B. Không thỏa mãn phương trình",
-        "C. Dấu sai",
-        "D. Chỉ có một nghiệm đúng"
+        "A. Sai vì tính $u_1 + 4|d| = 4 + 12 = 16$",
+        "B. Sai vì tính nhầm $u_1 + 5d$ thay vì $u_1 + 4d$",
+        "D. Sai vì tính $u_1 + 5d = 4 + 5(-3) = -11$"
       ]
     }
   },
   "7": {
-    "correct": "B",
+    "correct": "D",
     "explanation": {
-      "reason": "Phân tích tử số: x² - 4 = (x-2)(x+2). Giới hạn = lim(x+2) khi x→2 = 4",
+      "reason": "Phương trình $\\sin x = 0$ có nghiệm khi $x$ là bội số của $\\pi$. Trên đường tròn lượng giác, $\\sin x = 0$ tại các điểm $0, \\pi, 2\\pi, 3\\pi, ...$ tức là $x = k\\pi$ với $k \\in \\mathbb{Z}$.",
       "points": [
-        "Phân tích: x² - 4 = (x-2)(x+2)",
-        "Rút gọn: (x+2)",
-        "Tính giới hạn: x→2 cho x+2 = 4"
+        "Trên đường tròn lượng giác, $\\sin x = 0$ tại các điểm $0$ và $\\pi$",
+        "Do tính tuần hoàn với chu kỳ $2\\pi$, nghiệm tổng quát là $x = 0 + k\\pi$",
+        "Vậy $S = \\{k\\pi \\mid k \\in \\mathbb{Z}\\}$"
       ],
       "wrongAnswers": [
-        "A. Chưa rút gọn biểu thức",
-        "C. Tính sai",
-        "D. Giới hạn tồn tại"
+        "A. Sai vì đây là nghiệm của $\\cos x = 0$",
+        "B. Sai vì chỉ là một phần nghiệm (thiếu các nghiệm lẻ)",
+        "C. Sai vì đây cũng là nghiệm của $\\cos x = 0$"
       ]
     }
   },
   "8": {
     "correct": "B",
     "explanation": {
-      "reason": "Để căn bậc hai có nghĩa, cần x - 1 ≥ 0, tức x ≥ 1",
+      "reason": "Diện tích hình phẳng giới hạn bởi đồ thị hàm số và trục hoành luôn được tính bằng tích phân của giá trị tuyệt đối hàm số. Do $y = 2x - 3$ có thể âm hoặc dương trên đoạn $[1,2]$, nên phải lấy giá trị tuyệt đối.",
       "points": [
-        "Điều kiện: x - 1 ≥ 0",
-        "Giải: x ≥ 1",
-        "Tập xác định: [1, +∞)"
+        "Diện tích hình phẳng luôn dương nên cần $|f(x)|$",
+        "Công thức: $S = \\int_a^b |f(x)|\\,dx$",
+        "Áp dụng: $S = \\int_1^2 |2x - 3|\\,dx$"
       ],
       "wrongAnswers": [
-        "A. Không có điều kiện",
-        "C. Thiếu điểm x = 1",
-        "D. Dấu bất đẳng thức sai"
+        "A. Sai vì $\\pi$ chỉ xuất hiện trong thể tích khối tròn xoay",
+        "C. Sai vì $(2x-3)^2$ và $\\pi$ dùng cho thể tích khối tròn xoay",
+        "D. Sai vì lấy giá trị tuyệt đối ngoài tích phân có thể sai khi hàm đổi dấu"
       ]
     }
   },
   "9": {
-    "correct": "B",
+    "correct": "A", 
     "explanation": {
-      "reason": "log₂ 8 = log₂ 2³ = 3",
+      "reason": "Phương trình mặt phẳng đi qua điểm $M(x_0;y_0;z_0)$ và có vectơ pháp tuyến $\\vec{n}=(a;b;c)$ có dạng: $a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$.",
       "points": [
-        "Viết 8 = 2³",
-        "log₂ 2³ = 3log₂ 2",
-        "log₂ 2 = 1, nên kết quả là 3"
+        "Công thức: $a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$",
+        "Thay $A(2;1;-4)$ và $\\vec{n}=(3;2;-1)$:",
+        "$3(x-2) + 2(y-1) + (-1)(z-(-4)) = 0$",
+        "$3(x-2) + 2(y-1) - (z+4) = 0$"
       ],
       "wrongAnswers": [
-        "A. Nhầm với log₄ 8",
-        "C. Tính sai",
-        "D. Nhầm với cơ số"
+        "B. Sai vì nhầm lẫn tọa độ điểm và vectơ pháp tuyến",
+        "C. Sai vì sai dấu trong tọa độ điểm",
+        "D. Sai vì hoàn toàn nhầm lẫn giữa tọa độ điểm và vectơ"
       ]
     }
   },
   "10": {
     "correct": "C",
     "explanation": {
-      "reason": "Thể tích hình lập phương = a³ = 2³ = 8",
+      "reason": "Phương trình logarit cơ bản: $\\log_a x = b \\Leftrightarrow x = a^b$. Áp dụng với $\\log_3(2x - 1) = 2$",
       "points": [
-        "Công thức: V = a³",
-        "Thay a = 2",
-        "V = 2³ = 8"
+        "Áp dụng định nghĩa: $\\log_3(2x - 1) = 2 \\Leftrightarrow 2x - 1 = 3^2$",
+        "Tính: $2x - 1 = 9$",
+        "Giải: $2x = 10 \\Rightarrow x = 5$"
       ],
       "wrongAnswers": [
-        "A. Nhầm với diện tích một mặt",
-        "B. Nhầm với chu vi",
-        "D. Tính sai công thức"
+        "A. Sai vì tính $x = \\frac{9+1}{2} = \\frac{10}{2} = 5$ nhưng ghi nhầm $\\frac{7}{2}$",
+        "B. Sai vì tính $x = \\frac{4+1}{2} = \\frac{5}{2}$ (nhầm $3^2 = 4$)",
+        "D. Sai vì tính $2x = 8$ thay vì $2x = 10$"
       ]
     }
   },
   "11": {
-    "correct": "A",
+    "correct": "B",
     "explanation": {
-      "reason": "Đạo hàm của e^x chính là e^x",
+      "reason": "Đường tiệm cận đứng của hàm phân thức $y = \\frac{ax + b}{cx + d}$ là nghiệm của phương trình $cx + d = 0$, tức $x = -\\frac{d}{c}$. Quan sát đồ thị cho thấy tiệm cận đứng tại $x = -1$.",
       "points": [
-        "Công thức cơ bản: (e^x)' = e^x",
-        "Hàm mũ cơ số e có đạo hàm bằng chính nó"
+        "Tiệm cận đứng xảy ra khi mẫu số bằng 0: $cx + d = 0$",
+        "Từ đồ thị, quan sát thấy đường thẳng đứng tại $x = -1$",
+        "Vậy phương trình tiệm cận đứng là $x = -1$"
       ],
       "wrongAnswers": [
-        "B. Nhầm với đạo hàm của x^n",
-        "C. Đây là đạo hàm của ln x",
-        "D. Đây là nguyên hàm của 1/x"
+        "A. Sai vì $y = 2$ là phương trình đường ngang (tiệm cận ngang)",
+        "C. Sai vì $y = -1$ cũng là phương trình đường ngang",
+        "D. Sai vì quan sát đồ thị thấy tiệm cận đứng không phải tại $x = 2$"
       ]
     }
   },
   "12": {
-    "correct": "A",
+    "correct": "D",
     "explanation": {
-      "reason": "sin x = 1 có nghiệm x = π/2 + k2π (k ∈ Z)",
+      "reason": "Thể tích khối chóp có đáy là tam giác vuông và chiều cao vuông góc với đáy: $V = \\frac{1}{3} \\cdot S_{\\text{đáy}} \\cdot h$",
       "points": [
-        "sin x = 1 khi x = π/2",
-        "Chu kỳ của sin là 2π",
-        "Nghiệm tổng quát: x = π/2 + k2π"
+        "Diện tích đáy: $S_{\\triangle ABC} = \\frac{1}{2} \\cdot AB \\cdot AC = \\frac{1}{2} \\cdot 4 \\cdot 5 = 10$",
+        "Chiều cao: $h = SA = 3$ (vì $SA \\perp (ABC)$)",
+        "Thể tích: $V = \\frac{1}{3} \\cdot 10 \\cdot 3 = 10$"
       ],
       "wrongAnswers": [
-        "B. Đây là nghiệm của sin x = 0",
-        "C. Chu kỳ sai",
-        "D. Đây cũng là nghiệm của sin x = 0"
+        "A. Sai vì tính $AB \\cdot AC \\cdot SA = 4 \\cdot 5 \\cdot 3 = 60$ rồi chia 2",
+        "B. Sai vì quên hệ số $\\frac{1}{3}$ trong công thức thể tích chóp",
+        "C. Sai vì tính $AB \\cdot AC \\cdot SA = 60$ mà không chia cho $6$"
       ]
     }
   },
   "13": {
-    "correct": "B",
+    "sub_answers": {
+      "13a": true,
+      "13b": false,
+      "13c": false,
+      "13d": false
+    },
     "explanation": {
-      "reason": "Trong cấp số cộng: uₙ = u₁ + (n-1)d. u₅ = 3 + 4×2 = 11",
+      "reason": "Khảo sát hàm số $f(x) = x^3 - 12x - 8$ qua việc tính đạo hàm, tìm cực trị và giá trị trên đoạn",
+      "sub_explanations": {
+        "13a": {
+          "correct": true,
+          "reason": "Tính đạo hàm đúng: $f'(x) = (x^3 - 12x - 8)' = 3x^2 - 12$"
+        },
+        "13b": {
+          "correct": false,
+          "reason": "Giải $f'(x) = 0$: $3x^2 - 12 = 0 \\Leftrightarrow x^2 = 4 \\Leftrightarrow x = \\pm 2$. Tập nghiệm là $S = \\{-2; 2\\}$, không phải $\\{2\\}$"
+        },
+        "13c": {
+          "correct": false,
+          "reason": "$f(2) = 2^3 - 12 \\cdot 2 - 8 = 8 - 24 - 8 = -24 \\neq 24$"
+        },
+        "13d": {
+          "correct": false,
+          "reason": "Tính các giá trị: $f(-3) = 1$, $f(-2) = 8$, $f(2) = -24$, $f(3) = -17$. Giá trị lớn nhất là $f(-2) = 8$, không phải $24$"
+        }
+      },
       "points": [
-        "Công thức: uₙ = u₁ + (n-1)d",
-        "u₅ = u₁ + 4d = 3 + 4×2",
-        "u₅ = 3 + 8 = 11"
+        "a) Đúng: $f'(x) = 3x^2 - 12$",
+        "b) Sai: Tập nghiệm của $f'(x) = 0$ là $\\{-2; 2\\}$",
+        "c) Sai: $f(2) = -24$, không phải $24$",
+        "d) Sai: Giá trị lớn nhất trên $[-3;3]$ là $8$"
       ],
       "wrongAnswers": [
-        "A. Thiếu một bước",
-        "C. Tính thừa",
-        "D. Sai công thức"
+        "Chỉ có khẳng định a) là đúng",
+        "Các khẳng định b), c), d) đều sai do tính toán hoặc phân tích không chính xác"
       ]
     }
   },
   "14": {
-    "correct": "A",
+    "sub_answers": {
+      "14a": true,
+      "14b": false,
+      "14c": true,
+      "14d": false
+    },
     "explanation": {
-      "reason": "y = -x² + 4x - 1. Đỉnh parabol tại x = 2, y(2) = -4 + 8 - 1 = 3",
+      "reason": "Giải phương trình vi phân $y'(t) = k \\cdot y(t)$ và xác định các tham số từ điều kiện ban đầu trong bài toán thực tiễn về nồng độ thuốc tồn dư",
+      "sub_explanations": {
+        "14a": {
+          "correct": true,
+          "reason": "Từ $y'(t) = k \\cdot y(t)$, ta có $\\frac{y'(t)}{y(t)} = k$. Tích phân hai vế: $\\ln y(t) = kt + C$. Vì $y(t) = e^{g(t)}$ nên $g(t) = \\ln y(t) = kt + C$"
+        },
+        "14b": {
+          "correct": false,
+          "reason": "Từ hệ: $\\begin{cases} 6k + C = \\ln 2 \\\\ 12k + C = 0 \\end{cases}$, trừ hai phương trình được $-6k = \\ln 2$, suy ra $k = -\\frac{\\ln 2}{6}$, không phải $\\frac{\\ln 2}{6}$"
+        },
+        "14c": {
+          "correct": true,
+          "reason": "Thay $k = -\\frac{\\ln 2}{6}$ vào $12k + C = 0$: $12 \\cdot (-\\frac{\\ln 2}{6}) + C = 0 \\Rightarrow -2\\ln 2 + C = 0 \\Rightarrow C = 2\\ln 2$"
+        },
+        "14d": {
+          "correct": false,
+          "reason": "$y(25) = e^{-\\frac{\\ln 2}{6} \\cdot 25 + 2\\ln 2} = 2^{-\\frac{25}{6} + 2} = 2^{-\\frac{13}{6}} \\approx 0.2227 < 0.25$"
+        }
+      },
       "points": [
-        "Hàm bậc 2 hệ số a < 0 có max tại đỉnh",
-        "x = -b/2a = -4/(-2) = 2",
-        "y(2) = -4 + 8 - 1 = 3"
+        "a) Đúng: Từ phương trình vi phân, $g(t) = kt + C$",
+        "b) Sai: $k = -\\frac{\\ln 2}{6}$, không phải $\\frac{\\ln 2}{6}$",
+        "c) Đúng: $C = 2\\ln 2$ từ điều kiện $y(12) = 1$",
+        "d) Sai: $y(25) \\approx 0.2227 < 0.25$ mg/lít"
       ],
-      "wrongAnswers": [
-        "B. Chưa tính đúng giá trị tại đỉnh",
-        "C. Tính sai",
-        "D. Kết quả không chính xác"
-      ]
+      "application": "Bài toán mô hình hóa sự phân rã nồng độ thuốc trong môi trường nuôi trồng thủy sản, ứng dụng phương trình vi phân cấp 1 tuyến tính"
     }
   },
   "15": {
-    "correct": "B",
+    "sub_answers": {
+      "15a": true,
+      "15b": false,
+      "15c": true,
+      "15d": false
+    },
     "explanation": {
-      "reason": "Thể tích hình cầu V = (4/3)πR³ = (4/3)π×27 = 36π",
+      "reason": "Mô hình toán học về chuyển động của vật với vận tốc $v(t) = \\beta t + 300$ và các tính chất hình học của vectơ trong không gian",
+      "sub_explanations": {
+        "15a": {
+          "correct": true,
+          "reason": "Vectơ $\\vec{u} = (a; b; c)$ có góc với $\\vec{i} = (1;0;0)$ là $60°$. Ta có: $\\cos(\\vec{u}, \\vec{i}) = \\frac{\\vec{u} \\cdot \\vec{i}}{|\\vec{u}|} = \\frac{a}{1} = a$. Do đó $a = \\cos 60° = \\frac{1}{2}$"
+        },
+        "15b": {
+          "correct": false,
+          "reason": "Từ các góc: $b = \\cos 60° = \\frac{1}{2}$, $c = \\cos 45° = \\frac{\\sqrt{2}}{2}$. Vectơ chỉ phương là $\\vec{v} = (1;1;\\sqrt{2})$. Phương trình đúng: $\\frac{x-5}{1} = \\frac{y-5}{1} = \\frac{z}{\\sqrt{2}}$, không phải $\\frac{z}{2}$"
+        },
+        "15c": {
+          "correct": true,
+          "reason": "Quãng đường sau 2 giây: $S = \\int_0^2 (\\beta t + 300)\\,dt = [\\frac{\\beta t^2}{2} + 300t]_0^2 = 2\\beta + 600 = 604$. Suy ra $\\beta = 2$"
+        },
+        "15d": {
+          "correct": false,
+          "reason": "Quãng đường sau 5 giây: $S = \\int_0^5 (2t + 300)\\,dt = [t^2 + 300t]_0^5 = 25 + 1500 = 1525$. Tọa độ: $x_B = 5 + \\frac{1525}{2} = 767.5 < 768$"
+        }
+      },
       "points": [
-        "Công thức: V = (4/3)πR³",
-        "R³ = 3³ = 27",
-        "V = (4/3)π×27 = 36π"
+        "a) Đúng: $a = \\cos 60° = \\frac{1}{2}$ từ góc giữa vectơ và trục $Ox$",
+        "b) Sai: Vectơ chỉ phương là $(1;1;\\sqrt{2})$, không phải $(1;1;2)$",
+        "c) Đúng: $\\beta = 2$ từ điều kiện quãng đường 604m sau 2 giây", 
+        "d) Sai: $x_B = 767.5 < 768$ sau 5 giây chuyển động"
       ],
-      "wrongAnswers": [
-        "A. Nhầm với diện tích mặt cầu",
-        "C. Tính sai",
-        "D. Trùng với đáp án B"
-      ]
+      "application": "Ứng dụng tích phân trong tính quãng đường chuyển động và hình học vectơ trong không gian"
     }
   },
   "16": {
-    "correct": "C",
+    "sub_answers": {
+      "16a": true,
+      "16b": true,
+      "16c": false,
+      "16d": true
+    },
     "explanation": {
-      "reason": "Mô-đun của z = a + bi là |z| = √(a² + b²) = √(9 + 16) = 5",
+      "reason": "Bài toán về xác suất có điều kiện trong nhận dạng tin nhắn quảng cáo, áp dụng công thức xác suất toàn phần và định lý Bayes",
+      "sub_explanations": {
+        "16a": {
+          "correct": true,
+          "reason": "$P(\\overline{A}) = 1 - P(A) = 1 - 0{,}15 = 0{,}85$"
+        },
+        "16b": {
+          "correct": true,
+          "reason": "$P(\\overline{B} \\mid \\overline{A}) = 1 - P(B \\mid \\overline{A}) = 1 - 0{,}05 = 0{,}95$"
+        },
+        "16c": {
+          "correct": false,
+          "reason": "Áp dụng công thức xác suất toàn phần: $P(\\overline{B}) = P(A) \\cdot P(\\overline{B} \\mid A) + P(\\overline{A}) \\cdot P(\\overline{B} \\mid \\overline{A}) = 0{,}15 \\cdot 0{,}1 + 0{,}85 \\cdot 0{,}95 = 0{,}8225 \\neq 0{,}85$"
+        },
+        "16d": {
+          "correct": true,
+          "reason": "$P(\\overline{A} \\mid \\overline{B}) = \\frac{P(\\overline{A}) \\cdot P(\\overline{B} \\mid \\overline{A})}{P(\\overline{B})} = \\frac{0{,}85 \\cdot 0{,}95}{0{,}8225} \\approx 0{,}982 > 0{,}95$"
+        }
+      },
       "points": [
-        "Công thức: |z| = √(a² + b²)",
-        "a = 3, b = 4",
-        "|z| = √(9 + 16) = √25 = 5"
+        "a) Đúng: $P(\\overline{A}) = 1 - P(A) = 0{,}85$",
+        "b) Đúng: $P(\\overline{B} \\mid \\overline{A}) = 1 - P(B \\mid \\overline{A}) = 0{,}95$",
+        "c) Sai: $P(\\overline{B}) = 0{,}8225$ theo công thức xác suất toàn phần",
+        "d) Đúng: $P(\\overline{A} \\mid \\overline{B}) \\approx 0{,}982 > 0{,}95$ theo định lý Bayes"
       ],
-      "wrongAnswers": [
-        "A. Chỉ là phần thực",
-        "B. Chỉ là phần ảo",
-        "D. Là tổng phần thực và ảo"
-      ]
+      "application": "Ứng dụng xác suất có điều kiện trong hệ thống lọc spam và nhận dạng tin nhắn quảng cáo"
     }
   },
   "17": {
-    "correct": "C",
+    "correct": "1260",
     "explanation": {
-      "reason": "∫₀^π sin x dx = [-cos x]₀^π = -cos π + cos 0 = 1 + 1 = 2",
-      "points": [
-        "Nguyên hàm của sin x là -cos x",
-        "[-cos x]₀^π = -cos π - (-cos 0)",
-        "= -(-1) + 1 = 2"
+      "reason": "Bài toán xác suất kết hợp với cấp số cộng: tính xác suất để 6 số được chọn và sắp xếp tạo thành 3 cấp số cộng đồng thời",
+      "cac_buoc_giai": [
+        "**Bước 1:** Tổng số cách chọn và sắp xếp 6 số từ 9 số: $n(\\Omega) = A_9^6 = \\frac{9!}{3!} = 60480$",
+        "**Bước 2:** Điều kiện để giải được mật thư: $(A,M,B)$, $(B,N,C)$, $(C,P,A)$ đều là cấp số cộng",
+        "**Bước 3:** Từ điều kiện suy ra: $A + B = 2M$, $B + C = 2N$, $C + A = 2P$",
+        "**Bước 4:** Cộng ba phương trình: $A + B + C = M + N + P$, do đó $A, B, C$ phải cùng tính chẵn lẻ"
       ],
-      "wrongAnswers": [
-        "A. Tính sai dấu",
-        "B. Thiếu một phần",
-        "D. Nhầm với giới hạn tích phân"
+      "phan_tich_truong_hop": {
+        "truong_hop_1": {
+          "tieu_de": "Trường hợp 1: A, B, C cùng lẻ",
+          "tap_so_le": "Tập số lẻ: $\\{11, 13, 15, 17, 19\\}$",
+          "tong_to_hop": "Số cách chọn 3 từ 5: $\\binom{5}{3} = 10$",
+          "cac_cap_so_cong": [
+            "$(11,13,15)$ - cấp số cộng với công sai 2",
+            "$(13,15,17)$ - cấp số cộng với công sai 2", 
+            "$(15,17,19)$ - cấp số cộng với công sai 2",
+            "$(11,15,19)$ - cấp số cộng với công sai 4"
+          ],
+          "loai_bo": "Loại bỏ 4 tổ hợp tạo cấp số cộng",
+          "to_hop_hop_le": "$10 - 4 = 6$ tổ hợp hợp lệ",
+          "cach_sap_xep": "Mỗi tổ hợp có $3! = 6$ cách sắp xếp vào A, B, C",
+          "tong_cong": "$6 \\times 6 = 36$ cách"
+        },
+        "truong_hop_2": {
+          "tieu_de": "Trường hợp 2: A, B, C cùng chẵn",
+          "tap_so_chan": "Tập số chẵn: $\\{12, 14, 16, 18\\}$",
+          "tong_to_hop": "Số cách chọn 3 từ 4: $\\binom{4}{3} = 4$",
+          "cac_cap_so_cong": [
+            "$(12,14,16)$ - cấp số cộng với công sai 2",
+            "$(14,16,18)$ - cấp số cộng với công sai 2"
+          ],
+          "loai_bo": "Loại bỏ 2 tổ hợp tạo cấp số cộng",
+          "to_hop_hop_le": "$4 - 2 = 2$ tổ hợp hợp lệ",
+          "cach_sap_xep": "Mỗi tổ hợp có $3! = 6$ cách sắp xếp vào A, B, C",
+          "tong_cong": "$2 \\times 6 = 12$ cách"
+        }
+      },
+      "tinh_toan_cuoi": {
+        "tong_truong_hop_thuan_loi": "$n(A) = 36 + 12 = 48$",
+        "xac_suat": "$P(A) = \\frac{48}{60480} = \\frac{1}{1260}$",
+        "dap_an": "Vậy $a = 1260$"
+      },
+      "diem_quan_trong": [
+        "Điều kiện cùng tính chẵn lẻ là then chốt để giảm không gian tìm kiếm",
+        "Phải loại bỏ các bộ ba đã tạo thành cấp số cộng để tránh trùng lặp điều kiện",
+        "Mỗi bộ (A,B,C) xác định duy nhất bộ (M,N,P) thỏa mãn điều kiện cấp số cộng",
+        "Bài toán kết hợp xác suất, tổ hợp và tính chất số học"
       ]
     }
   },
   "18": {
-    "correct": "C",
-    "explanation": {
-      "reason": "y' = 3x² - 3. y' = 0 khi x = ±1. Có 2 điểm cực trị",
-      "points": [
-        "Tính đạo hàm: y' = 3x² - 3",
-        "Giải y' = 0: 3x² = 3, x = ±1",
-        "Có 2 nghiệm nên 2 điểm cực trị"
-      ],
-      "wrongAnswers": [
-        "A. Có điểm cực trị",
-        "B. Có nhiều hơn 1 điểm",
-        "D. Chỉ có 2 điểm cực trị"
-      ]
-    }
+    "cac_buoc_giai": [
+      "Bước 1: Thiết lập hàm lợi nhuận",
+      "- Chi phí sản xuất $x$ sản phẩm: $C(x) = x \\cdot G(x) = x \\left( \\frac{30\\,000}{x} + 200 \\right) = 30\\,000 + 200x$",
+      "- Lợi nhuận: $P(x) = F(x) - C(x) = -0{,}01x^2 + 300x - (30\\,000 + 200x) = -0{,}01x^2 + 100x - 30\\,000$",
+      "",
+      "Bước 2: Thiết lập bất phương trình",
+      "- Yêu cầu: $P(x) > 100\\,000$ (100 triệu đồng)",
+      "- $-0{,}01x^2 + 100x - 30\\,000 > 100\\,000$",
+      "- $-0{,}01x^2 + 100x - 130\\,000 > 0$",
+      "",
+      "Bước 3: Giải bất phương trình bậc hai",
+      "- $\\Delta = 100^2 - 4(-0{,}01)(-130\\,000) = 10\\,000 - 5\\,200 = 4\\,800$",
+      "- $\\sqrt{\\Delta} = \\sqrt{4800} = 40\\sqrt{3} \\approx 69{,}28$",
+      "- Nghiệm: $x = \\frac{-100 \\pm 40\\sqrt{3}}{-0{,}02} = \\frac{100 \\mp 40\\sqrt{3}}{0{,}02}$",
+      "- $x_1 = \\frac{100 - 40\\sqrt{3}}{0{,}02} \\approx 1535{,}9$",
+      "- $x_2 = \\frac{100 + 40\\sqrt{3}}{0{,}02} \\approx 8464{,}1$"
+    ],
+    "phan_tich_truong_hop": [
+      "- Bất phương trình $-0{,}01x^2 + 100x - 130\\,000 > 0$ có nghiệm $x \\in (1535{,}9; 8464{,}1)$",
+      "- Kết hợp với điều kiện $1 \\le x \\le 4500$ và $x \\in \\mathbb{N}^*$",
+      "- Ta có: $x \\in [1536; 4500]$ và $x \\in \\mathbb{N}^*$"
+    ],
+    "tinh_toan_cuoi": [
+      "- Số sản phẩm ít nhất cần sản xuất: $x_{min} = 1536$",
+      "- Kiểm tra: $P(1536) = -0{,}01(1536)^2 + 100(1536) - 30\\,000 \\approx 100\\,294{,}96 > 100\\,000$ ✓"
+    ],
+    "diem_quan_trong": [
+      "⚠️ Lưu ý về hàm chi phí: $G(x)$ là chi phí bình quân cho mỗi sản phẩm",
+      "📊 Chi phí tổng = (Chi phí bình quân) × (Số sản phẩm)",
+      "💡 Bất phương trình bậc hai với hệ số $a < 0$ có nghiệm nằm giữa hai nghiệm",
+      "🎯 Cần kiểm tra điều kiện $x \\in \\mathbb{N}^*$ và $1 \\le x \\le 4500$"
+    ]
   },
   "19": {
-    "correct": "B",
-    "explanation": {
-      "reason": "2^x = 16 = 2⁴, nên x = 4",
-      "points": [
-        "Viết 16 = 2⁴",
-        "2^x = 2⁴",
-        "So sánh số mũ: x = 4"
-      ],
-      "wrongAnswers": [
-        "A. Nhầm với 2²",
-        "C. Nhầm với 2³",
-        "D. Nhầm với cơ số"
-      ]
-    }
+    "cac_buoc_giai": [
+      "Bước 1: Thiết lập biến và hàm mục tiêu",
+      "- Gọi $x, y \\in \\mathbb{N}$ lần lượt là số lượng thực đơn 1 và thực đơn 2 bán được",
+      "- Doanh thu: $F(x, y) = 30x + 50y$ (nghìn đồng)",
+      "",
+      "Bước 2: Thiết lập ràng buộc",
+      "- Thực đơn 1: 2 cốc nước chanh + 1 túi khoai chiên",
+      "- Thực đơn 2: 3 cốc nước chanh + 2 túi khoai chiên",
+      "- Ràng buộc nguyên liệu:",
+      "  + Nước chanh: $2x + 3y \\leq 165$",
+      "  + Khoai chiên: $x + 2y \\leq 100$",
+      "  + Điều kiện: $x \\geq 0, y \\geq 0$",
+      "",
+      "Bước 3: Tìm miền nghiệm",
+      "- Hệ bất phương trình tạo thành miền tứ giác $OABC$ với các đỉnh:",
+      "  + $O(0,0)$",
+      "  + $A(0,50)$ (giao của $y = 50$ và trục $Oy$)",
+      "  + $B(30,35)$ (giao của $2x + 3y = 165$ và $x + 2y = 100$)",
+      "  + $C(82.5, 0)$ (giao của $2x + 3y = 165$ và trục $Ox$)"
+    ],
+    "phan_tich_truong_hop": [
+      "- Tại $O(0,0)$: $F = 30(0) + 50(0) = 0$",
+      "- Tại $A(0,50)$: $F = 30(0) + 50(50) = 2500$",
+      "- Tại $B(30,35)$: $F = 30(30) + 50(35) = 900 + 1750 = 2650$",
+      "- Tại $C(82.5, 0)$: $F = 30(82.5) + 50(0) = 2475$"
+    ],
+    "tinh_toan_cuoi": [
+      "- So sánh các giá trị: $F(O) = 0 < F(C) = 2475 < F(A) = 2500 < F(B) = 2650$",
+      "- Giá trị lớn nhất: $F_{max} = 2650$ tại $(x,y) = (30,35)$",
+      "- Kiểm tra: $2(30) + 3(35) = 60 + 105 = 165 \\leq 165$ ✓",
+      "- Kiểm tra: $30 + 2(35) = 30 + 70 = 100 \\leq 100$ ✓"
+    ],
+    "diem_quan_trong": [
+      "📊 Đây là bài toán quy hoạch tuyến tính với 2 biến",
+      "🎯 Hàm mục tiêu đạt giá trị lớn nhất tại một đỉnh của miền nghiệm",
+      "⚠️ Cần kiểm tra tất cả các đỉnh của miền nghiệm",
+      "💡 Phương pháp: Tìm giao điểm của các đường biên và so sánh giá trị hàm mục tiêu",
+      "🔍 Ứng dụng thực tiễn: Tối ưu hóa doanh thu trong hoạt động kinh doanh"
+    ]
   },
   "20": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Tam giác vuông (3,4,5). Diện tích = (1/2) × 3 × 4 = 6",
-      "points": [
-        "Nhận biết tam giác vuông: 3² + 4² = 5²",
-        "Công thức: S = (1/2) × cạnh góc vuông",
-        "S = (1/2) × 3 × 4 = 6"
-      ],
-      "wrongAnswers": [
-        "B. Tính sai công thức",
-        "C. Nhầm với chu vi",
-        "D. Tính sai"
-      ]
-    }
-  },
-  "21": {
-    "correct": "B",
-    "explanation": {
-      "reason": "y = x⁴, y' = 4x³, y'' = 12x²",
-      "points": [
-        "Đạo hàm cấp 1: y' = 4x³",
-        "Đạo hàm cấp 2: y'' = (4x³)' = 12x²"
-      ],
-      "wrongAnswers": [
-        "A. Đây là đạo hàm cấp 1",
-        "C. Tính thừa một lần nữa",
-        "D. Đạo hàm cấp 3"
-      ]
-    }
+    "cac_buoc_giai": [
+      "Bước 1: Thiết lập hệ tọa độ và phân tích hình học",
+      "- Gọi $O$ là tâm hình thoi $ABCD$, $I$ là trung điểm của $BC$",
+      "- $H$ là trọng tâm tam giác $ABC$: $H = AI \\cap BO$",
+      "- $SH \\perp (ABCD)$ với $SH = \\sqrt{3}$",
+      "",
+      "Bước 2: Xác định tính chất vuông góc",
+      "- Vì $SH \\perp (ABCD)$ nên $(ABCD) \\perp (SBD)$",
+      "- Do $ABCD$ là hình thoi nên $AC \\perp BD$",
+      "- Suy ra: $AC \\perp (SBD)$",
+      "",
+      "Bước 3: Tìm khoảng cách giữa hai đường thẳng chéo nhau",
+      "- Trong mặt phẳng $(SBD)$, dựng $OK \\perp SD$ với $K \\in SD$",
+      "- $OK$ là đoạn vuông góc chung giữa $AC$ và $SD$",
+      "- Khoảng cách cần tìm = $OK$",
+      "",
+      "Bước 4: Tính các độ dài cần thiết",
+      "- Trong tam giác đều $ABC$ với $AB = 2$ và $\\angle ABC = 60°$:",
+      "  + $OA = \\frac{1}{2}AB = 1$",
+      "  + $OB = AB \\cdot \\frac{\\sqrt{3}}{2} = \\sqrt{3}$",
+      "  + $OH = AB \\cdot \\frac{\\sqrt{3}}{6} = \\frac{\\sqrt{3}}{3}$",
+      "- $HD = OH + OD = \\frac{\\sqrt{3}}{3} + \\sqrt{3} = \\frac{4\\sqrt{3}}{3}$",
+      "- $SD = \\sqrt{SH^2 + HD^2} = \\sqrt{3 + \\frac{48}{9}} = \\frac{5\\sqrt{3}}{3}$"
+    ],
+    "phan_tich_truong_hop": [
+      "- Sử dụng tam giác đồng dạng: $\\triangle OKD \\sim \\triangle SHD$",
+      "- Tỷ lệ đồng dạng: $\\frac{OK}{SH} = \\frac{OD}{SD}$",
+      "- Công thức: $OK = \\frac{SH \\cdot OD}{SD}$"
+    ],
+    "tinh_toan_cuoi": [
+      "- Thay số: $OK = \\frac{\\sqrt{3} \\cdot \\sqrt{3}}{\\frac{5\\sqrt{3}}{3}} = \\frac{3}{\\frac{5\\sqrt{3}}{3}} = \\frac{9}{5\\sqrt{3}}$",
+      "- Rút gọn: $OK = \\frac{9\\sqrt{3}}{15} = \\frac{3\\sqrt{3}}{5}$",
+      "- Tính số: $OK = \\frac{3\\sqrt{3}}{5} \\approx \\frac{3 \\times 1.732}{5} \\approx 1.039 \\approx 1.04$"
+    ],
+    "diem_quan_trong": [
+      "🔺 Tính chất hình thoi: đường chéo vuông góc với nhau",
+      "📐 Điều kiện vuông góc: $AC \\perp (SBD)$ do $SH \\perp (ABCD)$",
+      "📏 Phương pháp tam giác đồng dạng để tính khoảng cách",
+      "⚠️ Cần phân biệt khoảng cách giữa đường thẳng và mặt phẳng vs giữa hai đường thẳng chéo nhau",
+      "🎯 Làm tròn đến hàng phần trăm: 1.04"
+    ]
   },
   "22": {
-    "correct": "C",
-    "explanation": {
-      "reason": "Trong cấp số nhân: uₙ = u₁ × q^(n-1). u₄ = 2 × 3³ = 2 × 27 = 54",
-      "points": [
-        "Công thức: uₙ = u₁ × q^(n-1)",
-        "u₄ = u₁ × q³ = 2 × 3³",
-        "u₄ = 2 × 27 = 54"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu một lũy thừa",
-        "B. Tính sai",
-        "D. Tính thừa"
-      ]
-    }
-  },
-  "23": {
-    "correct": "B",
-    "explanation": {
-      "reason": "cos x = 0 khi x = π/2 + kπ (k ∈ Z)",
-      "points": [
-        "cos x = 0 tại π/2, 3π/2, ...",
-        "Khoảng cách giữa các nghiệm là π",
-        "Nghiệm tổng quát: x = π/2 + kπ"
-      ],
-      "wrongAnswers": [
-        "A. Đây là nghiệm của sin x = 0",
-        "C. Khoảng cách sai",
-        "D. Chu kỳ sai"
-      ]
-    }
-  },
-  "24": {
-    "correct": "C",
-    "explanation": {
-      "reason": "Với hàm phân thức, tiệm cận ngang là tỉ số hệ số bậc cao nhất: 2/1 = 2",
-      "points": [
-        "Bậc tử = bậc mẫu",
-        "Tiệm cận ngang = hệ số x tử / hệ số x mẫu",
-        "y = 2/1 = 2"
-      ],
-      "wrongAnswers": [
-        "A. Chỉ đúng khi bậc tử < bậc mẫu",
-        "B. Không phải tỉ số đúng",
-        "D. Đây là tiệm cận đứng"
-      ]
-    }
-  },
-  "25": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Thể tích chóp = (1/3) × S_đáy × h = (1/3) × 16 × 3 = 16",
-      "points": [
-        "Diện tích đáy hình vuông: 4² = 16",
-        "Công thức: V = (1/3) × S × h",
-        "V = (1/3) × 16 × 3 = 16"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu hệ số 1/3",
-        "C. Tính thừa",
-        "D. Sai công thức"
-      ]
-    }
-  },
-  "26": {
-    "correct": "C",
-    "explanation": {
-      "reason": "tan 45° = 1",
-      "points": [
-        "Trong tam giác vuông cân",
-        "tan 45° = đối/kề = 1/1 = 1"
-      ],
-      "wrongAnswers": [
-        "A. Đây là sin 30°",
-        "B. Đây là cos 45°",
-        "D. Đây là tan 60°"
-      ]
-    }
-  },
-  "27": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Δ = 4 - 20 = -16 < 0, nên phương trình vô nghiệm",
-      "points": [
-        "Tính biệt thức: Δ = b² - 4ac",
-        "Δ = 4 - 4×1×5 = -16",
-        "Δ < 0 nên vô nghiệm"
-      ],
-      "wrongAnswers": [
-        "B. Δ ≠ 0",
-        "C. Phương trình bậc 2 có tối đa 2 nghiệm",
-        "D. Sai"
-      ]
-    }
-  },
-  "28": {
-    "correct": "B",
-    "explanation": {
-      "reason": "C₅² = 5!/(2!×3!) = (5×4)/(2×1) = 10",
-      "points": [
-        "Công thức: C_n^k = n!/(k!(n-k)!)",
-        "C₅² = 5!/(2!×3!)",
-        "= (5×4)/(2×1) = 10"
-      ],
-      "wrongAnswers": [
-        "A. Tính thiếu",
-        "C. Nhầm với chỉnh hợp A₅²",
-        "D. Tính sai"
-      ]
-    }
-  },
-  "29": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Đạo hàm của ln x là 1/x",
-      "points": [
-        "Công thức cơ bản: (ln x)' = 1/x",
-        "Với x > 0"
-      ],
-      "wrongAnswers": [
-        "B. Đây là nguyên hàm",
-        "C. Đạo hàm của e^x",
-        "D. Đây là chính hàm ln x"
-      ]
-    }
-  },
-  "30": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Diện tích hình tròn S = πr² = π × 5² = 25π",
-      "points": [
-        "Công thức: S = πr²",
-        "r = 5",
-        "S = π × 25 = 25π"
-      ],
-      "wrongAnswers": [
-        "A. Nhầm với chu vi",
-        "C. Tính thừa",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "31": {
-    "correct": "A",
-    "explanation": {
-      "reason": "2x - 3 > 5 ⟹ 2x > 8 ⟹ x > 4",
-      "points": [
-        "Chuyển vế: 2x > 5 + 3 = 8",
-        "Chia cho 2: x > 4"
-      ],
-      "wrongAnswers": [
-        "B. Tính sai phép chia",
-        "C. Đảo dấu bất đẳng thức",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "32": {
-    "correct": "C",
-    "explanation": {
-      "reason": "Độ dài véc-tơ |a⃗| = √(3² + 4²) = √25 = 5",
-      "points": [
-        "Công thức: |a⃗| = √(x² + y²)",
-        "x = 3, y = 4",
-        "|a⃗| = √(9 + 16) = 5"
-      ],
-      "wrongAnswers": [
-        "A. Chỉ là thành phần x",
-        "B. Chỉ là thành phần y",
-        "D. Là tổng các thành phần"
-      ]
-    }
-  },
-  "33": {
-    "correct": "A",
-    "explanation": {
-      "reason": "∫3x² dx = 3∫x² dx = 3 × (x³/3) + C = x³ + C",
-      "points": [
-        "∫x^n dx = x^(n+1)/(n+1) + C",
-        "∫3x² dx = 3 × (x³/3) + C",
-        "= x³ + C"
-      ],
-      "wrongAnswers": [
-        "B. Đây là đạo hàm",
-        "C. Sai công thức",
-        "D. Thiếu hệ số"
-      ]
-    }
-  },
-  "34": {
-    "correct": "D",
-    "explanation": {
-      "reason": "Số hoán vị của 4 phần tử là P₄ = 4! = 24",
-      "points": [
-        "Sắp xếp n phần tử: P_n = n!",
-        "P₄ = 4! = 4 × 3 × 2 × 1 = 24"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu một phần tử",
-        "B. Tính sai",
-        "C. Cũng tính sai"
-      ]
-    }
-  },
-  "35": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Hàm số y = 1/x không xác định tại x = 0, nên x = 0 là tiệm cận đứng",
-      "points": [
-        "Hàm số không xác định tại x = 0",
-        "lim(x→0) |1/x| = +∞",
-        "Vậy x = 0 là tiệm cận đứng"
-      ],
-      "wrongAnswers": [
-        "B. x = 1 không làm hàm số vô định",
-        "C. y = 0 là tiệm cận ngang",
-        "D. y = 1 không phải tiệm cận"
-      ]
-    }
-  },
-  "36": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Phương trình đường thẳng: y - y₀ = k(x - x₀). y - 2 = 3(x - 1) ⟹ y = 3x - 1",
-      "points": [
-        "Công thức: y - y₀ = k(x - x₀)",
-        "y - 2 = 3(x - 1)",
-        "y = 3x - 3 + 2 = 3x - 1"
-      ],
-      "wrongAnswers": [
-        "B. Quên trừ 3",
-        "C. Sai hệ số góc",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "37": {
-    "correct": "A",
-    "explanation": {
-      "reason": "z₁ + z₂ = (2 + 3i) + (1 - i) = (2 + 1) + (3 - 1)i = 3 + 2i",
-      "points": [
-        "Cộng phần thực: 2 + 1 = 3",
-        "Cộng phần ảo: 3i + (-i) = 2i",
-        "Kết quả: 3 + 2i"
-      ],
-      "wrongAnswers": [
-        "B. Cộng sai phần ảo",
-        "C. Cộng sai cả hai phần",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "38": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Diện tích elip S = πab = π × 5 × 3 = 15π",
-      "points": [
-        "Công thức: S = πab",
-        "a = 5, b = 3",
-        "S = π × 5 × 3 = 15π"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu một thừa số",
-        "C. Tính thừa",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "39": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Áp dụng BĐT AM-GM: x² + 4/x² ≥ 2√(x² × 4/x²) = 4. Dấu \"=\" khi x² = 2",
-      "points": [
-        "Áp dụng BĐT AM-GM",
-        "x² + 4/x² ≥ 2√(4) = 4",
-        "Min = 4 khi x² = 2"
-      ],
-      "wrongAnswers": [
-        "A. Nhỏ hơn giá trị thực",
-        "C. Lớn hơn min",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "40": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Diện tích đáy tam giác đều: S = (a²√3)/4 = √3. Thể tích V = S × h = √3 × 4 = 4√3",
-      "points": [
-        "Diện tích đáy: (2²√3)/4 = √3",
-        "Thể tích: V = S × h",
-        "V = √3 × 4 = 4√3"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu hệ số 2",
-        "C. Tính thừa",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "41": {
-    "correct": "C",
-    "explanation": {
-      "reason": "log₃ x = 2 ⟹ x = 3² = 9",
-      "points": [
-        "Định nghĩa logarit: log_a b = c ⟺ a^c = b",
-        "log₃ x = 2 ⟹ 3² = x",
-        "x = 9"
-      ],
-      "wrongAnswers": [
-        "A. Nhầm với 3 × 2",
-        "B. Tính sai",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "42": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Det(A) = 1×4 - 2×3 = 4 - 6 = -2",
-      "points": [
-        "Công thức: det = ad - bc",
-        "Det(A) = 1×4 - 2×3",
-        "= 4 - 6 = -2"
-      ],
-      "wrongAnswers": [
-        "B. Tính thiếu",
-        "C. Đảo dấu",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "43": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Tổng cấp số cộng: S = n(u₁ + uₙ)/2 = 100(1 + 100)/2 = 5050",
-      "points": [
-        "Công thức: S = n(a₁ + aₙ)/2",
-        "S = 100(1 + 100)/2",
-        "S = 100 × 101/2 = 5050"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu 50",
-        "C. Tính thừa",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "44": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Chu kỳ của sin(ax) là 2π/|a|. Với a = 2, chu kỳ = 2π/2 = π",
-      "points": [
-        "Công thức: T = 2π/|a|",
-        "a = 2",
-        "T = 2π/2 = π"
-      ],
-      "wrongAnswers": [
-        "A. Chia thừa 2",
-        "C. Đây là chu kỳ của sin(x)",
-        "D. Tính sai"
-      ]
-    }
-  },
-  "45": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Khoảng cách từ điểm đến đường thẳng: d = |ax₀ + by₀ + c|/√(a² + b²) = |2 + 3 - 1|/√2 = 4/√2 = 2√2",
-      "points": [
-        "Công thức: d = |ax₀ + by₀ + c|/√(a² + b²)",
-        "d = |1×2 + 1×3 - 1|/√(1² + 1²)",
-        "d = 4/√2 = 2√2"
-      ],
-      "wrongAnswers": [
-        "A. Chưa chia cho √2",
-        "C. Chưa chia cho √(a² + b²)",
-        "D. Chính là 2√2"
-      ]
-    }
-  },
-  "46": {
-    "correct": "A",
-    "explanation": {
-      "reason": "Thể tích hình nón V = (1/3)πr²h = (1/3)π × 9 × 4 = 12π",
-      "points": [
-        "Công thức: V = (1/3)πr²h",
-        "V = (1/3)π × 3² × 4",
-        "V = (1/3)π × 36 = 12π"
-      ],
-      "wrongAnswers": [
-        "B. Thiếu hệ số 1/3",
-        "C. Tính sai",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "47": {
-    "correct": "C",
-    "explanation": {
-      "reason": "Đặt t = x². Phương trình trở thành t² - 5t + 4 = 0. Giải được t = 1, t = 4. Từ đó x = ±1, ±2 (4 nghiệm)",
-      "points": [
-        "Đặt t = x², được t² - 5t + 4 = 0",
-        "Giải: t = 1 hoặc t = 4",
-        "x² = 1 (x = ±1) và x² = 4 (x = ±2): 4 nghiệm"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu 2 nghiệm",
-        "B. Thiếu 1 nghiệm",
-        "D. Phương trình bậc 4 có tối đa 4 nghiệm"
-      ]
-    }
-  },
-  "48": {
-    "correct": "A",
-    "explanation": {
-      "reason": "f'(x) = 3x² + 6x - 9. f'(0) = -9",
-      "points": [
-        "Tính đạo hàm: f'(x) = 3x² + 6x - 9",
-        "Thay x = 0: f'(0) = 0 + 0 - 9 = -9"
-      ],
-      "wrongAnswers": [
-        "B. Đây là hệ số x²",
-        "C. Đây là f(0)",
-        "D. Đảo dấu"
-      ]
-    }
-  },
-  "49": {
-    "correct": "B",
-    "explanation": {
-      "reason": "Véc-tơ AB⃗ = (-1,1,0), AC⃗ = (-1,0,1). Diện tích = (1/2)|AB⃗ × AC⃗| = (1/2)√3",
-      "points": [
-        "AB⃗ = (-1,1,0), AC⃗ = (-1,0,1)",
-        "AB⃗ × AC⃗ = (1,1,1), |AB⃗ × AC⃗| = √3",
-        "S = (1/2)√3"
-      ],
-      "wrongAnswers": [
-        "A. Thiếu hệ số √3",
-        "C. Thiếu hệ số 1/2",
-        "D. Sai hoàn toàn"
-      ]
-    }
-  },
-  "50": {
-    "correct": "C",
-    "explanation": {
-      "reason": "Đây là cấp số nhân với u₁ = 1, q = 1/2. Tổng = u₁/(1-q) = 1/(1-1/2) = 2",
-      "points": [
-        "Cấp số nhân lùi vô hạn với |q| < 1",
-        "S = a/(1-q) = 1/(1-1/2)",
-        "S = 1/(1/2) = 2"
-      ],
-      "wrongAnswers": [
-        "A. Chỉ là số hạng đầu",
-        "B. Tính thiếu",
-        "D. Tính thừa"
-      ]
-    }
+    "cac_buoc_giai": [
+      "Bước 1: Tính thể tích khối chóp cụt tứ giác đều ban đầu",
+      "- Độ dài hai cạnh đáy: $a_1 = 7{,}4$ cm, $a_2 = 10{,}4$ cm",
+      "- Chiều cao: $h = 1{,}5$ cm",
+      "- Công thức: $V_{chóp\\ cụt} = \\frac{h}{3}(S_1 + S_2 + \\sqrt{S_1 \\cdot S_2})$",
+      "- $S_1 = 7{,}4^2 = 54{,}76$, $S_2 = 10{,}4^2 = 108{,}16$",
+      "- $V_{gỗ} = \\frac{1{,}5}{3}(54{,}76 + 108{,}16 + \\sqrt{54{,}76 \\times 108{,}16})$",
+      "- $V_{gỗ} = \\frac{1{,}5}{3}(54{,}76 + 108{,}16 + 76{,}98) = \\frac{1{,}5 \\times 239{,}9}{3} = 119{,}95$ cm³",
+      "",
+      "Bước 2: Tính thể tích phần khoét đi (nắp cầu H)",
+      "- Bán kính mặt cầu: $R = 5{,}8$ cm",
+      "- Bán kính mặt cắt: $r = 3{,}5$ cm",
+      "- Khoảng cách từ tâm đến mặt cắt: $d = \\sqrt{R^2 - r^2} = \\sqrt{5{,}8^2 - 3{,}5^2}$",
+      "- $d = \\sqrt{33{,}64 - 12{,}25} = \\sqrt{21{,}39} \\approx 4{,}625$ cm",
+      "",
+      "Bước 3: Tính thể tích nắp cầu bằng tích phân",
+      "- $V_H = \\pi \\int_{\\sqrt{21{,}39}}^{5{,}8} (R^2 - x^2) dx$",
+      "- $V_H = \\pi \\int_{4{,}625}^{5{,}8} (33{,}64 - x^2) dx$",
+      "- $V_H = \\pi [33{,}64x - \\frac{x^3}{3}]_{4{,}625}^{5{,}8}$",
+      "- $V_H \\approx 23{,}45$ cm³"
+    ],
+    "phan_tich_truong_hop": [
+      "- Khối chóp cụt: Sử dụng công thức thể tích với hai đáy hình vuông",
+      "- Nắp cầu: Phần mặt cầu bị cắt bởi mặt phẳng",
+      "- Tích phân: Tính thể tích vật thể quay quanh trục"
+    ],
+    "tinh_toan_cuoi": [
+      "- Thể tích khối gỗ ban đầu: $V_{gỗ} = 119{,}95$ cm³",
+      "- Thể tích phần khoét đi: $V_H = 23{,}45$ cm³", 
+      "- Thể tích chân đế còn lại: $V = 119{,}95 - 23{,}45 = 96{,}5$ cm³"
+    ],
+    "diem_quan_trong": [
+      "📐 Bài toán hình học không gian phức hợp",
+      "🔢 Công thức thể tích chóp cụt tứ giác đều",
+      "⚫ Tính thể tích nắp cầu bằng tích phân",
+      "📏 Mối liên hệ giữa bán kính cầu và khoảng cách tâm-mặt cắt",
+      "🎯 Kết quả: 96.5 cm³"
+    ]
   }
-}
+    }
+

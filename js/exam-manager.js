@@ -73,7 +73,30 @@ function submitExam() {
     if (window.AppState.examTimer && window.AppState.timeRemaining > 0) {
         // Tính số câu đã làm và chưa làm
         const totalQuestions = window.AppState.currentExam.questions.length;
-        const answeredQuestions = Object.keys(window.AppState.userAnswers).length;
+        
+        // Đếm số câu đã trả lời (tính cả sub-questions cho câu đúng/sai)
+        let answeredQuestions = 0;
+        window.AppState.currentExam.questions.forEach((question, index) => {
+            if (question.sub_questions) {
+                // Câu hỏi đúng/sai - kiểm tra tất cả sub questions
+                const hasAnswered = question.sub_questions.every((_, subIndex) => 
+                    window.AppState.userAnswers.hasOwnProperty(`${index}_${subIndex}`)
+                );
+                if (hasAnswered) answeredQuestions++;
+            } else if (question.answer_type) {
+                // Câu hỏi điền đáp án
+                if (window.AppState.userAnswers.hasOwnProperty(index) && 
+                    window.AppState.userAnswers[index] !== '') {
+                    answeredQuestions++;
+                }
+            } else {
+                // Câu hỏi trắc nghiệm thường
+                if (window.AppState.userAnswers.hasOwnProperty(index)) {
+                    answeredQuestions++;
+                }
+            }
+        });
+        
         const unansweredQuestions = totalQuestions - answeredQuestions;
         const flaggedCount = Object.keys(window.AppState.flaggedQuestions).filter(key => window.AppState.flaggedQuestions[key]).length;
         

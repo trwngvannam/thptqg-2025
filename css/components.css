@@ -362,3 +362,78 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(149, 165, 166, 0.3);
 }
+
+/* ==========================================================================
+   IMAGE NOTE CARD - Card thông báo hình ảnh
+   ========================================================================== */
+
+.image-note-card {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border: 1px solid #f6c23e;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    box-shadow: 0 2px 4px rgba(246, 194, 62, 0.1);
+    transition: all 0.3s ease;
+}
+
+.image-note-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(246, 194, 62, 0.15);
+}
+
+.image-note-icon {
+    background: #f6c23e;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+.image-note-content {
+    flex: 1;
+}
+
+.image-note-title {
+    font-weight: 600;
+    color: #856404;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.image-note-text {
+    color: #856404;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* Dark mode cho image note card */
+@media (prefers-color-scheme: dark) {
+    .image-note-card {
+        background: linear-gradient(135deg, #2c2416 0%, #3d3520 100%);
+        border-color: #6c5f1a;
+        color: #ffeaa7;
+    }
+    
+    .image-note-icon {
+        background: #6c5f1a;
+    }
+    
+    .image-note-title,
+    .image-note-text {
+        color: #ffeaa7;
+    }
+}
+
+/* ==========================================================================
+   EXISTING COMPONENTS
+   ========================================================================== */

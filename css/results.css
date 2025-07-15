@@ -1,3 +1,15 @@
+/* Đảm bảo tất cả nội dung text không tràn */
+* {
+    box-sizing: border-box;
+}
+
+.result-card, .result-banner, .review-card, .question-item {
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
 /* ==========================================================================
    RESULTS STYLES - Result Screen, Review, Answer Explanations
    ========================================================================== */
@@ -270,6 +282,12 @@
     margin-top: 2rem;
     box-shadow: 0 4px 12px rgba(40, 167, 69, 0.1);
     animation: slideIn 0.3s ease-out;
+    /* Ngăn nội dung tràn khỏi card */
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .explanation-header {
@@ -279,11 +297,15 @@
     margin-bottom: 1rem;
     color: #856404;
     font-size: 1.1rem;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .explanation-header i {
     color: #ffc107;
     font-size: 1.3rem;
+    flex-shrink: 0; /* Icon không bị co lại */
 }
 
 .correct-answer {
@@ -297,11 +319,10 @@
     border-radius: 8px;
     color: #155724;
     font-weight: 600;
-}
-
-.correct-answer i {
-    color: #28a745;
-    font-size: 1.2rem;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
 
 .explanation-section,
@@ -320,16 +341,25 @@
 
 .explanation-title i {
     color: #17a2b8;
+    flex-shrink: 0; /* Icon không bị co lại */
 }
 
 .explanation-content {
     padding-left: 1.5rem;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
 
 .explanation-point {
     margin-bottom: 0.5rem;
     line-height: 1.6;
     color: #495057;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .wrong-answer {
@@ -340,6 +370,10 @@
     border-radius: 4px;
     line-height: 1.6;
     color: #721c24;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
 
 .explanation-note {
@@ -347,14 +381,216 @@
     padding: 1rem;
     color: #6c757d;
     font-style: italic;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
-/* Math formulas in explanations and results */
-.answer-explanation .MathJax {
-    font-size: 1em !important;
+/* Sub-explanations for true/false questions */
+.sub-explanations-section {
+    margin-bottom: 1rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
 
+.sub-explanation {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #6c757d;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.sub-explanation.correct {
+    border-left-color: #28a745;
+    background: rgba(40, 167, 69, 0.05);
+}
+
+.sub-explanation.incorrect {
+    border-left-color: #dc3545;
+    background: rgba(220, 53, 69, 0.05);
+}
+
+.sub-question-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.correct-icon {
+    color: #28a745;
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+.incorrect-icon {
+    color: #dc3545;
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+.sub-explanation-reason {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+    color: #495057;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Application section */
+.application-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.application-content {
+    padding: 1rem;
+    background: rgba(23, 162, 184, 0.05);
+    border: 1px solid rgba(23, 162, 184, 0.2);
+    border-radius: 8px;
+    color: #495057;
+    line-height: 1.6;
+    font-style: italic;
+    /* Text wrapping */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Math formulas in explanations and results - Đảm bảo wrap đúng cách */
+.answer-explanation .MathJax,
 .result-banner .MathJax,
-.exam-title .MathJax {
-    font-size: 0.95em !important;
+.exam-title .MathJax,
+.sub-explanation .MathJax,
+.sub-question-text .MathJax,
+.explanation-point .MathJax,
+.application-content .MathJax {
+    font-size: 1em !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Đặc biệt cho các công thức toán dài */
+.MathJax_Display {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    margin: 0.5rem 0 !important;
+    padding: 0.25rem !important;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .answer-explanation {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .sub-explanation {
+        padding: 0.75rem;
+    }
+    
+    .explanation-content {
+        padding-left: 1rem;
+    }
+    
+    .sub-explanation-reason {
+        padding-left: 1rem;
+    }
+    
+    .MathJax, .MathJax_Display {
+        font-size: 0.9em !important;
+    }
+}
+
+/* Fill-in question explanation styles */
+.solution-steps {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.case-analysis {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #fff3cd;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+}
+
+.case-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.case-title {
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.case-details {
+    margin-left: 1rem;
+}
+
+.case-detail {
+    margin: 0.5rem 0;
+    color: #6c757d;
+}
+
+.final-calculation {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #d1ecf1;
+    border-radius: 8px;
+    border-left: 4px solid #17a2b8;
+}
+
+.calculation-step {
+    margin: 0.5rem 0;
+    color: #495057;
+}
+
+.key-insights {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #d4edda;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.insight-point {
+    margin: 0.5rem 0;
+    color: #495057;
 }

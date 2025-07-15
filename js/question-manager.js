@@ -3,16 +3,55 @@ function createQuestionGrid() {
     const questionGrid = document.getElementById('question-grid');
     questionGrid.innerHTML = '';
     
-    for (let i = 0; i < window.AppState.currentExam.questions.length; i++) {
-        const btn = document.createElement('button');
-        btn.className = 'question-btn';
-        btn.textContent = i + 1;
-        btn.addEventListener('click', () => loadQuestion(i));
-        questionGrid.appendChild(btn);
+    // Thêm class đặc biệt cho môn toán
+    if (window.AppState.selectedSubject === 'math') {
+        questionGrid.classList.add('math-layout');
+        
+        // Tạo 3 cột: 8-8-6 câu
+        const columns = [8, 8, 6];
+        let questionIndex = 0;
+        
+        for (let col = 0; col < columns.length; col++) {
+            const columnDiv = document.createElement('div');
+            columnDiv.className = 'question-column';
+            
+            for (let i = 0; i < columns[col]; i++) {
+                if (questionIndex < window.AppState.currentExam.questions.length) {
+                    const btn = document.createElement('button');
+                    btn.className = 'question-btn';
+                    btn.textContent = questionIndex + 1;
+                    btn.dataset.questionIndex = questionIndex;
+                    btn.addEventListener('click', function(e) {
+                        loadQuestion(parseInt(this.dataset.questionIndex));
+                    });
+                    columnDiv.appendChild(btn);
+                    questionIndex++;
+                }
+            }
+            
+            questionGrid.appendChild(columnDiv);
+        }
+    } else {
+        questionGrid.classList.remove('math-layout');
+        
+        // Layout thông thường cho môn khác
+        for (let i = 0; i < window.AppState.currentExam.questions.length; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'question-btn';
+            btn.textContent = i + 1;
+            btn.dataset.questionIndex = i;
+            btn.addEventListener('click', function(e) {
+                loadQuestion(parseInt(this.dataset.questionIndex));
+            });
+            questionGrid.appendChild(btn);
+        }
     }
     
     // Mark first question as current
-    questionGrid.children[0].classList.add('current');
+    const firstBtn = questionGrid.querySelector('.question-btn');
+    if (firstBtn) {
+        firstBtn.classList.add('current');
+    }
 }
 
 // Hàm tải câu hỏi
@@ -87,30 +126,50 @@ function loadQuestion(index) {
 
 // Render câu hỏi trắc nghiệm thường (PHẦN 1)
 function renderMultipleChoiceQuestion(question, index) {
-    return `
-        <div class="question">
-            <div class="question-text">${question.text}</div>
-            <div class="options">
-                ${question.options.map((option, i) => {
-                    const isSelected = window.AppState.userAnswers[index] === option.charAt(0); // A, B, C, D
-                    const isCorrect = question.correct === option.charAt(0);
-                    const isWrong = window.AppState.examSubmitted && isSelected && !isCorrect;
-                    
-                    let optionClass = 'option';
-                    if (isSelected) optionClass += ' selected';
-                    if (window.AppState.examSubmitted && isCorrect) optionClass += ' correct';
-                    if (window.AppState.examSubmitted && isWrong) optionClass += ' wrong';
-                    
-                    return `
-                        <div class="${optionClass}" onclick="${!window.AppState.examSubmitted ? `selectMultipleChoiceAnswer(${index}, '${option.charAt(0)}')` : ''}">
-                            <input type="radio" name="question-${index}" value="${option.charAt(0)}" ${isSelected ? 'checked' : ''} ${window.AppState.examSubmitted ? 'disabled' : ''}>
-                            <span class="option-text">${option}</span>
-                        </div>
-                    `;
-                }).join('')}
+    let questionHTML = '<div class="question">';
+    questionHTML += '<div class="question-text">' + question.text + '</div>';
+    
+    // Thêm card thông báo hình ảnh nếu có
+    if (question.hasImage && question.imageNote) {
+        questionHTML += `
+            <div class="image-note-card">
+                <div class="image-note-icon">
+                    <i class="fas fa-image"></i>
+                </div>
+                <div class="image-note-content">
+                    <div class="image-note-title">Hình ảnh đang được cập nhật</div>
+                    <div class="image-note-text">${question.imageNote}</div>
+                </div>
             </div>
-        </div>
-    `;
+        `;
+    }
+    
+    questionHTML += '<div class="options">';
+    
+    question.options.forEach((option, i) => {
+        const isSelected = window.AppState.userAnswers[index] === option.charAt(0);
+        const isCorrect = question.correct === option.charAt(0);
+        const isWrong = window.AppState.examSubmitted && isSelected && !isCorrect;
+        
+        let optionClass = 'option';
+        if (isSelected) optionClass += ' selected';
+        if (window.AppState.examSubmitted && isCorrect) optionClass += ' correct';
+        if (window.AppState.examSubmitted && isWrong) optionClass += ' wrong';
+        
+        const onclick = !window.AppState.examSubmitted ? `selectMultipleChoiceAnswer(${index}, '${option.charAt(0)}')` : '';
+        const checked = isSelected ? 'checked' : '';
+        const disabled = window.AppState.examSubmitted ? 'disabled' : '';
+        
+        questionHTML += `
+            <div class="${optionClass}" onclick="${onclick}">
+                <input type="radio" name="question-${index}" value="${option.charAt(0)}" ${checked} ${disabled}>
+                <span class="option-text">${option}</span>
+            </div>
+        `;
+    });
+    
+    questionHTML += '</div></div>';
+    return questionHTML;
 }
 
 // Render câu hỏi đúng/sai (PHẦN 2)

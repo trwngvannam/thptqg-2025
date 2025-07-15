@@ -61,31 +61,31 @@
       "id": 3,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 3",
-      "text": "Cho hai mặt phẳng $(P)$ và $(Q)$ vuông góc với nhau. Giao tuyến của chúng là đường thẳng $d$. Điều kiện để hai mặt phẳng vuông góc là:",
+      "text": "Một người chia thời lượng (đơn vị: giây) thực hiện các cuộc gọi điện thoại của mình trong một tuần thành sáu nhóm và lập bảng tần số ghép nhóm như sau:\n\n\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline\n\\textbf{Nhóm} & [0;40) & [40;80) & [80;120) & [120;160) & [160;200) & [200;240) \\\\\n\\hline\n\\textbf{Tần số} & 11 & 10 & 6 & 8 & 4 & 1 \\\\\n\\hline\n\\end{array}\n\nTứ phân vị thứ ba $Q_3$ (đơn vị: giây) của mẫu số liệu ghép nhóm trên bằng:",
       "options": [
-        "A. Góc giữa hai vectơ pháp tuyến bằng $90°$",
-        "B. Tích vô hướng hai vectơ pháp tuyến bằng 0", 
-        "C. Hai mặt phẳng song song",
-        "D. Cả A và B đều đúng"
+        "A. $145$",
+        "B. $140$",
+        "C. $135$",
+        "D. $130$"
       ],
-      "correct": "D",
-      "topic": "Quan hệ vuông góc",
-      "level": "NB",
+      "correct": "C",
+      "topic": "Các số đặc trưng MSL",
+      "level": "TH",
       "hasMath": true
     },
     {
       "id": 4,
       "part": "PHẦN 1: TRẮC NGHIỆM", 
       "question_number": "Câu 4",
-      "text": "Cho cấp số cộng có $u_1 = 3$ và công sai $d = 4$. Số hạng thứ 5 của cấp số cộng là:",
+      "text": "Trong không gian $Oxyz$, cho đường thẳng $(d)$: $\\frac{x - 3}{4} = \\frac{y + 2}{-5} = \\frac{z - 1}{2}$. Vectơ nào sau đây là một vectơ chỉ phương của đường thẳng $(d)$?",
       "options": [
-        "A. $19$",
-        "B. $20$",
-        "C. $21$",
-        "D. $23$"
+        "A. $\\vec{v} = (4; 5; 2)$",
+        "B. $\\vec{v} = (3; -2; 1)$",
+        "C. $\\vec{v} = (3; 2; 1)$",
+        "D. $\\vec{v} = (4; -5; 2)$"
       ],
-      "correct": "A",
-      "topic": "Dãy số – Cấp số",
+      "correct": "D",
+      "topic": "Phương pháp tọa độ trong không gian",
       "level": "NB", 
       "hasMath": true
     },
@@ -93,15 +93,15 @@
       "id": 5,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 5",
-      "text": "Hàm số $y = \\frac{2x+1}{x-3}$ đồng biến trên khoảng nào?",
+      "text": "Họ nguyên hàm của hàm số $f(x) = x^2$ là:",
       "options": [
-        "A. $(-\\infty; 3)$ và $(3; +\\infty)$",
-        "B. $(-\\infty; +\\infty)$",
-        "C. $(-\\infty; 3)$",
-        "D. $(3; +\\infty)$"
+        "A. $\\frac{1}{3}x^3 + C$",
+        "B. $2x^3 + C$",
+        "C. $3x^3 + C$",
+        "D. $\\frac{1}{2}x^3 + C$"
       ],
       "correct": "A",
-      "topic": "Hàm số",
+      "topic": "Nguyên hàm – Tích phân",
       "level": "NB",
       "hasMath": true
     },
@@ -109,15 +109,15 @@
       "id": 6,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 6", 
-      "text": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{3x-1}{2x+5}$ là:",
+      "text": "Cho cấp số cộng $(u_n)$ có $u_1 = 4$ và công sai $d = -3$. Giá trị của $u_5$ bằng:",
       "options": [
-        "A. $y = \\frac{3}{2}$",
-        "B. $y = \\frac{1}{2}$",
-        "C. $y = -\\frac{5}{2}$",
-        "D. $x = -\\frac{5}{2}$"
+        "A. $16$",
+        "B. $19$",
+        "C. $-8$",
+        "D. $-11$"
       ],
-      "correct": "A",
-      "topic": "Hàm số",
+      "correct": "C",
+      "topic": "Dãy số – Cấp số",
       "level": "NB",
       "hasMath": true
     },
@@ -125,15 +125,15 @@
       "id": 7,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 7",
-      "text": "Trong không gian $Oxyz$, cho hai véc-tơ $\\vec{a} = (1; 2; -1)$ và $\\vec{b} = (2; 0; 3)$. Tích vô hướng $\\vec{a} \\cdot \\vec{b}$ bằng:",
+      "text": "Tập nghiệm của phương trình $\\sin x = 0$ là:",
       "options": [
-        "A. $-1$",
-        "B. $1$",
-        "C. $2$",
-        "D. $5$"
+        "A. $S = \\left\\{ \\frac{\\pi}{2} + k\\pi \\mid k \\in \\mathbb{Z} \\right\\}$",
+        "B. $S = \\left\\{ 2k\\pi \\mid k \\in \\mathbb{Z} \\right\\}$",
+        "C. $S = \\left\\{ \\frac{\\pi}{2} + 2k\\pi \\mid k \\in \\mathbb{Z} \\right\\}$",
+        "D. $S = \\left\\{ k\\pi \\mid k \\in \\mathbb{Z} \\right\\}$"
       ],
-      "correct": "A",
-      "topic": "Vectơ trong không gian",
+      "correct": "D",
+      "topic": "Lượng giác",
       "level": "NB",
       "hasMath": true
     },
@@ -141,31 +141,31 @@
       "id": 8,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 8",
-      "text": "Cho mẫu số liệu: $2, 4, 6, 8, 10$. Phương sai của mẫu số liệu này là:",
+      "text": "Trong mặt phẳng với hệ tọa độ $Oxy$, diện tích $S$ của hình phẳng giới hạn bởi đồ thị của hàm số $y = 2x - 3$, trục hoành và hai đường thẳng $x = 1$, $x = 2$ được xác định bằng công thức:",
       "options": [
-        "A. $6$",
-        "B. $8$", 
-        "C. $10$",
-        "D. $12$"
+        "A. $S = \\pi \\int_1^2 |2x - 3|\\,dx$",
+        "B. $S = \\int_1^2 |2x - 3|\\,dx$", 
+        "C. $S = \\pi \\int_1^2 (2x - 3)^2\\,dx$",
+        "D. $S = \\left| \\int_1^2 (2x - 3)\\,dx \\right|$"
       ],
       "correct": "B",
-      "topic": "Các số đặc trưng MSL",
-      "level": "NB",
+      "topic": "Nguyên hàm – Tích phân",
+      "level": "TH",
       "hasMath": true
     },
     {
       "id": 9,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 9",
-      "text": "Nguyên hàm của hàm số $f(x) = 3x^2 + 2x - 1$ là:",
+      "text": "Trong không gian với hệ tọa độ $Oxyz$, mặt phẳng đi qua điểm $A(2;1;-4)$ nhận $\\vec{n} = (3;2;-1)$ làm một vectơ pháp tuyến có phương trình là:",
       "options": [
-        "A. $x^3 + x^2 - x + C$",
-        "B. $6x + 2 + C$",
-        "C. $x^3 + x^2 + x + C$",
-        "D. $3x^3 + 2x^2 - x + C$"
+        "A. $3(x - 2) + 2(y - 1) - (z + 4) = 0$",
+        "B. $2(x + 3) + (y + 2) - 4(z - 1) = 0$",
+        "C. $3(x + 2) + 2(y + 1) - (z - 4) = 0$",
+        "D. $2(x - 3) + (y - 2) - 4(z + 1) = 0$"
       ],
       "correct": "A",
-      "topic": "Nguyên hàm – Tích phân",
+      "topic": "Phương pháp tọa độ trong không gian",
       "level": "NB",
       "hasMath": true
     },
@@ -173,15 +173,15 @@
       "id": 10,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 10",
-      "text": "Tích phân $\\int_0^2 (2x + 1) dx$ bằng:",
+      "text": "Nghiệm của phương trình $\\log_3(2x - 1) = 2$ là:",
       "options": [
-        "A. $4$",
-        "B. $5$",
-        "C. $6$", 
-        "D. $7$"
+        "A. $x = \\frac{7}{2}$",
+        "B. $x = \\frac{5}{2}$",
+        "C. $x = 5$", 
+        "D. $x = 4$"
       ],
       "correct": "C",
-      "topic": "Nguyên hàm – Tích phân",
+      "topic": "Hàm số mũ và hàm số logarit",
       "level": "NB",
       "hasMath": true
     },
@@ -189,31 +189,33 @@
       "id": 11,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 11",
-      "text": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua điểm $A(1; 2; 3)$ và có véc-tơ pháp tuyến $\\vec{n} = (2; -1; 3)$ là:",
+      "text": "Cho hàm số $y = \\frac{ax + b}{cx + d}$ ($ac \\ne 0$, $ad - bc \\ne 0$) có đồ thị như hình dưới. Đường tiệm cận đứng của đồ thị hàm số đã cho có phương trình là:",
       "options": [
-        "A. $2x - y + 3z - 9 = 0$",
-        "B. $2x - y + 3z + 9 = 0$",
-        "C. $x + 2y + 3z - 9 = 0$",
-        "D. $2x - y + 3z = 0$"
+        "A. $y = 2$",
+        "B. $x = -1$",
+        "C. $y = -1$",
+        "D. $x = 2$"
       ],
-      "correct": "A", 
-      "topic": "Phương pháp tọa độ trong không gian",
+      "correct": "B", 
+      "topic": "Khảo sát hàm số",
       "level": "NB",
-      "hasMath": true
+      "hasMath": true,
+      "hasImage": true,
+      "imageNote": "HÌNH SẼ ĐƯỢC CẬP NHẬT SAU"
     },
     {
       "id": 12,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 12",
-      "text": "Phương trình tham số của đường thẳng đi qua điểm $M(1; 0; 2)$ và có véc-tơ chỉ phương $\\vec{u} = (2; -1; 3)$ là:",
+      "text": "Cho hình chóp $S.ABC$ có $SA$ vuông góc với mặt phẳng $(ABC)$, tam giác $ABC$ vuông tại $A$ và $SA = 3$, $AB = 4$, $AC = 5$. Thể tích của khối chóp $S.ABC$ bằng:",
       "options": [
-        "A. $\\begin{cases} x = 1 + 2t \\\\ y = -t \\\\ z = 2 + 3t \\end{cases}$",
-        "B. $\\begin{cases} x = 2 + t \\\\ y = -1 \\\\ z = 3 + 2t \\end{cases}$",
-        "C. $\\begin{cases} x = 1 + t \\\\ y = -t \\\\ z = 2 + t \\end{cases}$",
-        "D. $\\begin{cases} x = 2t \\\\ y = -t \\\\ z = 3t \\end{cases}$"
+        "A. $30$",
+        "B. $20$",
+        "C. $60$",
+        "D. $10$"
       ],
-      "correct": "A",
-      "topic": "Phương pháp tọa độ trong không gian", 
+      "correct": "D",
+      "topic": "Khối đa diện",
       "level": "NB",
       "hasMath": true
     },
@@ -221,30 +223,30 @@
       "id": 13,
       "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
       "question_number": "Câu 13",
-      "text": "Cho hàm số lượng giác $y = \\sin x$ và $y = \\cos x$. Xét tính đúng/sai của các khẳng định sau:",
+      "text": "Cho hàm số $f(x) = x^3 - 12x - 8$. Xét tính đúng/sai của các khẳng định sau:",
       "sub_questions": [
         {
           "id": "13a",
-          "text": "a) $\\sin^2 x + \\cos^2 x = 1$ với mọi $x \\in \\mathbb{R}$",
+          "text": "a) Hàm số đã cho có đạo hàm là $f'(x) = 3x^2 - 12$",
           "correct": true
         },
         {
           "id": "13b", 
-          "text": "b) Đạo hàm của $\\sin x$ là $-\\cos x$",
+          "text": "b) Phương trình $f'(x) = 0$ có tập nghiệm là $S = \\{2\\}$",
           "correct": false
         },
         {
           "id": "13c",
-          "text": "c) Phương trình $\\sin x = \\frac{1}{2}$ có nghiệm $x = \\frac{\\pi}{6} + k2\\pi$ hoặc $x = \\frac{5\\pi}{6} + k2\\pi$",
-          "correct": true
+          "text": "c) $f(2) = 24$",
+          "correct": false
         },
         {
           "id": "13d",
-          "text": "d) Hàm số $y = \\sin 2x$ có chu kỳ $T = \\pi$",
-          "correct": true
+          "text": "d) Giá trị lớn nhất của hàm số $f(x)$ trên đoạn $[-3; 3]$ bằng $24$",
+          "correct": false
         }
       ],
-      "topic": "Lượng giác",
+      "topic": "Khảo sát hàm số",
       "level": "NB-TH",
       "hasMath": true
     },
@@ -252,125 +254,125 @@
       "id": 14,
       "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
       "question_number": "Câu 14", 
-      "text": "Một hộp có 5 viên bi đỏ và 3 viên bi xanh. Lấy ngẫu nhiên 2 viên bi. Xét tính đúng/sai của các khẳng định:",
+      "text": "Trong ngành nuôi trồng thuỷ sản, việc kiểm soát lượng thuốc tồn dư trong nước là một nhiệm vụ quan trọng nhằm đáp ứng các tiêu chuẩn an toàn về môi trường. Khi nghiên cứu một loại thuốc trị bệnh trong nuôi trồng thủy sản, người ta sử dụng thuốc đó một lần và theo dõi nồng độ thuốc tồn dư trong nước kể từ lúc sử dụng thuốc. Kết quả cho thấy nồng độ thuốc $y(t)$ (đơn vị: mg/lít) tồn dư trong nước tại thời điểm $t$ ngày ($t \\geq 0$) kể từ lúc sử dụng thuốc, thoả mãn $y(t) > 0$ và: $y'(t) = k \\cdot y(t)$ ($t \\geq 0$) trong đó $k$ là hằng số khác không. Biết: $y(6) = 2$, $y(12) = 1$ và hàm số $y(t) = e^{g(t)}$ với $g(t)$ là một hàm số xác định với $t \\geq 0$. Xét tính đúng/sai của các khẳng định:",
       "sub_questions": [
         {
           "id": "14a",
-          "text": "a) Xác suất lấy được 2 viên bi đỏ là $\\frac{5}{14}$",
+          "text": "a) $g(t) = kt + C$ với $C$ là hằng số xác định",
           "correct": true
         },
         {
           "id": "14b",
-          "text": "b) Xác suất lấy được ít nhất 1 viên bi xanh là $\\frac{9}{14}$",
-          "correct": true
+          "text": "b) $k = \\frac{\\ln 2}{6}$",
+          "correct": false
         },
         {
           "id": "14c",
-          "text": "c) Xác suất có điều kiện lấy được viên thứ 2 là bi đỏ biết viên thứ 1 là bi đỏ là $\\frac{4}{7}$",
+          "text": "c) $C = 2\\ln 2$",
           "correct": true
         },
         {
           "id": "14d",
-          "text": "d) Xác suất lấy được 1 viên đỏ và 1 viên xanh trong thực tiễn là $\\frac{15}{28}$",
-          "correct": true
+          "text": "d) Nồng độ thuốc tồn dư tại thời điểm $t = 25$ (ngày) lớn hơn $0.25$ mg/lít",
+          "correct": false
         }
       ],
-      "topic": "Xác suất",
-      "level": "NB-TH",
+      "topic": "Phương trình vi phân - Ứng dụng thực tiễn",
+      "level": "TH-VD",
       "hasMath": true
     },
     {
       "id": 15,
       "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
       "question_number": "Câu 15",
-      "text": "Cho hàm số $f(x) = x^3 - 3x^2 + 2$. Xét các ứng dụng tích phân sau:",
+      "text": "Mô hình toán học sau đây được sử dụng trong quan sát chuyển động của một vật. Trong không gian có hệ tọa độ $Oxyz$, các vectơ đơn vị $\\vec{i}, \\vec{j}, \\vec{k}$ lần lượt là các vectơ đơn vị trên các trục $Ox, Oy, Oz$. Cho hai điểm $A$ và $B$ lần lượt có tọa độ $A(5;5;0)$ và $B(x_B; y_B; z_B)$. Một vật chuyển động theo phương thẳng với vận tốc phụ thuộc thời gian: $v(t) = \\beta t + 300$ (đơn vị: m/s), trong đó $0 \\le t \\le 6$. Biết: tại $t = 0$ vật có vận tốc 300 m/s và hướng tới điểm $B$; sau 2 giây kể từ thời điểm ban đầu, vật đi được quãng đường 604 m; gọi $\\vec{u} = (a; b; c)$ là vectơ cùng hướng với $\\overrightarrow{AB}$ với $|\\vec{u}| = 1$; góc giữa $\\vec{u}$ và các vectơ $\\vec{i}, \\vec{j}, \\vec{k}$ lần lượt là $60°, 60°, 45°$. Xét các khẳng định:",
       "sub_questions": [
         {
           "id": "15a",
-          "text": "a) Diện tích hình phẳng giới hạn bởi $y = f(x)$, trục $Ox$ và các đường $x = 0, x = 2$ bằng $2$",
-          "correct": false
-        },
-        {
-          "id": "15b",
-          "text": "b) Thể tích khối tròn xoay khi quay đồ thị $y = f(x)$ quanh trục $Ox$ từ $x = 0$ đến $x = 1$ có công thức $V = \\pi \\int_0^1 [f(x)]^2 dx$",
+          "text": "a) $a = \\cos 60°$",
           "correct": true
         },
         {
+          "id": "15b",
+          "text": "b) Phương trình đường thẳng $AB$ là $\\frac{x - 5}{1} = \\frac{y - 5}{1} = \\frac{z}{2}$",
+          "correct": false
+        },
+        {
           "id": "15c", 
-          "text": "c) Độ dài cung đồ thị từ $x = 0$ đến $x = 1$ có công thức $s = \\int_0^1 \\sqrt{1 + [f'(x)]^2} dx$",
+          "text": "c) $\\beta = 2$",
           "correct": true
         },
         {
           "id": "15d",
-          "text": "d) Diện tích mặt xoay khi quay cung $y = f(x)$ quanh trục $Ox$ từ $x = 0$ đến $x = 1$ có công thức $S = 2\\pi \\int_0^1 |f(x)| \\sqrt{1 + [f'(x)]^2} dx$",
-          "correct": true
+          "text": "d) Sau 5 giây kể từ thời điểm ban đầu, vật đi đến điểm $B$ với $x_B > 768$",
+          "correct": false
         }
       ],
-      "topic": "Nguyên hàm – Tích phân",
-      "level": "NB-TH-VD",
+      "topic": "Vectơ – Tích phân – Ứng dụng thực tiễn",
+      "level": "TH-VD",
       "hasMath": true
     },
     {
       "id": 16,
       "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
       "question_number": "Câu 16",
-      "text": "Trong không gian $Oxyz$, cho đường thẳng $d: \\frac{x-1}{2} = \\frac{y+1}{1} = \\frac{z}{-1}$ và điểm $A(2; 0; 1)$. Xét tính đúng/sai:",
+      "text": "Một phần mềm nhận dạng tin nhắn quảng cáo trên điện thoại dựa vào từ khoá để đánh dấu một số tin nhắn được gửi đến. Người ta thấy rằng: Có 15% số tin nhắn được đánh dấu $\\Rightarrow P(A) = 0{,}15$; Trong các tin nhắn bị đánh dấu: 10% không phải là quảng cáo $\\Rightarrow P(\\overline{B} \\mid A) = 0{,}1$; Trong các tin nhắn không bị đánh dấu: 5% là quảng cáo $\\Rightarrow P(B \\mid \\overline{A}) = 0{,}05$. Gọi $A$: \"Tin nhắn bị đánh dấu\", $B$: \"Tin nhắn là quảng cáo\". Xét tính đúng/sai:",
       "sub_questions": [
         {
           "id": "16a",
-          "text": "a) Đường thẳng $d$ đi qua điểm $M(1; -1; 0)$ và có véc-tơ chỉ phương $\\vec{u} = (2; 1; -1)$",
+          "text": "a) Xác suất để tin nhắn đó không bị đánh dấu là $0{,}85$",
           "correct": true
         },
         {
           "id": "16b",
-          "text": "b) Khoảng cách từ điểm $A$ đến đường thẳng $d$ bằng $\\sqrt{6}$",
+          "text": "b) Xác suất để tin nhắn đó không phải là quảng cáo, biết rằng nó không bị đánh dấu, bằng $0{,}95$",
           "correct": true
         },
         {
           "id": "16c",
-          "text": "c) Trong ứng dụng thực tiễn: Nếu $d$ biểu diễn đường bay của máy bay, thì máy bay di chuyển theo hướng véc-tơ $(2; 1; -1)$",
-          "correct": true
+          "text": "c) Xác suất để tin nhắn đó không phải là quảng cáo bằng $0{,}85$",
+          "correct": false
         },
         {
           "id": "16d",
-          "text": "d) Phương trình mặt phẳng chứa $A$ và vuông góc với $d$ là $2x + y - z - 3 = 0$",
+          "text": "d) Xác suất để tin nhắn đó không bị đánh dấu, biết rằng nó không phải là quảng cáo, lớn hơn $0{,}95$",
           "correct": true
         }
       ],
-      "topic": "Phương pháp tọa độ không gian",
-      "level": "NB-TH",
+      "topic": "Xác suất có điều kiện",
+      "level": "VD",
       "hasMath": true
     },
     {
       "id": 17,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
       "question_number": "Câu 17",
-      "text": "Trong không gian, cho hai đường thẳng chéo nhau $d_1: \\frac{x-1}{2} = \\frac{y}{1} = \\frac{z+1}{-1}$ và $d_2: \\frac{x+1}{1} = \\frac{y-2}{-1} = \\frac{z}{2}$. Khoảng cách giữa hai đường thẳng chéo nhau này bằng:",
+      "text": "Bạn Nam tham gia cuộc thi giải một mật thư. Theo quy tắc cuộc thi, người chơi cần chọn ra 6 số từ tập $S = \\{11; 12; 13; 14; 15; 16; 17; 18; 19\\}$ và xếp mỗi số vào đúng một vị trí trong 6 vị trí $A, B, C, M, N, P$, sao cho mỗi vị trí chỉ chứa một số. Mật thư sẽ được giải nếu các bộ ba số xuất hiện ở các bộ vị trí: $(A, M, B)$, $(B, N, C)$, $(C, P, A)$ tạo thành các cấp số cộng theo thứ tự. Bạn Nam chọn ngẫu nhiên 6 số và sắp xếp. Gọi xác suất để giải được mật thư là $\\frac{1}{a}$. Tìm giá trị của $a$.",
       "answer_type": "number",
-      "correct_answer": "3",
-      "topic": "Quan hệ vuông góc",
-      "level": "TH",
+      "correct_answer": "1260",
+      "topic": "Xác suất - Dãy số",
+      "level": "VD",
       "hasMath": true
     },
     {
       "id": 18,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN", 
       "question_number": "Câu 18",
-      "text": "Một đồ thị có 6 đỉnh được sắp xếp thành hình lục giác đều, mỗi đỉnh được nối với 2 đỉnh kề cạnh. Số lượng đường đi Hamilton trong đồ thị này là:",
+      "text": "Một doanh nghiệp sản xuất $x$ sản phẩm trong một tháng ($x \\in \\mathbb{N}^*$, $1 \\le x \\le 4500$). Doanh thu khi bán hết $x$ sản phẩm: $F(x) = -0{,}01x^2 + 300x$ (nghìn đồng). Chi phí sản xuất bình quân cho mỗi sản phẩm: $G(x) = \\frac{30\\,000}{x} + 200$ (nghìn đồng). Biết rằng toàn bộ sản phẩm sản xuất ra đều bán hết. Tìm số sản phẩm ít nhất cần sản xuất để lợi nhuận thu được lớn hơn 100 triệu đồng.",
       "answer_type": "number",
-      "correct_answer": "60",
-      "topic": "Lý thuyết đồ thị",
+      "correct_answer": "1536",
+      "topic": "Hàm số - Ứng dụng thực tiễn",
       "level": "VD",
-      "hasMath": false
+      "hasMath": true
     },
     {
       "id": 19,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
       "question_number": "Câu 19", 
-      "text": "Một công ty sản xuất có hàm chi phí $C(x) = x^3 - 6x^2 + 12x + 20$ (triệu đồng) và hàm doanh thu $R(x) = 15x$ (triệu đồng), trong đó $x$ là số lượng sản phẩm (nghìn chiếc). Lợi nhuận tối đa mà công ty có thể đạt được là (triệu đồng):",
+      "text": "Để gây quỹ từ thiện, câu lạc bộ thiện nguyện của một trường THPT tổ chức hoạt động bán hàng với hai mặt hàng là nước chanh và khoai chiên. Câu lạc bộ thiết kế hai thực đơn: Thực đơn 1 có giá 30 nghìn đồng, gồm hai cốc nước chanh và một túi khoai chiên; Thực đơn 2 có giá 50 nghìn đồng, gồm ba cốc nước chanh và hai túi khoai chiên. Biết rằng chỉ làm được tối đa 165 cốc nước chanh và 100 túi khoai chiên. Hỏi số tiền lớn nhất mà câu lạc bộ có thể nhận được sau khi bán hết hàng là bao nhiêu (nghìn đồng)?",
       "answer_type": "number", 
-      "correct_answer": "7",
-      "topic": "Hàm số - Ứng dụng thực tiễn",
+      "correct_answer": "2650",
+      "topic": "Quy hoạch tuyến tính - Ứng dụng thực tiễn",
       "level": "VD",
       "hasMath": true
     },
@@ -378,10 +380,10 @@
       "id": 20,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
       "question_number": "Câu 20",
-      "text": "Trong không gian $Oxyz$, cho ba điểm $A(1; 2; 0)$, $B(3; 0; 1)$, $C(0; 1; 2)$. Trong ứng dụng thực tiễn về định vị GPS, nếu ba điểm này là vị trí của ba vệ tinh, thì tọa độ trọng tâm của tam giác $ABC$ có tung độ bằng:",
-      "answer_type": "fraction",
-      "correct_answer": "1",
-      "topic": "Vectơ - Ứng dụng thực tiễn", 
+      "text": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thoi với $\\angle ABC = 60°$ và $AB = 2$. Biết rằng hình chiếu vuông góc của $S$ trên mặt phẳng $(ABCD)$ là trọng tâm $H$ của tam giác $ABC$ và $SH = \\sqrt{3}$. Tính khoảng cách giữa hai đường thẳng $AC$ và $SD$ (làm tròn kết quả đến hàng phần trăm).",
+      "answer_type": "decimal",
+      "correct_answer": "1.04",
+      "topic": "Hình học không gian - Khoảng cách",
       "level": "VD",
       "hasMath": true
     },
@@ -389,10 +391,10 @@
       "id": 21,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
       "question_number": "Câu 21",
-      "text": "Một bể nước có dạng parabol với phương trình $y = x^2$ (đơn vị: mét). Mực nước ban đầu ở độ cao $y = 4$m. Khi rút nước, thể tích nước còn lại từ $y = 0$ đến $y = 1$ tính bằng tích phân $V = 2\\pi \\int_0^1 y \\sqrt{1 + \\frac{1}{4y}} dy$. Giá trị của tích phân này bằng:",
+      "text": "Có bốn ngăn (trong một giá để sách) được đánh số thứ tự $1, 2, 3, 4$, và bảy quyển sách khác nhau. Bạn An xếp hết bảy quyển sách nói trên vào bốn ngăn đó sao cho mỗi ngăn có ít nhất một quyển sách, và các quyển sách được xếp thẳng đứng thành một hàng ngang với gáy sách quay ra ngoài ở mỗi ngăn. Khi đã xếp xong bảy quyển sách, hai cách xếp của bạn An được gọi là giống nhau nếu chúng thỏa mãn đồng thời hai điều kiện sau: Với từng ngăn, số lượng quyển sách ở ngăn đó là như nhau trong cả hai cách xếp; Với từng ngăn, thứ tự từ trái sang phải của các quyển sách được xếp là như nhau trong cả hai cách xếp. Gọi $T$ là số cách xếp đôi một khác nhau của bạn An. Hỏi: Giá trị của $\\frac{T}{100}$ bằng bao nhiêu?",
       "answer_type": "number",
-      "correct_answer": "4",
-      "topic": "Nguyên hàm – Tích phân - Ứng dụng",
+      "correct_answer": "1008",
+      "topic": "Tổ hợp - Chỉnh hợp",
       "level": "VD",
       "hasMath": true
     },
@@ -400,10 +402,10 @@
       "id": 22,
       "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
       "question_number": "Câu 22",
-      "text": "Trong một cuộc khảo sát về hiệu quả của vaccine, biết rằng xác suất một người đã tiêm vaccine bị nhiễm bệnh là 0.05. Xác suất một người chưa tiêm vaccine bị nhiễm bệnh là 0.3. Tỷ lệ người đã tiêm vaccine trong dân số là 80%. Xác suất có điều kiện để một người đã tiêm vaccine, biết rằng người đó bị nhiễm bệnh, bằng (làm tròn đến 2 chữ số thập phân):",
+      "text": "Để đặt được một vật trang trí trên mặt bàn, người ta thiết kế một chân đế như sau: Lấy một khối gỗ có dạng khối chóp cụt tứ giác đều với độ dài hai cạnh đáy lần lượt là $7{,}4$ cm và $10{,}4$ cm, bề dày của khối gỗ bằng $1{,}5$ cm. Sau đó khoét bỏ đi một phần của khối gỗ sao cho phần đó có dạng vật thể $H$, ở đó $H$ nhận được bằng cách cắt khối cầu bán kính $5{,}8$ cm bởi một mặt phẳng cắt mà mặt cắt là hình tròn bán kính $3{,}5$ cm. Hỏi thể tích của khối chân đế còn lại bằng bao nhiêu $\\text{cm}^3$? (Không làm tròn kết quả các phép tính trung gian, chỉ làm tròn kết quả cuối cùng đến hàng phần mười.)",
       "answer_type": "decimal",
-      "correct_answer": "0.25",
-      "topic": "Xác suất có điều kiện",
+      "correct_answer": "96.5",
+      "topic": "Hình học không gian - Thể tích",
       "level": "VD", 
       "hasMath": true
     }

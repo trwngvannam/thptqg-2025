@@ -153,6 +153,28 @@
     .option-text {
         font-size: 1rem;
     }
+    
+    /* Math layout responsive */
+    .question-grid.math-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .question-grid.math-layout .question-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+    
+    .question-grid.math-layout .question-column:last-child {
+        flex: 1;
+    }
+    
+    .question-grid.math-layout .question-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Mobile nhỏ */
