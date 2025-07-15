@@ -29,15 +29,15 @@
       "id": 1,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 1",
-      "text": "Nghiệm của bất phương trình $\\log_2(x-1) > 3$ là:",
+      "text": "Cho hình lăng trụ $ABC.A'B'C'$. Phát biểu nào sau đây là đúng?",
       "options": [
-        "A. $x > 9$",
-        "B. $x > 8$", 
-        "C. $x > 7$",
-        "D. $x > 4$"
+        "A. $\\vec{BA} + \\vec{A'C'} = \\vec{BC'}$",
+        "B. $\\vec{BA} + \\vec{A'C'} = \\vec{C'B'}$",
+        "C. $\\vec{BA} + \\vec{A'C'} = \\vec{BC}$",
+        "D. $\\vec{BA} + \\vec{A'C'} = \\vec{A'A}$"
       ],
       "correct": "A",
-      "topic": "Lũy thừa – Mũ – Logarit",
+      "topic": "Vectơ trong không gian",
       "level": "NB",
       "hasMath": true
     },
@@ -45,15 +45,15 @@
       "id": 2,
       "part": "PHẦN 1: TRẮC NGHIỆM",
       "question_number": "Câu 2",
-      "text": "Nghiệm của phương trình $2^{x+1} = 16$ là:",
+      "text": "Cho hình hộp $ABCD.A'B'C'D'$. Đường thẳng $AB$ song song với mặt phẳng nào sau đây?",
       "options": [
-        "A. $x = 2$",
-        "B. $x = 3$",
-        "C. $x = 4$", 
-        "D. $x = 5$"
+        "A. $(CC'A'A)$",
+        "B. $(BB'C'C)$",
+        "C. $(A'B'C'D')$",
+        "D. $(AA'D'D)$"
       ],
-      "correct": "B",
-      "topic": "Lũy thừa – Mũ – Logarit",
+      "correct": "C",
+      "topic": "Quan hệ song song",
       "level": "NB",
       "hasMath": true
     },

@@ -1,33 +1,33 @@
 {
   "1": {
-    "correct": "B",
+    "correct": "A",
     "explanation": {
-      "reason": "Hàm số f(x) = x² - 2x + 3 có đạo hàm f'(x) = 2x - 2. Cho f'(x) = 0 ta có x = 1. Tại x = 1: f(1) = 1 - 2 + 3 = 2",
+      "reason": "Trong hình lăng trụ $ABC.A'B'C'$, ta có $\\vec{A'C'} = \\vec{AC}$ (tính chất hình lăng trụ). Áp dụng quy tắc hình bình hành: $\\vec{BA} + \\vec{AC} = \\vec{BC}$. Do đó $\\vec{BA} + \\vec{A'C'} = \\vec{BC'}$ (vì $\\vec{BC'} = \\vec{BC} + \\vec{CC'} = \\vec{BC} + \\vec{AA'}$).",
       "points": [
-        "Tìm đạo hàm của hàm số",
-        "Giải phương trình f'(x) = 0",
-        "Tính giá trị hàm số tại điểm tìm được"
+        "Tính chất hình lăng trụ: $\\vec{A'C'} = \\vec{AC}$",
+        "Áp dụng quy tắc hình bình hành trong mặt phẳng $ABC$",
+        "Sử dụng tính chất vector trong không gian 3D"
       ],
       "wrongAnswers": [
-        "A. Sai vì chưa tính đúng giá trị nhỏ nhất",
-        "C. Sai vì đây là giá trị tại x = 0",
-        "D. Sai vì tính toán không chính xác"
+        "B. Sai vì $\\vec{C'B'} = -\\vec{B'C'}$, không bằng tổng đã cho",
+        "C. Sai vì $\\vec{BC}$ nằm trong mặt đáy, không liên quan đến $\\vec{A'C'}$",
+        "D. Sai vì $\\vec{A'A} = -\\vec{AA'}$, ngược hướng với vector cần tìm"
       ]
     }
   },
   "2": {
-    "correct": "B",
+    "correct": "C",
     "explanation": {
-      "reason": "Đạo hàm của sin(u) là cos(u).u'. Với u = 2x + 1, ta có u' = 2. Vậy y' = cos(2x + 1) × 2 = 2cos(2x + 1)",
+      "reason": "Trong hình hộp $ABCD.A'B'C'D'$, đường thẳng $AB$ song song với mặt phẳng $(A'B'C'D')$ vì: $AB \\nsubseteq (A'B'C'D')$ (không nằm trong mặt phẳng) và $AB \\parallel A'B'$ (hai cạnh tương ứng của hình hộp), mà $A'B' \\subset (A'B'C'D')$.",
       "points": [
-        "Áp dụng quy tắc đạo hàm hàm hợp",
-        "sin(u)' = cos(u) × u'",
-        "u = 2x + 1 nên u' = 2"
+        "Kiểm tra điều kiện: $AB \\nsubseteq (A'B'C'D')$",
+        "Tìm đường thẳng song song: $AB \\parallel A'B'$", 
+        "Xác nhận $A'B' \\subset (A'B'C'D')$"
       ],
       "wrongAnswers": [
-        "A. Thiếu hệ số 2 từ đạo hàm của (2x + 1)",
-        "C. Nhầm lẫn với đạo hàm của cos",
-        "D. Nhầm lẫn công thức đạo hàm"
+        "A. Sai vì $(CC'A'A)$ không chứa đường thẳng song song với $AB$",
+        "B. Sai vì $(BB'C'C)$ chứa điểm $B$ nên $AB$ có thể cắt mặt phẳng này",
+        "D. Sai vì $(AA'D'D)$ cũng chứa điểm $A$ nên $AB$ có thể cắt mặt phẳng này"
       ]
     }
   },

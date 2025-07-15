@@ -90,7 +90,6 @@ function renderMultipleChoiceQuestion(question, index) {
     return `
         <div class="question">
             <div class="question-text">${question.text}</div>
-            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Hình minh họa" style="max-width: 100%; height: auto; margin: 1rem 0; border: 1px solid #ddd; border-radius: 8px;"/></div>` : ''}
             <div class="options">
                 ${question.options.map((option, i) => {
                     const isSelected = window.AppState.userAnswers[index] === option.charAt(0); // A, B, C, D
