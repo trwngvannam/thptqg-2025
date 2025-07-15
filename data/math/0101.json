@@ -2,622 +2,409 @@
   "title": "ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề 0101",
   "subject": "TOÁN",
   "time_limit": 90,
-  "total_questions": 50,
+  "total_questions": 22,
+  "structure": {
+    "part1": {
+      "name": "PHẦN 1: TRẮC NGHIỆM",
+      "questions": 12,
+      "points_per_question": 0.25,
+      "description": "Gồm 12 câu hỏi dạng chọn đáp án đúng (A, B, C, D)"
+    },
+    "part2": {
+      "name": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI", 
+      "questions": 4,
+      "sub_questions": 16,
+      "points_per_sub": 0.25,
+      "description": "Mỗi câu gồm 4 ý nhỏ, chọn Đúng hoặc Sai cho từng ý"
+    },
+    "part3": {
+      "name": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "questions": 6,
+      "points_per_question": 0.5,
+      "description": "Tự ghi kết quả vào ô trống dưới dạng số, biểu thức ngắn gọn"
+    }
+  },
   "questions": [
     {
       "id": 1,
-      "text": "Cho hàm số $f(x) = x^2 - 2x + 3$. Giá trị nhỏ nhất của hàm số là:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 1",
+      "text": "Nghiệm của bất phương trình $\\log_2(x-1) > 3$ là:",
       "options": [
-        "A. $1$",
-        "B. $2$", 
-        "C. $3$",
-        "D. $4$"
+        "A. $x > 9$",
+        "B. $x > 8$", 
+        "C. $x > 7$",
+        "D. $x > 4$"
       ],
-      "correct": 1,
+      "correct": "A",
+      "topic": "Lũy thừa – Mũ – Logarit",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 2,
-      "text": "Tính đạo hàm của hàm số $y = \\sin(2x + 1)$:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 2",
+      "text": "Nghiệm của phương trình $2^{x+1} = 16$ là:",
       "options": [
-        "A. $y' = \\cos(2x + 1)$",
-        "B. $y' = 2\\cos(2x + 1)$",
-        "C. $y' = -\\sin(2x + 1)$", 
-        "D. $y' = 2\\sin(2x + 1)$"
+        "A. $x = 2$",
+        "B. $x = 3$",
+        "C. $x = 4$", 
+        "D. $x = 5$"
       ],
-      "correct": 1,
+      "correct": "B",
+      "topic": "Lũy thừa – Mũ – Logarit",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 3,
-      "text": "Cho tam giác ABC vuông tại A, có AB = 3, AC = 4. Độ dài cạnh BC là:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 3",
+      "text": "Cho hai mặt phẳng $(P)$ và $(Q)$ vuông góc với nhau. Giao tuyến của chúng là đường thẳng $d$. Điều kiện để hai mặt phẳng vuông góc là:",
       "options": [
-        "A. $5$",
-        "B. $6$",
-        "C. $7$",
-        "D. $8$"
+        "A. Góc giữa hai vectơ pháp tuyến bằng $90°$",
+        "B. Tích vô hướng hai vectơ pháp tuyến bằng 0", 
+        "C. Hai mặt phẳng song song",
+        "D. Cả A và B đều đúng"
       ],
-      "correct": 0,
-      "hasMath": true,
-      "hasGeometry": true,
-      "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE2MCIgdmlld0JveD0iMCAwIDIwMCAxNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC50cmlhbmdsZSB7IGZpbGw6ICNlNmY3ZmY7IHN0cm9rZTogIzMzMzsgc3Ryb2tlLXdpZHRoOiAyOyB9CiAgICAgIC5yaWdodC1hbmdsZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzMzMzsgc3Ryb2tlLXdpZHRoOiAyOyB9CiAgICAgIC50ZXh0IHsgZm9udC1zaXplOiAxNHB4OyBmaWxsOiAjMzMzOyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IH0KICAgICAgLmxhYmVsIHsgZm9udC1zaXplOiAxNnB4OyBmaWxsOiAjZmY2NjAwOyBmb250LXdlaWdodDogYm9sZDsgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgCiAgPCEtLSBUcmlhbmdsZSAtLT4KICA8cG9seWdvbiBjbGFzcz0idHJpYW5nbGUiIHBvaW50cz0iNDAsODAgNDAsNDAgMTIwLDgwIi8+CiAgCiAgPCEtLSBSaWdodCBhbmdsZSBtYXJrZXIgLS0+CiAgPHJlY3QgY2xhc3M9InJpZ2h0LWFuZ2xlIiB4PSI0MCIgeT0iNjgiIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIvPgogIAogIDwhLS0gTGFiZWxzIC0tPgogIDx0ZXh0IGNsYXNzPSJsYWJlbCIgeD0iMzAiIHk9IjM1Ij5BPC90ZXh0PgogIDx0ZXh0IGNsYXNzPSJsYWJlbCIgeD0iMzAiIHk9IjEwMCI+QjwvdGV4dD4KICA8dGV4dCBjbGFzcz0ibGFiZWwiIHg9IjEyNSIgeT0iODUiPkM8L3RleHQ+CiAgCiAgPCEtLSBEaW1lbnNpb25zIC0tPgogIDx0ZXh0IGNsYXNzPSJ0ZXh0IiB4PSIyMCIgeT0iNjUiPkFCID0gMzwvdGV4dD4KICA8dGV4dCBjbGFzcz0idGV4dCIgeD0iNzAiIHk9IjMwIj5BQyA9IDQ8L3RleHQ+CiAgPHRleHQgY2xhc3M9InRleHQiIHg9Ijc1IiB5PSIxMDAiPkJDID0gPzwvdGV4dD4KPC9zdmc+"
+      "correct": "D",
+      "topic": "Quan hệ vuông góc",
+      "level": "NB",
+      "hasMath": true
     },
     {
       "id": 4,
-      "text": "Giải phương trình $2x + 3 = 7$:",
+      "part": "PHẦN 1: TRẮC NGHIỆM", 
+      "question_number": "Câu 4",
+      "text": "Cho cấp số cộng có $u_1 = 3$ và công sai $d = 4$. Số hạng thứ 5 của cấp số cộng là:",
       "options": [
-        "A. $x = 1$",
-        "B. $x = 2$",
-        "C. $x = 3$",
-        "D. $x = 4$"
+        "A. $19$",
+        "B. $20$",
+        "C. $21$",
+        "D. $23$"
       ],
-      "correct": 1,
+      "correct": "A",
+      "topic": "Dãy số – Cấp số",
+      "level": "NB", 
       "hasMath": true
     },
     {
       "id": 5,
-      "text": "Tích phân $\\int_0^1 x^2 dx$ bằng:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 5",
+      "text": "Hàm số $y = \\frac{2x+1}{x-3}$ đồng biến trên khoảng nào?",
       "options": [
-        "A. $\\frac{1}{4}$",
-        "B. $\\frac{1}{3}$",
-        "C. $\\frac{1}{2}$",
-        "D. $1$"
+        "A. $(-\\infty; 3)$ và $(3; +\\infty)$",
+        "B. $(-\\infty; +\\infty)$",
+        "C. $(-\\infty; 3)$",
+        "D. $(3; +\\infty)$"
       ],
-      "correct": 1,
+      "correct": "A",
+      "topic": "Hàm số",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 6,
-      "text": "Tìm nghiệm của phương trình $x^2 - 5x + 6 = 0$:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 6", 
+      "text": "Đường tiệm cận ngang của đồ thị hàm số $y = \\frac{3x-1}{2x+5}$ là:",
       "options": [
-        "A. $x = 2, x = 3$",
-        "B. $x = 1, x = 6$", 
-        "C. $x = -2, x = -3$",
-        "D. $x = 2, x = -3$"
+        "A. $y = \\frac{3}{2}$",
+        "B. $y = \\frac{1}{2}$",
+        "C. $y = -\\frac{5}{2}$",
+        "D. $x = -\\frac{5}{2}$"
       ],
-      "correct": 0,
+      "correct": "A",
+      "topic": "Hàm số",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 7,
-      "text": "Giới hạn $\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$ bằng:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 7",
+      "text": "Trong không gian $Oxyz$, cho hai véc-tơ $\\vec{a} = (1; 2; -1)$ và $\\vec{b} = (2; 0; 3)$. Tích vô hướng $\\vec{a} \\cdot \\vec{b}$ bằng:",
       "options": [
-        "A. $2$",
-        "B. $4$",
-        "C. $6$",
-        "D. Không tồn tại"
+        "A. $-1$",
+        "B. $1$",
+        "C. $2$",
+        "D. $5$"
       ],
-      "correct": 1,
+      "correct": "A",
+      "topic": "Vectơ trong không gian",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 8,
-      "text": "Tập xác định của hàm số $y = \\sqrt{x - 1}$ là:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 8",
+      "text": "Cho mẫu số liệu: $2, 4, 6, 8, 10$. Phương sai của mẫu số liệu này là:",
       "options": [
-        "A. $\\mathbb{R}$",
-        "B. $[1, +\\infty)$",
-        "C. $(1, +\\infty)$",
-        "D. $(-\\infty, 1]$"
+        "A. $6$",
+        "B. $8$", 
+        "C. $10$",
+        "D. $12$"
       ],
-      "correct": 1,
+      "correct": "B",
+      "topic": "Các số đặc trưng MSL",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 9,
-      "text": "Tính $\\log_2 8$:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 9",
+      "text": "Nguyên hàm của hàm số $f(x) = 3x^2 + 2x - 1$ là:",
       "options": [
-        "A. $2$",
-        "B. $3$",
-        "C. $4$",
-        "D. $8$"
+        "A. $x^3 + x^2 - x + C$",
+        "B. $6x + 2 + C$",
+        "C. $x^3 + x^2 + x + C$",
+        "D. $3x^3 + 2x^2 - x + C$"
       ],
-      "correct": 1,
+      "correct": "A",
+      "topic": "Nguyên hàm – Tích phân",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 10,
-      "text": "Cho hình lập phương có cạnh bằng 2. Thể tích của nó là:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 10",
+      "text": "Tích phân $\\int_0^2 (2x + 1) dx$ bằng:",
       "options": [
         "A. $4$",
-        "B. $6$",
-        "C. $8$",
-        "D. $12$"
+        "B. $5$",
+        "C. $6$", 
+        "D. $7$"
       ],
-      "correct": 2,
-      "hasMath": true,
-      "hasGeometry": true,
-      "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDIwMCAxODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jdWJlLWZhY2UgeyBmaWxsOiBub25lOyBzdHJva2U6ICMzMzM7IHN0cm9rZS13aWR0aDogMjsgfQogICAgICAuY3ViZS1mcm9udCB7IGZpbGw6ICNlNmY3ZmY7IG9wYWNpdHk6IDAuODsgfQogICAgICAuY3ViZS10b3AgeyBmaWxsOiAjYzNlY2ZmOyBvcGFjaXR5OiAwLjg7IH0KICAgICAgLmN1YmUtcmlnaHQgeyBmaWxsOiAjYTBkN2ZmOyBvcGFjaXR5OiAwLjg7IH0KICAgICAgLnRleHQgeyBmb250LXNpemU6IDE0cHg7IGZpbGw6ICMzMzM7IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgCiAgPCEtLSBGcm9udCBmYWNlIC0tPgogIDxwb2x5Z29uIGNsYXNzPSJjdWJlLWZhY2UgY3ViZS1mcm9udCIgcG9pbnRzPSI0MCw2MCA0MCwxNDAgMTIwLDE0MCAxMjAsNjAiLz4KICAKICA8IS0tIFRvcCBmYWNlIC0tPgogIDxwb2x5Z29uIGNsYXNzPSJjdWJlLWZhY2UgY3ViZS10b3AiIHBvaW50cz0iNDAsNjAgODAsNDAgMTYwLDQwIDEyMCw2MCIvPgogIAogIDwhLS0gUmlnaHQgZmFjZSAtLT4KICA8cG9seWdvbiBjbGFzcz0iY3ViZS1mYWNlIGN1YmUtcmlnaHQiIHBvaW50cz0iMTIwLDYwIDE2MCw0MCAxNjAsMTIwIDEyMCwxNDAiLz4KICAKICA8IS0tIEhpZGRlbiBlZGdlcyAtLT4KICA8bGluZSBjbGFzcz0iY3ViZS1mYWNlIiB4MT0iODAiIHkxPSI0MCIgeDI9IjgwIiB5Mj0iMTIwIiBzdHJva2UtZGFzaGFycmF5PSI1LDUiLz4KICA8bGluZSBjbGFzcz0iY3ViZS1mYWNlIiB4MT0iODAiIHkxPSIxMjAiIHgyPSIxNjAiIHkyPSIxMjAiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIvPgogIDxsaW5lIGNsYXNzPSJjdWJlLWZhY2UiIHgxPSI4MCIgeTE9IjEyMCIgeDI9IjQwIiB5Mj0iMTQwIiBzdHJva2UtZGFzaGFycmF5PSI1LDUiLz4KICAKICA8IS0tIERpbWVuc2lvbiBsYWJlbHMgLS0+CiAgPHRleHQgY2xhc3M9InRleHQiIHg9IjcwIiB5PSIxNTUiPjI8L3RleHQ+CiAgPHRleHQgY2xhc3M9InRleHQiIHg9IjE3MCIgeT0iODUiPjI8L3RleHQ+CiAgPHRleHQgY2xhc3M9InRleHQiIHg9IjI1IiB5PSIxMDAiPjI8L3RleHQ+Cjwvc3ZnPg=="
+      "correct": "C",
+      "topic": "Nguyên hàm – Tích phân",
+      "level": "NB",
+      "hasMath": true
     },
     {
       "id": 11,
-      "text": "Đạo hàm của $y = e^x$ là:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 11",
+      "text": "Trong không gian $Oxyz$, phương trình mặt phẳng đi qua điểm $A(1; 2; 3)$ và có véc-tơ pháp tuyến $\\vec{n} = (2; -1; 3)$ là:",
       "options": [
-        "A. $e^x$",
-        "B. $xe^{x-1}$",
-        "C. $\\frac{1}{x}$",
-        "D. $\\ln x$"
+        "A. $2x - y + 3z - 9 = 0$",
+        "B. $2x - y + 3z + 9 = 0$",
+        "C. $x + 2y + 3z - 9 = 0$",
+        "D. $2x - y + 3z = 0$"
       ],
-      "correct": 0,
+      "correct": "A", 
+      "topic": "Phương pháp tọa độ trong không gian",
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 12,
-      "text": "Phương trình $\\sin x = 1$ có nghiệm:",
+      "part": "PHẦN 1: TRẮC NGHIỆM",
+      "question_number": "Câu 12",
+      "text": "Phương trình tham số của đường thẳng đi qua điểm $M(1; 0; 2)$ và có véc-tơ chỉ phương $\\vec{u} = (2; -1; 3)$ là:",
       "options": [
-        "A. $x = \\frac{\\pi}{2} + k2\\pi$",
-        "B. $x = \\pi + k2\\pi$",
-        "C. $x = \\frac{\\pi}{4} + k\\pi$",
-        "D. $x = k\\pi$"
+        "A. $\\begin{cases} x = 1 + 2t \\\\ y = -t \\\\ z = 2 + 3t \\end{cases}$",
+        "B. $\\begin{cases} x = 2 + t \\\\ y = -1 \\\\ z = 3 + 2t \\end{cases}$",
+        "C. $\\begin{cases} x = 1 + t \\\\ y = -t \\\\ z = 2 + t \\end{cases}$",
+        "D. $\\begin{cases} x = 2t \\\\ y = -t \\\\ z = 3t \\end{cases}$"
       ],
-      "correct": 0,
+      "correct": "A",
+      "topic": "Phương pháp tọa độ trong không gian", 
+      "level": "NB",
       "hasMath": true
     },
     {
       "id": 13,
-      "text": "Cho cấp số cộng với $u_1 = 3, d = 2$. Số hạng $u_5$ bằng:",
-      "options": [
-        "A. $9$",
-        "B. $11$",
-        "C. $13$",
-        "D. $15$"
+      "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
+      "question_number": "Câu 13",
+      "text": "Cho hàm số lượng giác $y = \\sin x$ và $y = \\cos x$. Xét tính đúng/sai của các khẳng định sau:",
+      "sub_questions": [
+        {
+          "id": "13a",
+          "text": "a) $\\sin^2 x + \\cos^2 x = 1$ với mọi $x \\in \\mathbb{R}$",
+          "correct": true
+        },
+        {
+          "id": "13b", 
+          "text": "b) Đạo hàm của $\\sin x$ là $-\\cos x$",
+          "correct": false
+        },
+        {
+          "id": "13c",
+          "text": "c) Phương trình $\\sin x = \\frac{1}{2}$ có nghiệm $x = \\frac{\\pi}{6} + k2\\pi$ hoặc $x = \\frac{5\\pi}{6} + k2\\pi$",
+          "correct": true
+        },
+        {
+          "id": "13d",
+          "text": "d) Hàm số $y = \\sin 2x$ có chu kỳ $T = \\pi$",
+          "correct": true
+        }
       ],
-      "correct": 1,
+      "topic": "Lượng giác",
+      "level": "NB-TH",
       "hasMath": true
     },
     {
       "id": 14,
-      "text": "Tìm giá trị lớn nhất của hàm số $y = -x^2 + 4x - 1$ trên $\\mathbb{R}$:",
-      "options": [
-        "A. $3$",
-        "B. $4$",
-        "C. $5$",
-        "D. $6$"
+      "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
+      "question_number": "Câu 14", 
+      "text": "Một hộp có 5 viên bi đỏ và 3 viên bi xanh. Lấy ngẫu nhiên 2 viên bi. Xét tính đúng/sai của các khẳng định:",
+      "sub_questions": [
+        {
+          "id": "14a",
+          "text": "a) Xác suất lấy được 2 viên bi đỏ là $\\frac{5}{14}$",
+          "correct": true
+        },
+        {
+          "id": "14b",
+          "text": "b) Xác suất lấy được ít nhất 1 viên bi xanh là $\\frac{9}{14}$",
+          "correct": true
+        },
+        {
+          "id": "14c",
+          "text": "c) Xác suất có điều kiện lấy được viên thứ 2 là bi đỏ biết viên thứ 1 là bi đỏ là $\\frac{4}{7}$",
+          "correct": true
+        },
+        {
+          "id": "14d",
+          "text": "d) Xác suất lấy được 1 viên đỏ và 1 viên xanh trong thực tiễn là $\\frac{15}{28}$",
+          "correct": true
+        }
       ],
-      "correct": 0,
+      "topic": "Xác suất",
+      "level": "NB-TH",
       "hasMath": true
     },
     {
       "id": 15,
-      "text": "Cho hình cầu có bán kính $R = 3$. Thể tích của nó là:",
-      "options": [
-        "A. $12\\pi$",
-        "B. $36\\pi$",
-        "C. $108\\pi$",
-        "D. $36\\pi$"
+      "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
+      "question_number": "Câu 15",
+      "text": "Cho hàm số $f(x) = x^3 - 3x^2 + 2$. Xét các ứng dụng tích phân sau:",
+      "sub_questions": [
+        {
+          "id": "15a",
+          "text": "a) Diện tích hình phẳng giới hạn bởi $y = f(x)$, trục $Ox$ và các đường $x = 0, x = 2$ bằng $2$",
+          "correct": false
+        },
+        {
+          "id": "15b",
+          "text": "b) Thể tích khối tròn xoay khi quay đồ thị $y = f(x)$ quanh trục $Ox$ từ $x = 0$ đến $x = 1$ có công thức $V = \\pi \\int_0^1 [f(x)]^2 dx$",
+          "correct": true
+        },
+        {
+          "id": "15c", 
+          "text": "c) Độ dài cung đồ thị từ $x = 0$ đến $x = 1$ có công thức $s = \\int_0^1 \\sqrt{1 + [f'(x)]^2} dx$",
+          "correct": true
+        },
+        {
+          "id": "15d",
+          "text": "d) Diện tích mặt xoay khi quay cung $y = f(x)$ quanh trục $Ox$ từ $x = 0$ đến $x = 1$ có công thức $S = 2\\pi \\int_0^1 |f(x)| \\sqrt{1 + [f'(x)]^2} dx$",
+          "correct": true
+        }
       ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true,
-      "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDIwMCAxODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zcGhlcmUgeyBmaWxsOiAjZTZmN2ZmOyBzdHJva2U6ICMzMzM7IHN0cm9rZS13aWR0aDogMjsgb3BhY2l0eTogMC44OyB9CiAgICAgIC5yYWRpdXMgeyBzdHJva2U6ICNmZjY2MDA7IHN0cm9rZS13aWR0aDogMjsgfQogICAgICAudGV4dCB7IGZvbnQtc2l6ZTogMTRweDsgZmlsbDogIzMzMzsgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyB9CiAgICAgIC5sYWJlbCB7IGZvbnQtc2l6ZTogMTZweDsgZmlsbDogI2ZmNjYwMDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIAogIDwhLS0gU3BoZXJlIC0tPgogIDxjaXJjbGUgY2xhc3M9InNwaGVyZSIgY3g9IjEwMCIgY3k9IjkwIiByPSI2MCIvPgogIAogIDwhLS0gQ2VudGVyIHBvaW50IC0tPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjkwIiByPSIyIiBmaWxsPSIjMzMzIi8+CiAgCiAgPCEtLSBSYWRpdXMgbGluZSAtLT4KICA8bGluZSBjbGFzcz0icmFkaXVzIiB4MT0iMTAwIiB5MT0iOTAiIHgyPSIxNjAiIHkyPSI5MCIvPgogIAogIDwhLS0gTGFiZWxzIC0tPgogIDx0ZXh0IGNsYXNzPSJsYWJlbCIgeD0iOTUiIHk9Ijg1Ij5PPC90ZXh0PgogIDx0ZXh0IGNsYXNzPSJ0ZXh0IiB4PSIxMjUiIHk9Ijg1Ij5SID0gMzwvdGV4dD4KPC9zdmc+"
+      "topic": "Nguyên hàm – Tích phân",
+      "level": "NB-TH-VD",
+      "hasMath": true
     },
     {
       "id": 16,
-      "text": "Số phức $z = 3 + 4i$ có mô-đun bằng:",
-      "options": [
-        "A. $3$",
-        "B. $4$",
-        "C. $5$",
-        "D. $7$"
+      "part": "PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI",
+      "question_number": "Câu 16",
+      "text": "Trong không gian $Oxyz$, cho đường thẳng $d: \\frac{x-1}{2} = \\frac{y+1}{1} = \\frac{z}{-1}$ và điểm $A(2; 0; 1)$. Xét tính đúng/sai:",
+      "sub_questions": [
+        {
+          "id": "16a",
+          "text": "a) Đường thẳng $d$ đi qua điểm $M(1; -1; 0)$ và có véc-tơ chỉ phương $\\vec{u} = (2; 1; -1)$",
+          "correct": true
+        },
+        {
+          "id": "16b",
+          "text": "b) Khoảng cách từ điểm $A$ đến đường thẳng $d$ bằng $\\sqrt{6}$",
+          "correct": true
+        },
+        {
+          "id": "16c",
+          "text": "c) Trong ứng dụng thực tiễn: Nếu $d$ biểu diễn đường bay của máy bay, thì máy bay di chuyển theo hướng véc-tơ $(2; 1; -1)$",
+          "correct": true
+        },
+        {
+          "id": "16d",
+          "text": "d) Phương trình mặt phẳng chứa $A$ và vuông góc với $d$ là $2x + y - z - 3 = 0$",
+          "correct": true
+        }
       ],
-      "correct": 2,
+      "topic": "Phương pháp tọa độ không gian",
+      "level": "NB-TH",
       "hasMath": true
     },
     {
       "id": 17,
-      "text": "Tích phân $\\int_0^{\\pi} \\sin x dx$ bằng:",
-      "options": [
-        "A. $0$",
-        "B. $1$",
-        "C. $2$",
-        "D. $\\pi$"
-      ],
-      "correct": 2,
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "question_number": "Câu 17",
+      "text": "Trong không gian, cho hai đường thẳng chéo nhau $d_1: \\frac{x-1}{2} = \\frac{y}{1} = \\frac{z+1}{-1}$ và $d_2: \\frac{x+1}{1} = \\frac{y-2}{-1} = \\frac{z}{2}$. Khoảng cách giữa hai đường thẳng chéo nhau này bằng:",
+      "answer_type": "number",
+      "correct_answer": "3",
+      "topic": "Quan hệ vuông góc",
+      "level": "TH",
       "hasMath": true
     },
     {
       "id": 18,
-      "text": "Cho hàm số $y = x^3 - 3x + 1$. Số điểm cực trị của hàm số là:",
-      "options": [
-        "A. $0$",
-        "B. $1$",
-        "C. $2$",
-        "D. $3$"
-      ],
-      "correct": 2,
-      "hasMath": true
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN", 
+      "question_number": "Câu 18",
+      "text": "Một đồ thị có 6 đỉnh được sắp xếp thành hình lục giác đều, mỗi đỉnh được nối với 2 đỉnh kề cạnh. Số lượng đường đi Hamilton trong đồ thị này là:",
+      "answer_type": "number",
+      "correct_answer": "60",
+      "topic": "Lý thuyết đồ thị",
+      "level": "VD",
+      "hasMath": false
     },
     {
       "id": 19,
-      "text": "Phương trình $2^x = 16$ có nghiệm:",
-      "options": [
-        "A. $x = 2$",
-        "B. $x = 4$",
-        "C. $x = 8$",
-        "D. $x = 16$"
-      ],
-      "correct": 1,
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "question_number": "Câu 19", 
+      "text": "Một công ty sản xuất có hàm chi phí $C(x) = x^3 - 6x^2 + 12x + 20$ (triệu đồng) và hàm doanh thu $R(x) = 15x$ (triệu đồng), trong đó $x$ là số lượng sản phẩm (nghìn chiếc). Lợi nhuận tối đa mà công ty có thể đạt được là (triệu đồng):",
+      "answer_type": "number", 
+      "correct_answer": "7",
+      "topic": "Hàm số - Ứng dụng thực tiễn",
+      "level": "VD",
       "hasMath": true
     },
     {
       "id": 20,
-      "text": "Cho tam giác có ba cạnh $a = 3, b = 4, c = 5$. Diện tích tam giác là:",
-      "options": [
-        "A. $6$",
-        "B. $7.5$",
-        "C. $12$",
-        "D. $15$"
-      ],
-      "correct": 0,
-      "hasMath": true,
-      "hasGeometry": true
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "question_number": "Câu 20",
+      "text": "Trong không gian $Oxyz$, cho ba điểm $A(1; 2; 0)$, $B(3; 0; 1)$, $C(0; 1; 2)$. Trong ứng dụng thực tiễn về định vị GPS, nếu ba điểm này là vị trí của ba vệ tinh, thì tọa độ trọng tâm của tam giác $ABC$ có tung độ bằng:",
+      "answer_type": "fraction",
+      "correct_answer": "1",
+      "topic": "Vectơ - Ứng dụng thực tiễn", 
+      "level": "VD",
+      "hasMath": true
     },
     {
       "id": 21,
-      "text": "Đạo hàm cấp hai của $y = x^4$ là:",
-      "options": [
-        "A. $4x^3$",
-        "B. $12x^2$",
-        "C. $24x$",
-        "D. $24$"
-      ],
-      "correct": 1,
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "question_number": "Câu 21",
+      "text": "Một bể nước có dạng parabol với phương trình $y = x^2$ (đơn vị: mét). Mực nước ban đầu ở độ cao $y = 4$m. Khi rút nước, thể tích nước còn lại từ $y = 0$ đến $y = 1$ tính bằng tích phân $V = 2\\pi \\int_0^1 y \\sqrt{1 + \\frac{1}{4y}} dy$. Giá trị của tích phân này bằng:",
+      "answer_type": "number",
+      "correct_answer": "4",
+      "topic": "Nguyên hàm – Tích phân - Ứng dụng",
+      "level": "VD",
       "hasMath": true
     },
     {
       "id": 22,
-      "text": "Cho cấp số nhân với $u_1 = 2, q = 3$. Số hạng $u_4$ bằng:",
-      "options": [
-        "A. $18$",
-        "B. $24$",
-        "C. $54$",
-        "D. $162$"
-      ],
-      "correct": 2,
-      "hasMath": true
-    },
-    {
-      "id": 23,
-      "text": "Phương trình $\\cos x = 0$ có nghiệm:",
-      "options": [
-        "A. $x = k\\pi$",
-        "B. $x = \\frac{\\pi}{2} + k\\pi$",
-        "C. $x = \\frac{\\pi}{4} + k\\pi$",
-        "D. $x = 2k\\pi$"
-      ],
-      "correct": 1,
-      "hasMath": true
-    },
-    {
-      "id": 24,
-      "text": "Tìm tiệm cận ngang của hàm số $y = \\frac{2x + 1}{x - 3}$:",
-      "options": [
-        "A. $y = 0$",
-        "B. $y = 1$",
-        "C. $y = 2$",
-        "D. $y = 3$"
-      ],
-      "correct": 2,
-      "hasMath": true
-    },
-    {
-      "id": 25,
-      "text": "Cho hình chóp tứ giác đều có cạnh đáy $a = 4$ và chiều cao $h = 3$. Thể tích là:",
-      "options": [
-        "A. $12$",
-        "B. $16$",
-        "C. $24$",
-        "D. $48$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 26,
-      "text": "Giá trị của $\\tan 45°$ là:",
-      "options": [
-        "A. $\\frac{1}{2}$",
-        "B. $\\frac{\\sqrt{2}}{2}$",
-        "C. $1$",
-        "D. $\\sqrt{3}$"
-      ],
-      "correct": 2,
-      "hasMath": true
-    },
-    {
-      "id": 27,
-      "text": "Số nghiệm của phương trình $x^2 + 2x + 5 = 0$ là:",
-      "options": [
-        "A. $0$",
-        "B. $1$",
-        "C. $2$",
-        "D. $3$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 28,
-      "text": "Tính $C_5^2$ (tổ hợp chập 2 của 5):",
-      "options": [
-        "A. $8$",
-        "B. $10$",
-        "C. $15$",
-        "D. $20$"
-      ],
-      "correct": 1,
-      "hasMath": true
-    },
-    {
-      "id": 29,
-      "text": "Cho hàm số $y = \\ln x$. Đạo hàm của nó là:",
-      "options": [
-        "A. $\\frac{1}{x}$",
-        "B. $x$",
-        "C. $e^x$",
-        "D. $\\ln x$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 30,
-      "text": "Diện tích hình tròn có bán kính $r = 5$ là:",
-      "options": [
-        "A. $10\\pi$",
-        "B. $25\\pi$",
-        "C. $50\\pi$",
-        "D. $100\\pi$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 31,
-      "text": "Nghiệm của bất phương trình $2x - 3 > 5$ là:",
-      "options": [
-        "A. $x > 4$",
-        "B. $x > 1$",
-        "C. $x < 4$",
-        "D. $x < 1$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 32,
-      "text": "Cho véc-tơ $\\vec{a} = (3, 4)$. Độ dài của véc-tơ là:",
-      "options": [
-        "A. $3$",
-        "B. $4$",
-        "C. $5$",
-        "D. $7$"
-      ],
-      "correct": 2,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 33,
-      "text": "Tìm nguyên hàm của $f(x) = 3x^2$:",
-      "options": [
-        "A. $x^3 + C$",
-        "B. $6x + C$",
-        "C. $9x + C$",
-        "D. $\\frac{x^3}{3} + C$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 34,
-      "text": "Số cách sắp xếp 4 người ngồi thành hàng ngang (hoán vị $P_4$):",
-      "options": [
-        "A. $12$",
-        "B. $16$",
-        "C. $20$",
-        "D. $24$"
-      ],
-      "correct": 3,
-      "hasMath": true
-    },
-    {
-      "id": 35,
-      "text": "Cho hàm số $y = \\frac{1}{x}$. Tiệm cận đứng của đồ thị là:",
-      "options": [
-        "A. $x = 0$",
-        "B. $x = 1$",
-        "C. $y = 0$",
-        "D. $y = 1$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 36,
-      "text": "Phương trình đường thẳng đi qua điểm $A(1, 2)$ và có hệ số góc $k = 3$ là:",
-      "options": [
-        "A. $y = 3x - 1$",
-        "B. $y = 3x + 2$",
-        "C. $y = x + 2$",
-        "D. $y = 2x + 1$"
-      ],
-      "correct": 0,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 37,
-      "text": "Cho số phức $z_1 = 2 + 3i$ và $z_2 = 1 - i$. Tính $z_1 + z_2$:",
-      "options": [
-        "A. $3 + 2i$",
-        "B. $1 + 4i$",
-        "C. $3 + 4i$",
-        "D. $2 + 2i$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 38,
-      "text": "Diện tích hình elip có bán trục lớn $a = 5$ và bán trục nhỏ $b = 3$ là:",
-      "options": [
-        "A. $8\\pi$",
-        "B. $15\\pi$",
-        "C. $30\\pi$",
-        "D. $75\\pi$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 39,
-      "text": "Tìm giá trị nhỏ nhất của hàm số $y = x^2 + \\frac{4}{x^2}$ với $x > 0$:",
-      "options": [
-        "A. $2$",
-        "B. $4$",
-        "C. $6$",
-        "D. $8$"
-      ],
-      "correct": 1,
-      "hasMath": true
-    },
-    {
-      "id": 40,
-      "text": "Cho hình lăng trụ tam giác đều có cạnh đáy $a = 2$ và chiều cao $h = 4$. Thể tích là:",
-      "options": [
-        "A. $2\\sqrt{3}$",
-        "B. $4\\sqrt{3}$",
-        "C. $6\\sqrt{3}$",
-        "D. $8\\sqrt{3}$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 41,
-      "text": "Nghiệm của phương trình $\\log_3 x = 2$ là:",
-      "options": [
-        "A. $x = 6$",
-        "B. $x = 8$",
-        "C. $x = 9$",
-        "D. $x = 12$"
-      ],
-      "correct": 2,
-      "hasMath": true
-    },
-    {
-      "id": 42,
-      "text": "Cho ma trận $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$. Det(A) bằng:",
-      "options": [
-        "A. $-2$",
-        "B. $-1$",
-        "C. $2$",
-        "D. $10$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 43,
-      "text": "Tính tổng $S = 1 + 2 + 3 + ... + 100$:",
-      "options": [
-        "A. $5000$",
-        "B. $5050$",
-        "C. $5100$",
-        "D. $10000$"
-      ],
-      "correct": 1,
-      "hasMath": true
-    },
-    {
-      "id": 44,
-      "text": "Cho hàm số $y = \\sin(2x)$. Chu kỳ của hàm số là:",
-      "options": [
-        "A. $\\frac{\\pi}{2}$",
-        "B. $\\pi$",
-        "C. $2\\pi$",
-        "D. $4\\pi$"
-      ],
-      "correct": 1,
-      "hasMath": true
-    },
-    {
-      "id": 45,
-      "text": "Khoảng cách từ điểm $M(2, 3)$ đến đường thẳng $x + y - 1 = 0$ là:",
-      "options": [
-        "A. $2$",
-        "B. $2\\sqrt{2}$",
-        "C. $4$",
-        "D. $\\frac{4}{\\sqrt{2}}$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 46,
-      "text": "Cho hình nón có bán kính đáy $r = 3$ và chiều cao $h = 4$. Thể tích là:",
-      "options": [
-        "A. $12\\pi$",
-        "B. $36\\pi$",
-        "C. $48\\pi$",
-        "D. $144\\pi$"
-      ],
-      "correct": 0,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 47,
-      "text": "Số nghiệm thực của phương trình $x^4 - 5x^2 + 4 = 0$ là:",
-      "options": [
-        "A. $2$",
-        "B. $3$",
-        "C. $4$",
-        "D. $5$"
-      ],
-      "correct": 2,
-      "hasMath": true
-    },
-    {
-      "id": 48,
-      "text": "Cho hàm số $f(x) = x^3 + 3x^2 - 9x + 5$. Giá trị $f'(0)$ bằng:",
-      "options": [
-        "A. $-9$",
-        "B. $3$",
-        "C. $5$",
-        "D. $9$"
-      ],
-      "correct": 0,
-      "hasMath": true
-    },
-    {
-      "id": 49,
-      "text": "Trong không gian, cho ba điểm $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$. Diện tích tam giác ABC là:",
-      "options": [
-        "A. $\\frac{\\sqrt{2}}{2}$",
-        "B. $\\frac{\\sqrt{3}}{2}$",
-        "C. $\\sqrt{2}$",
-        "D. $\\sqrt{3}$"
-      ],
-      "correct": 1,
-      "hasMath": true,
-      "hasGeometry": true
-    },
-    {
-      "id": 50,
-      "text": "Cho chuỗi số $1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + ...$. Tổng của chuỗi là:",
-      "options": [
-        "A. $1$",
-        "B. $\\frac{3}{2}$",
-        "C. $2$",
-        "D. $3$"
-      ],
-      "correct": 2,
+      "part": "PHẦN 3: ĐIỀN ĐÁP ÁN",
+      "question_number": "Câu 22",
+      "text": "Trong một cuộc khảo sát về hiệu quả của vaccine, biết rằng xác suất một người đã tiêm vaccine bị nhiễm bệnh là 0.05. Xác suất một người chưa tiêm vaccine bị nhiễm bệnh là 0.3. Tỷ lệ người đã tiêm vaccine trong dân số là 80%. Xác suất có điều kiện để một người đã tiêm vaccine, biết rằng người đó bị nhiễm bệnh, bằng (làm tròn đến 2 chữ số thập phân):",
+      "answer_type": "decimal",
+      "correct_answer": "0.25",
+      "topic": "Xác suất có điều kiện",
+      "level": "VD", 
       "hasMath": true
     }
   ]

@@ -405,3 +405,135 @@
 #submitted-notice {
     animation: slideIn 0.5s ease-out;
 }
+
+/* Exam Parts Styling */
+.exam-part {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* True/False Questions Styling */
+.true-false-options {
+    margin-top: 1rem;
+}
+
+.sub-question {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.sub-question-text {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.true-false-buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.tf-btn {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid #dee2e6;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tf-btn:hover:not(:disabled) {
+    border-color: #007bff;
+    background: #f8f9ff;
+}
+
+.tf-btn.selected {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.tf-btn.correct {
+    background: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.tf-btn.wrong {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.tf-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Fill-in Questions Styling */
+.fill-in-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.answer-input-container {
+    margin-bottom: 1rem;
+}
+
+.answer-input-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.answer-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.answer-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.answer-input.correct {
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.answer-input.wrong {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+
+.correct-answer {
+    padding: 0.75rem;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    color: #155724;
+    margin-top: 0.75rem;
+}
+
+.correct-answer strong {
+    color: #0f5132;
+}

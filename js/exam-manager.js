@@ -112,28 +112,55 @@ function submitExam() {
 
 // Hàm tính toán kết quả bài thi
 function calculateResults() {
-    const totalQuestions = window.AppState.currentExam.questions.length;
-    let correctAnswers = 0;
+    const questions = window.AppState.currentExam.questions;
+    let totalScore = 0;
+    let maxScore = 0;
     
-    // Calculate correct answers
-    window.AppState.currentExam.questions.forEach((question, index) => {
-        if (window.AppState.userAnswers[index] === question.correct) {
-            correctAnswers++;
+    // Calculate score based on question types
+    questions.forEach((question, index) => {
+        if (question.sub_questions) {
+            // PHẦN 2: TRẮC NGHIỆM ĐÚNG/SAI - 0.25 điểm mỗi ý
+            question.sub_questions.forEach((sub, subIndex) => {
+                maxScore += 0.25;
+                const userAnswer = window.AppState.userAnswers[`${index}_${subIndex}`];
+                if (userAnswer === sub.correct) {
+                    totalScore += 0.25;
+                }
+            });
+        } else if (question.answer_type) {
+            // PHẦN 3: ĐIỀN ĐÁP ÁN - 0.5 điểm mỗi câu
+            maxScore += 0.5;
+            const userAnswer = window.AppState.userAnswers[index];
+            if (userAnswer && userAnswer.toString().trim() === question.correct_answer.toString().trim()) {
+                totalScore += 0.5;
+            }
+        } else {
+            // PHẦN 1: TRẮC NGHIỆM - 0.25 điểm mỗi câu
+            maxScore += 0.25;
+            const userAnswer = window.AppState.userAnswers[index];
+            if (userAnswer === question.correct) {
+                totalScore += 0.25;
+            }
         }
     });
     
-    const score = Math.round((correctAnswers / totalQuestions) * 10 * 100) / 100;
+    // Round to 2 decimal places
+    const finalScore = Math.round(totalScore * 100) / 100;
     const examEndTime = new Date();
     const timeTakenMs = examEndTime - window.AppState.examStartTime;
     
-    // Chuyển đổi milliseconds thành phút và giây
+    // Convert milliseconds to minutes and seconds
     const timeTakenSeconds = Math.floor(timeTakenMs / 1000);
     const minutes = Math.floor(timeTakenSeconds / 60);
     const seconds = timeTakenSeconds % 60;
     
-    // Reload current question để hiển thị đáp án và giải thích
+    // Calculate number of correct answers for display
+    const correctAnswers = Math.round(totalScore / 0.25); // Approximation for display
+    const totalQuestions = questions.length;
+    
+    // Reload current question to show answers and explanations
     loadQuestion(window.AppState.currentQuestionIndex);
     
     // Display results
-    displayResults(correctAnswers, totalQuestions, score, minutes, seconds);
+    displayResults(correctAnswers, totalQuestions, finalScore, minutes, seconds);
 }
