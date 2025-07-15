@@ -80,7 +80,7 @@ function showResultsInExamScreen(correct, total, score, minutes, seconds) {
                 </div>
                 <div class="result-item">
                     <span class="label">Điểm số:</span>
-                    <span class="value score">${score.toFixed(1)}</span>
+                    <span class="value score">${score.toFixed(2)}</span>
                 </div>
                 <div class="result-item">
                     <span class="label">Thời gian:</span>

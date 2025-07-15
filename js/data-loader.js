@@ -1,4 +1,4 @@
-// Load exam list metadata from JSON file
+// Load exam list metadata from optimized JSON file
 async function loadExamListData() {
     try {
         const response = await fetch('exam_list.json');
@@ -6,7 +6,25 @@ async function loadExamListData() {
             throw new Error('Không thể tải danh sách đề thi');
         }
         const data = await response.json();
-        window.AppState.examListData = data.exams;
+        
+        // Convert optimized format to original format for backward compatibility
+        const examListData = {};
+        
+        Object.keys(data.subjects).forEach(subjectKey => {
+            const subject = data.subjects[subjectKey];
+            Object.keys(subject.exams).forEach(examCode => {
+                examListData[examCode] = {
+                    title: `ĐỀ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG NĂM 2025 - Mã đề ${examCode}`,
+                    subject: subject.name,
+                    time_limit: subject.time_limit,
+                    total_questions: subject.total_questions,
+                    has_content: subject.exams[examCode],
+                    file: `data/${subjectKey}/${examCode}.json`
+                };
+            });
+        });
+        
+        window.AppState.examListData = examListData;
     } catch (error) {
         console.error('Lỗi khi tải danh sách đề thi:', error);
         alert('Không thể tải danh sách đề thi. Vui lòng kiểm tra kết nối mạng.');

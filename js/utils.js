@@ -1,6 +1,7 @@
 // Hàm chọn mã đề thi
 function selectExamCode(code) {
     window.AppState.selectedExamCode = code;
+    window.AppState.flaggedQuestions = {};
     
     // Enable start button if name is provided
     checkStartButtonState();

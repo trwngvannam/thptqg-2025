@@ -31,6 +31,7 @@ function selectSubject(subject) {
     
     // Reset exam selection
     window.AppState.selectedExamCode = null;
+    window.AppState.flaggedQuestions = {};
     document.getElementById('selected-exam').textContent = 'Chọn mã đề thi';
     
     // Generate dropdown items for selected subject

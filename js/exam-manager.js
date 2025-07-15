@@ -28,6 +28,7 @@ async function startExam() {
     window.AppState.currentExam = examData;
     window.AppState.currentQuestionIndex = 0;
     window.AppState.userAnswers = {};
+    window.AppState.flaggedQuestions = {};
     window.AppState.examStartTime = new Date();
     window.AppState.examSubmitted = false;
     window.AppState.timeUpAlertShown = false;
@@ -52,6 +53,11 @@ async function startExam() {
     createQuestionGrid();
     loadQuestion(0);
     startTimer();
+    
+    // Update UI components to reflect reset state
+    if (typeof updateFlaggedButton === 'function') {
+        updateFlaggedButton();
+    }
     
     // Re-render MathJax for the exam content
     setTimeout(() => {
@@ -116,7 +122,7 @@ function calculateResults() {
         }
     });
     
-    const score = (correctAnswers / totalQuestions) * 10;
+    const score = Math.round((correctAnswers / totalQuestions) * 10 * 100) / 100;
     const examEndTime = new Date();
     const timeTakenMs = examEndTime - window.AppState.examStartTime;
     

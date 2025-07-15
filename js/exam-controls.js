@@ -73,6 +73,7 @@ function newExam() {
     window.AppState.currentExam = null;
     window.AppState.currentQuestionIndex = 0;
     window.AppState.userAnswers = {};
+    window.AppState.flaggedQuestions = {};
     window.AppState.examStartTime = null;
     window.AppState.timeRemaining = 50 * 60;
     window.AppState.selectedExamCode = null;

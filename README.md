@@ -8,8 +8,9 @@ Mở file `index.html` để xem demo trang web thi trực tuyến.
 ## Cấu Trúc Dữ Liệu
 
 ### 1. Dữ liệu đề thi (data/)
-- `exam_list.json`: Metadata của 48 mã đề (1101-1148)
-- `1101.json` đến `1148.json`: Dữ liệu câu hỏi cho từng mã đề (40 câu/mã đề)
+- `exam_list.json`: Metadata tối ưu của 49 đề thi (48 đề Tiếng Anh + 1 đề Toán)
+- `1101.json` đến `1148.json`: Dữ liệu câu hỏi cho từng mã đề Tiếng Anh (40 câu/mã đề)
+- `0101.json`: Dữ liệu câu hỏi cho đề Toán (50 câu)
 
 ### 2. Explanations (explanations/)
 - `1101.json` đến `1148.json`: Giải thích đáp án cho từng mã đề
@@ -27,7 +28,8 @@ Mở file `index.html` để xem demo trang web thi trực tuyến.
 
 ## Tính Năng
 
-- **48 mã đề THPTQG**: Dữ liệu đầy đủ cho tất cả mã đề từ 1101-1148
+- **49 đề thi THPTQG**: 48 đề Tiếng Anh (1101-1148) + 1 đề Toán (0101)
+- **Metadata tối ưu**: File exam_list.json giảm 80% kích thước (từ 8KB xuống 1.5KB)
 - **Lazy Loading**: Chỉ tải dữ liệu khi cần thiết, tối ưu hiệu suất
 - **Dropdown tìm kiếm**: Lọc mã đề theo số hoặc ký tự bất kỳ
 - **Explanations động**: Giải thích đáp án được tải riêng theo từng mã đề
