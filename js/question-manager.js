@@ -127,6 +127,22 @@ function loadQuestion(index) {
 // Render câu hỏi trắc nghiệm thường (PHẦN 1)
 function renderMultipleChoiceQuestion(question, index) {
     let questionHTML = '<div class="question">';
+    
+    // Hiển thị instruction nếu có
+    if (question.instruction) {
+        questionHTML += '<div class="question-instruction">' + question.instruction + '</div>';
+    }
+    
+    // Hiển thị passage nếu có
+    if (question.passage) {
+        questionHTML += '<div class="question-passage">' + question.passage.replace(/\n/g, '<br>') + '</div>';
+    }
+    
+    // Hiển thị context nếu có
+    if (question.context) {
+        questionHTML += '<div class="question-context">' + question.context.replace(/\n/g, '<br>') + '</div>';
+    }
+    
     questionHTML += '<div class="question-text">' + question.text + '</div>';
     
     // Thêm card thông báo hình ảnh nếu có
@@ -174,36 +190,52 @@ function renderMultipleChoiceQuestion(question, index) {
 
 // Render câu hỏi đúng/sai (PHẦN 2)
 function renderTrueFalseQuestion(question, index) {
-    return `
-        <div class="question">
-            <div class="question-text">${question.text}</div>
-            <div class="true-false-options">
-                ${question.sub_questions.map((sub, i) => {
-                    const userAnswer = window.AppState.userAnswers[`${index}_${i}`];
-                    const isCorrect = sub.correct;
-                    const showCorrect = window.AppState.examSubmitted;
-                    
-                    return `
-                        <div class="sub-question">
-                            <div class="sub-question-text">${sub.text}</div>
-                            <div class="true-false-buttons">
-                                <button class="tf-btn ${userAnswer === true ? 'selected' : ''} ${showCorrect && isCorrect === true ? 'correct' : ''} ${showCorrect && userAnswer === true && isCorrect !== true ? 'wrong' : ''}" 
-                                        onclick="${!window.AppState.examSubmitted ? `selectTrueFalseAnswer(${index}, ${i}, true)` : ''}" 
-                                        ${window.AppState.examSubmitted ? 'disabled' : ''}>
-                                    Đúng
-                                </button>
-                                <button class="tf-btn ${userAnswer === false ? 'selected' : ''} ${showCorrect && isCorrect === false ? 'correct' : ''} ${showCorrect && userAnswer === false && isCorrect !== false ? 'wrong' : ''}" 
-                                        onclick="${!window.AppState.examSubmitted ? `selectTrueFalseAnswer(${index}, ${i}, false)` : ''}" 
-                                        ${window.AppState.examSubmitted ? 'disabled' : ''}>
-                                    Sai
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                }).join('')}
+    let questionHTML = '<div class="question">';
+    
+    // Hiển thị instruction nếu có
+    if (question.instruction) {
+        questionHTML += '<div class="question-instruction">' + question.instruction + '</div>';
+    }
+    
+    // Hiển thị passage nếu có
+    if (question.passage) {
+        questionHTML += '<div class="question-passage">' + question.passage.replace(/\n/g, '<br>') + '</div>';
+    }
+    
+    // Hiển thị context nếu có
+    if (question.context) {
+        questionHTML += '<div class="question-context">' + question.context.replace(/\n/g, '<br>') + '</div>';
+    }
+    
+    questionHTML += '<div class="question-text">' + question.text + '</div>';
+    questionHTML += '<div class="true-false-options">';
+    
+    questionHTML += question.sub_questions.map((sub, i) => {
+        const userAnswer = window.AppState.userAnswers[`${index}_${i}`];
+        const isCorrect = sub.correct;
+        const showCorrect = window.AppState.examSubmitted;
+        
+        return `
+            <div class="sub-question">
+                <div class="sub-question-text">${sub.text}</div>
+                <div class="true-false-buttons">
+                    <button class="tf-btn ${userAnswer === true ? 'selected' : ''} ${showCorrect && isCorrect === true ? 'correct' : ''} ${showCorrect && userAnswer === true && isCorrect !== true ? 'wrong' : ''}" 
+                            onclick="${!window.AppState.examSubmitted ? `selectTrueFalseAnswer(${index}, ${i}, true)` : ''}" 
+                            ${window.AppState.examSubmitted ? 'disabled' : ''}>
+                        Đúng
+                    </button>
+                    <button class="tf-btn ${userAnswer === false ? 'selected' : ''} ${showCorrect && isCorrect === false ? 'correct' : ''} ${showCorrect && userAnswer === false && isCorrect !== false ? 'wrong' : ''}" 
+                            onclick="${!window.AppState.examSubmitted ? `selectTrueFalseAnswer(${index}, ${i}, false)` : ''}" 
+                            ${window.AppState.examSubmitted ? 'disabled' : ''}>
+                        Sai
+                    </button>
+                </div>
             </div>
-        </div>
-    `;
+        `;
+    }).join('');
+    
+    questionHTML += '</div></div>';
+    return questionHTML;
 }
 
 // Render câu hỏi điền đáp án (PHẦN 3)
@@ -211,27 +243,44 @@ function renderFillInQuestion(question, index) {
     const userAnswer = window.AppState.userAnswers[index] || '';
     const isCorrect = window.AppState.examSubmitted && userAnswer.toString().trim() === question.correct_answer.toString().trim();
     
-    return `
-        <div class="question">
-            <div class="question-text">${question.text}</div>
-            <div class="fill-in-section">
-                <div class="answer-input-container">
-                    <label>Đáp án:</label>
-                    <input type="text" 
-                           class="answer-input ${window.AppState.examSubmitted ? (isCorrect ? 'correct' : 'wrong') : ''}" 
-                           value="${userAnswer}" 
-                           onchange="selectFillInAnswer(${index}, this.value)"
-                           ${window.AppState.examSubmitted ? 'disabled' : ''}
-                           placeholder="Nhập đáp án của bạn...">
-                </div>
-                ${window.AppState.examSubmitted ? `
-                    <div class="correct-answer">
-                        <strong>Đáp án đúng:</strong> ${question.correct_answer}
-                    </div>
-                ` : ''}
+    let questionHTML = '<div class="question">';
+    
+    // Hiển thị instruction nếu có
+    if (question.instruction) {
+        questionHTML += '<div class="question-instruction">' + question.instruction + '</div>';
+    }
+    
+    // Hiển thị passage nếu có
+    if (question.passage) {
+        questionHTML += '<div class="question-passage">' + question.passage.replace(/\n/g, '<br>') + '</div>';
+    }
+    
+    // Hiển thị context nếu có
+    if (question.context) {
+        questionHTML += '<div class="question-context">' + question.context.replace(/\n/g, '<br>') + '</div>';
+    }
+    
+    questionHTML += '<div class="question-text">' + question.text + '</div>';
+    questionHTML += `
+        <div class="fill-in-section">
+            <div class="answer-input-container">
+                <label>Đáp án:</label>
+                <input type="text" 
+                       class="answer-input ${window.AppState.examSubmitted ? (isCorrect ? 'correct' : 'wrong') : ''}" 
+                       value="${userAnswer}" 
+                       onchange="selectFillInAnswer(${index}, this.value)"
+                       ${window.AppState.examSubmitted ? 'disabled' : ''}
+                       placeholder="Nhập đáp án của bạn...">
             </div>
+            ${window.AppState.examSubmitted ? `
+                <div class="correct-answer">
+                    <strong>Đáp án đúng:</strong> ${question.correct_answer}
+                </div>
+            ` : ''}
         </div>
-    `;
+    </div>`;
+    
+    return questionHTML;
 }
 
 // Function để chọn đáp án trắc nghiệm (A, B, C, D)
