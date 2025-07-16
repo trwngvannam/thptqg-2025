@@ -52,7 +52,7 @@ function updateExamInfo(subject) {
         window.AppState.timeRemaining = 50 * 60; // 50 minutes for English
     } else if (subject === 'math') {
         examTime.textContent = 'Thời gian: 90 phút';
-        examQuestions.textContent = '50 câu hỏi';
+        examQuestions.textContent = '22 câu hỏi';
         window.AppState.timeRemaining = 90 * 60; // 90 minutes for Math
     }
 }
